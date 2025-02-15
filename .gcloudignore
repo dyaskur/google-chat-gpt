@@ -13,5 +13,15 @@
 .git
 .gitignore
 *.md
+*.MD
 *.sh
 node_modules
+babel.config.json
+jest.config.js
+deploy.sh
+.idea
+.github
+tests
+src
+*/__mock__
+tsconfig.json
