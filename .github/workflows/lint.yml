@@ -3,7 +3,7 @@ name: Lint and Format Check
 on:
   push:
     branches:
-      - '**' # Runs on any branch
+      - 'main'
   pull_request: # Runs on all PRs
 
 jobs:
