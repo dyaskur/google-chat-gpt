@@ -7,7 +7,7 @@ import prettierConfig from 'eslint-config-prettier'
 
 export default [
   {
-    ignores: ['dist/', 'tests/'], // Ignore the dist folder
+    ignores: ['dist/', 'tests/', 'pnpm-lock.yaml'], // Ignore the dist folder
   },
   js.configs.recommended, // Base ESLint rules
   {
