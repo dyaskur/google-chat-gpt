@@ -1,4 +1,4 @@
-// eslint.config.js
+// eslint.config.mjs
 import js from '@eslint/js'
 import ts from '@typescript-eslint/eslint-plugin'
 import tsParser from '@typescript-eslint/parser'
@@ -6,11 +6,17 @@ import prettier from 'eslint-plugin-prettier'
 import prettierConfig from 'eslint-config-prettier'
 
 export default [
+  {
+    ignores: ['dist/', 'tests/'], // Ignore the dist folder
+  },
   js.configs.recommended, // Base ESLint rules
   {
     files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
       parser: tsParser,
+      globals: {
+        console: 'readonly', // Allow console usage
+      },
     },
     plugins: {
       '@typescript-eslint': ts,
