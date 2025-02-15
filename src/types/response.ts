@@ -1,18 +1,18 @@
 type MessageAction = {
   message: {
-    text: string;
-  };
-};
+    text: string
+  }
+}
 
 type ChatDataAction = {
-  createMessageAction?: MessageAction;
-  updateMessageAction?: MessageAction;
-};
+  createMessageAction?: MessageAction
+  updateMessageAction?: MessageAction
+}
 
 type HostAppDataAction = {
-  chatDataAction: ChatDataAction;
-};
+  chatDataAction: ChatDataAction
+}
 
 export type ChatResponse = {
-  hostAppDataAction: HostAppDataAction;
-};
+  hostAppDataAction: HostAppDataAction
+}

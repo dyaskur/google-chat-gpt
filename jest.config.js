@@ -3,4 +3,4 @@ export default {
     '^.+\\.ts?$': 'babel-jest',
   },
   clearMocks: true,
-};
+}
