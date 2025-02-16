@@ -3,12 +3,15 @@ import {ChatEvent} from './types/event'
 import {createMessageResponse} from './utils'
 import * as fs from 'node:fs'
 import client, {connectDB, disconnectDB} from './db/client'
+import {getCache} from './utils/cache'
 
 export const app: HttpFunction = async (req, res) => {
   if (!(req.method === 'POST' && req.body)) {
     console.log('unknown access', req.hostname, req.ips.join(','), req.method, JSON.stringify(req.body))
     await connectDB() // Connect to DB
-
+    const cache = await getCache()
+    await cache.set('test', 'test 123 sdfsd dsf sdf ')
+    console.log(await cache.get('test'), process.env.DATABASE_URL)
     const result = await client.query('SELECT NOW()')
     console.log('Current Time:', result.rows[0])
 
@@ -17,7 +20,7 @@ export const app: HttpFunction = async (req, res) => {
       if (err) {
         res.status(500).send('Error reading node_modules')
       } else {
-        console.log(files.join('\n'))
+        // console.log(files.join('\n'))
         res.status(200).send(files.join('\n'))
       }
     })

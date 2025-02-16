@@ -6,6 +6,7 @@
   "scripts": {
     "test": "ENV_VARIABLE=dev NODE_OPTIONS='--experimental-vm-modules --experimental-specifier-resolution=node' jest --coverage",
     "start": "functions-framework --target=app",
+    "dev": "tsc && functions-framework --target=app",
     "lint": "eslint . && pnpm prettier --check .",
     "lint:fix": "eslint . --fix",
     "prettier:fix": "prettier --write .",
@@ -17,7 +18,8 @@
   "dependencies": {
     "@google-cloud/functions-framework": "^3.4.5",
     "@googleapis/chat": "^32.0.0",
-    "pg": "^8.13.3"
+    "pg": "^8.13.3",
+    "redis": "^4.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.9",
