@@ -7,7 +7,7 @@ import prettierConfig from 'eslint-config-prettier'
 
 export default [
   {
-    ignores: ['dist/', 'tests/', 'pnpm-lock.yaml'], // Ignore the dist folder
+    ignores: ['dist/', 'tests/', 'pnpm-lock.yaml', 'coverage/'], // Ignore the dist folder
   },
   js.configs.recommended, // Base ESLint rules
   {
@@ -15,12 +15,15 @@ export default [
     languageOptions: {
       parser: tsParser,
       globals: {
+        process: true, // ✅ Allow `process` as a global variable
         console: 'readonly', // Allow console usage
       },
-      env: {
-        node: true, // Enable Node.js environment (includes process, setTimeout, etc.)
-        es2022: true, // Enable modern JavaScript features
-      },
+      // env: {
+      //   node: true, // Enable Node.js environment (includes process, setTimeout, etc.)
+      //   es2022: true, // Enable modern JavaScript features
+      // },
+      ecmaVersion: 'latest', // Use latest ECMAScript version
+      sourceType: 'module', // Set module type for ESM
     },
     plugins: {
       '@typescript-eslint': ts,

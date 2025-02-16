@@ -21,6 +21,8 @@ jest.config.js
 deploy.sh
 .idea
 .github
+.husky
+coverage
 tests
 src
 */__mock__
