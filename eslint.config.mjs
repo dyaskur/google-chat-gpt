@@ -17,6 +17,10 @@ export default [
       globals: {
         console: 'readonly', // Allow console usage
       },
+      env: {
+        node: true, // Enable Node.js environment (includes process, setTimeout, etc.)
+        es2022: true, // Enable modern JavaScript features
+      },
     },
     plugins: {
       '@typescript-eslint': ts,
