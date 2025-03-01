@@ -1,24 +1,23 @@
-import {Client} from 'pg'
+import {Pool} from 'pg'
 
 if (!process.env.DATABASE_URL) {
   throw new Error('DATABASE_URL is not set in the environment variables')
 }
 
-const client = new Client(process.env.DATABASE_URL)
+const pool = new Pool({connectionString: process.env.DATABASE_URL})
 
-export async function connectDB() {
+export async function query(text: string, params?: any[]) {
+  const client = await pool.connect()
   try {
-    await client.connect()
-    console.log('Connected to PostgreSQL')
-  } catch (err) {
-    console.error('Database connection error:', err)
-    process.exit(1)
+    return await client.query(text, params)
+  } finally {
+    client.release()
   }
 }
 
 export async function disconnectDB() {
-  await client.end()
+  await pool.end()
   console.log('Disconnected from PostgreSQL')
 }
 
-export default client
+export default pool

@@ -7,7 +7,7 @@
     "test": "ENV_VARIABLE=dev NODE_OPTIONS='--experimental-vm-modules --experimental-specifier-resolution=node' jest --coverage",
     "start": "functions-framework --target=app",
     "dev": "tsc && functions-framework --target=app",
-    "lint": "eslint . && pnpm prettier --check .",
+    "lint": "eslint . && pnpm prettier --check src",
     "lint:fix": "eslint . --fix",
     "prettier:fix": "prettier --write .",
     "prepare": "husky"

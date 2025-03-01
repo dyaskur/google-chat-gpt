@@ -4,6 +4,9 @@ import {createMessageResponse} from './utils'
 import * as fs from 'node:fs'
 import client, {connectDB, disconnectDB} from './db/client'
 import {getCache} from './utils/cache'
+import {getCache, getUser} from './utils/cache'
+import {createUserIntegration} from './db/user'
+import {CreateUserInput} from './db/user.types'
 
 export const app: HttpFunction = async (req, res) => {
   if (!(req.method === 'POST' && req.body)) {
@@ -32,6 +35,21 @@ export const app: HttpFunction = async (req, res) => {
       console.log(JSON.stringify(event))
     }
 
+    const email = event.chat.user.email
+    let userId = await getUser(email)
+    if (!userId) {
+      const userData: CreateUserInput = {
+        email,
+        name: event.chat.user.name,
+        displayName: event.chat.user.name,
+        type: event.chat.user.type,
+        avatarUrl: event.chat.user.avatarUrl,
+        domainId: event.chat.user.domainId,
+      }
+      userId = await createUserIntegration(userData)
+      console.log('a new registered user', userId)
+    }
+    // const user = event.chat.user
     if (event.chat.addedToSpacePayload) {
       res.json(createMessageResponse('Hi, thanks for install my app'))
     } else {
