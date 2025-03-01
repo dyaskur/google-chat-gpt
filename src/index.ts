@@ -2,23 +2,17 @@ import {HttpFunction} from '@google-cloud/functions-framework'
 import {ChatEvent} from './types/event'
 import {createMessageResponse} from './utils'
 import * as fs from 'node:fs'
-import client, {connectDB, disconnectDB} from './db/client'
-import {getCache} from './utils/cache'
 import {getCache, getUser} from './utils/cache'
+import {fetchCompletion} from './apis/straico'
 import {createUserIntegration} from './db/user'
 import {CreateUserInput} from './db/user.types'
 
 export const app: HttpFunction = async (req, res) => {
   if (!(req.method === 'POST' && req.body)) {
     console.log('unknown access', req.hostname, req.ips.join(','), req.method, JSON.stringify(req.body))
-    await connectDB() // Connect to DB
     const cache = await getCache()
     await cache.set('test', 'test 123 sdfsd dsf sdf ')
     console.log(await cache.get('test'), process.env.DATABASE_URL)
-    const result = await client.query('SELECT NOW()')
-    console.log('Current Time:', result.rows[0])
-
-    await disconnectDB()
     fs.readdir('./node_modules', (err, files) => {
       if (err) {
         res.status(500).send('Error reading node_modules')
@@ -52,6 +46,13 @@ export const app: HttpFunction = async (req, res) => {
     // const user = event.chat.user
     if (event.chat.addedToSpacePayload) {
       res.json(createMessageResponse('Hi, thanks for install my app'))
+    } else if (event.chat.appCommandPayload) {
+      const commandId = event.chat.appCommandPayload.appCommandMetadata.appCommandId
+      console.log(commandId)
+    } else if (event.chat.messagePayload) {
+      const message = event.chat.messagePayload.message.text
+      const response = await fetchCompletion(message)
+      res.json(createMessageResponse(response.data.completion.choices[0].message.content))
     } else {
       res.json(createMessageResponse('Hi, what can I do for you?'))
     }
