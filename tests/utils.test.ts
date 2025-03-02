@@ -13,11 +13,11 @@ it('should return ChatResponse with nested message structure when given text', (
       chatDataAction: {
         createMessageAction: {
           message: {
-            text: 'Hello world'
-          }
-        }
-      }
-    }
+            text: 'Hello world',
+          },
+        },
+      },
+    },
   })
 })
 it('should handle text with special characters correctly', () => {
