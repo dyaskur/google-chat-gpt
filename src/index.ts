@@ -1,6 +1,6 @@
 import {HttpFunction} from '@google-cloud/functions-framework'
 import {ChatEvent} from './types/event'
-import {createMessageResponse} from './utils'
+import {createMessageResponse, formatForGoogleChat} from './utils/chat'
 import * as fs from 'node:fs'
 import {getCache, getUser} from './utils/cache'
 import {fetchCompletion} from './apis/straico'
@@ -52,7 +52,7 @@ export const app: HttpFunction = async (req, res) => {
     } else if (event.chat.messagePayload) {
       const message = event.chat.messagePayload.message.text
       const response = await fetchCompletion(message)
-      res.json(createMessageResponse(response.data.completion.choices[0].message.content))
+      res.json(createMessageResponse(formatForGoogleChat(response.data.completion.choices[0].message.content)))
     } else {
       res.json(createMessageResponse('Hi, what can I do for you?'))
     }
