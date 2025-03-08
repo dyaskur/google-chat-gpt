@@ -14,6 +14,24 @@ export function createMessageResponse(text: string): ChatResponse {
   }
 }
 
+export function createActionResponse(): ChatResponse {
+  return {
+    hostAppDataAction: {
+      chatDataAction: {
+        createMessageAction: {
+          message: {
+            text: 'please login first',
+            actionResponse: {
+              type: 'REQUEST_CONFIG',
+              url: 'https://yaskur.com/',
+            },
+          },
+        },
+      },
+    },
+  }
+}
+
 export function formatForGoogleChat(text: string): string {
   return (
     text

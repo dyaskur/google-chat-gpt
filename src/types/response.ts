@@ -1,12 +1,17 @@
 type MessageAction = {
   message: {
-    text: string
+    text?: string
+    actionResponse?: {
+      type: string
+      url?: string
+    }
   }
 }
 
 type ChatDataAction = {
   createMessageAction?: MessageAction
   updateMessageAction?: MessageAction
+  dialogAction?: MessageAction
 }
 
 type HostAppDataAction = {

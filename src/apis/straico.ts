@@ -34,21 +34,11 @@ export type CompletionResponse = {
   success: boolean
 }
 
-// const models = {
-//   'amazon/nova-lite-v1': 'Amazon: Nova Lite 1.0',
-//   'amazon/nova-micro-v1': 'Amazon: Nova Micro 1.0',
-//   'amazon/nova-pro-v1': 'Amazon: Nova Pro 1.0',
-//   'anthropic/claude-3-haiku:beta': 'Anthropic: Claude 3.0 haiku',
-//   'anthropic/claude-3-opus': 'Anthropic: Claude 3.0 opus',
-//   'anthropic/claude-3-sonnet': 'Anthropic: Claude 3.0 sonnet',
-//   'anthropic/claude-3-5-haiku-20241022': 'Anthropic: Claude 3.5 haiku',
-//   'anthropic/claude-3.5-sonnet': 'Anthropic: Claude 3.5 sonnet',
-// }
-
 export const fetchCompletion = async (
   message: string,
   model: string = 'openai/gpt-4o-mini',
 ): Promise<CompletionResponse> => {
+  console.log(message, model)
   const response = await fetch(BASE_URL + 'v0/prompt/completion', {
     method: 'POST',
     headers: {

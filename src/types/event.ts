@@ -94,6 +94,39 @@ type Thread = {
   name: string
   retentionSettings: RetentionSettings
 }
+type Timestamp = {
+  seconds: number
+  nanos: number
+}
+type MessageMetadata = {
+  sender: string
+  name: string
+  createTime: Timestamp
+  updateTime: Timestamp
+}
+type QuotedMessageMetadata = {
+  name: string
+  lastUpdateTime: Timestamp
+}
+
+type AttachmentDataRef = {
+  resourceName: string
+}
+
+type Attachment = {
+  contentName: string
+  contentType: string
+  attachmentDataRef: AttachmentDataRef
+  name: string
+  messageMetadata: MessageMetadata
+  thumbnailUri: string
+  source: string
+  downloadUri: string
+}
+
+type Gif = {
+  url: string
+}
 
 type Message = {
   sender: Sender
@@ -106,4 +139,7 @@ type Message = {
   text: string
   retentionSettings: RetentionSettings
   createTime: EventTime
+  quotedMessageMetadata?: QuotedMessageMetadata
+  attachment?: Attachment[]
+  attachedGifs?: Gif[]
 }
