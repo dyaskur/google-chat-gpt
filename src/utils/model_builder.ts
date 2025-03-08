@@ -1,5 +1,6 @@
 import * as fs from 'node:fs'
-import commands from '../json/commands_by_model.json'
+import * as commands from '../json/commands_by_model.json'
+import {AbangModel, OpenrouterModel, StraicoModel} from '../types/model'
 
 async function getStraicoModels() {
   const apiKey = process.env.STRAICO_API_KEY
@@ -19,7 +20,6 @@ async function getStraicoModels() {
     // console.log(data)
     return data.data
   }
-  console.log(process.env.STRAICO_API_KEY)
   return []
 }
 
@@ -39,45 +39,18 @@ function mapModelsByKey(models: StraicoModel[], key: keyof StraicoModel = 'model
     return acc
   }, {})
 }
-interface AbangModel extends OpenrouterModel {
-  straico?: {
-    model?: string
-    coins: string
-    max_output: number
-  }
-  commandName?: string
-}
-type OpenrouterModel = {
-  id: string
-  name: string
-  coins: string
-  pricing: {
-    prompt: string
-    completion: string
-    image: string
-    request: string
-  }
-  context_length: number
-}
-type StraicoModel = {
-  name: string
-  model: string
-  pricing: {
-    coins: string
-  }
-  max_output: number
-}
 
 async function exportModels() {
   const straico: StraicoModel[] = await getStraicoModels()
   const straicoByModel = mapModelsByKey(straico)
   const openrouter: OpenrouterModel[] = await getOpenrouterModels()
   const result: AbangModel[] = []
+  const straicoModels: {[key: number]: object} = {}
   const models: {[key: number]: AbangModel} = {}
   for (const model of openrouter) {
     const abangModel: AbangModel = {
       ...model,
-      commandName: model.id.replace(/-/g, '_').replace(/\//g, '-'),
+      commandName: '/' + model.id.replace(/-/g, '_').replace(/\//g, ':'),
     }
     if (straicoByModel[model.id]) {
       abangModel['straico'] = {
@@ -93,9 +66,25 @@ async function exportModels() {
     }
     result.push(abangModel)
     const commandsTyped = commands as {[key: string]: number}
-    models[commandsTyped[model.id as string] as number] = abangModel
+    let commandId = commandsTyped[model.id as string] as number
+    if (!commandId) {
+      // random number
+      commandId = Math.floor(Math.random() * 1000000)
+    }
+
+    if (abangModel.straico) {
+      straicoModels[commandId] = {
+        description: abangModel.description,
+        name: abangModel.name,
+        commandName: abangModel.commandName,
+        commandId: commandId,
+        straico: abangModel.straico,
+      }
+    }
+    models[commandId] = abangModel
   }
   fs.writeFileSync('models_by_command_id.json', JSON.stringify(models))
+  fs.writeFileSync('simplified.json', JSON.stringify(straicoModels))
   // generate commands
   // result.sort((a, b) => a.id.localeCompare(b.id))
   // const startIndex = 11
