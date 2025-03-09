@@ -52,16 +52,18 @@ async function exportModels() {
       ...model,
       commandName: '/' + model.id.replace(/-/g, '_').replace(/\//g, ':'),
     }
+    const modelExploded = model.id.split('/')
+    abangModel['provider'] = modelExploded[0]
     if (straicoByModel[model.id]) {
       abangModel['straico'] = {
         coins: straicoByModel[model.id].pricing.coins,
         max_output: straicoByModel[model.id].max_output,
       }
-    } else if (straicoByModel[model.id.split('/')[1]]) {
+    } else if (straicoByModel[modelExploded[1]]) {
       abangModel['straico'] = {
         model: model.id.split('/')[1],
-        coins: straicoByModel[model.id.split('/')[1]].pricing.coins,
-        max_output: straicoByModel[model.id.split('/')[1]].max_output,
+        coins: straicoByModel[modelExploded[1]].pricing.coins,
+        max_output: straicoByModel[modelExploded[1]].max_output,
       }
     }
     result.push(abangModel)

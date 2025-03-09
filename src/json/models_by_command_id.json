@@ -26,7 +26,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/01_ai:yi_large"
+    "commandName": "/01_ai:yi_large",
+    "provider": "01-ai"
   },
   "12": {
     "id": "aetherwiing/mn-starcannon-12b",
@@ -55,7 +56,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/aetherwiing:mn_starcannon_12b"
+    "commandName": "/aetherwiing:mn_starcannon_12b",
+    "provider": "aetherwiing"
   },
   "13": {
     "id": "ai21/jamba-1-5-large",
@@ -84,7 +86,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/ai21:jamba_1_5_large"
+    "commandName": "/ai21:jamba_1_5_large",
+    "provider": "ai21"
   },
   "14": {
     "id": "ai21/jamba-1-5-mini",
@@ -113,7 +116,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/ai21:jamba_1_5_mini"
+    "commandName": "/ai21:jamba_1_5_mini",
+    "provider": "ai21"
   },
   "15": {
     "id": "ai21/jamba-instruct",
@@ -142,7 +146,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/ai21:jamba_instruct"
+    "commandName": "/ai21:jamba_instruct",
+    "provider": "ai21"
   },
   "16": {
     "id": "aion-labs/aion-1.0",
@@ -171,7 +176,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/aion_labs:aion_1.0"
+    "commandName": "/aion_labs:aion_1.0",
+    "provider": "aion-labs"
   },
   "17": {
     "id": "aion-labs/aion-1.0-mini",
@@ -200,7 +206,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/aion_labs:aion_1.0_mini"
+    "commandName": "/aion_labs:aion_1.0_mini",
+    "provider": "aion-labs"
   },
   "18": {
     "id": "aion-labs/aion-rp-llama-3.1-8b",
@@ -229,7 +236,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/aion_labs:aion_rp_llama_3.1_8b"
+    "commandName": "/aion_labs:aion_rp_llama_3.1_8b",
+    "provider": "aion-labs"
   },
   "19": {
     "id": "allenai/llama-3.1-tulu-3-405b",
@@ -258,7 +266,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/allenai:llama_3.1_tulu_3_405b"
+    "commandName": "/allenai:llama_3.1_tulu_3_405b",
+    "provider": "allenai"
   },
   "20": {
     "id": "alpindale/goliath-120b",
@@ -288,6 +297,7 @@
     },
     "per_request_limits": null,
     "commandName": "/alpindale:goliath_120b",
+    "provider": "alpindale",
     "straico": {
       "coins": 5,
       "max_output": 400
@@ -320,7 +330,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/alpindale:magnum_72b"
+    "commandName": "/alpindale:magnum_72b",
+    "provider": "alpindale"
   },
   "22": {
     "id": "amazon/nova-lite-v1",
@@ -350,6 +361,7 @@
     },
     "per_request_limits": null,
     "commandName": "/amazon:nova_lite_v1",
+    "provider": "amazon",
     "straico": {
       "coins": 0.2,
       "max_output": 5000
@@ -383,6 +395,7 @@
     },
     "per_request_limits": null,
     "commandName": "/amazon:nova_micro_v1",
+    "provider": "amazon",
     "straico": {
       "coins": 0.1,
       "max_output": 5000
@@ -416,6 +429,7 @@
     },
     "per_request_limits": null,
     "commandName": "/amazon:nova_pro_v1",
+    "provider": "amazon",
     "straico": {
       "coins": 1,
       "max_output": 5000
@@ -448,7 +462,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/anthracite_org:magnum_v2_72b"
+    "commandName": "/anthracite_org:magnum_v2_72b",
+    "provider": "anthracite-org"
   },
   "26": {
     "id": "anthracite-org/magnum-v4-72b",
@@ -477,7 +492,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/anthracite_org:magnum_v4_72b"
+    "commandName": "/anthracite_org:magnum_v4_72b",
+    "provider": "anthracite-org"
   },
   "27": {
     "id": "anthropic/claude-2",
@@ -506,7 +522,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_2"
+    "commandName": "/anthropic:claude_2",
+    "provider": "anthropic"
   },
   "28": {
     "id": "anthropic/claude-2:beta",
@@ -535,7 +552,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_2:beta"
+    "commandName": "/anthropic:claude_2:beta",
+    "provider": "anthropic"
   },
   "29": {
     "id": "anthropic/claude-2.0",
@@ -564,7 +582,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_2.0"
+    "commandName": "/anthropic:claude_2.0",
+    "provider": "anthropic"
   },
   "30": {
     "id": "anthropic/claude-2.0:beta",
@@ -593,7 +612,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_2.0:beta"
+    "commandName": "/anthropic:claude_2.0:beta",
+    "provider": "anthropic"
   },
   "31": {
     "id": "anthropic/claude-2.1",
@@ -622,7 +642,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_2.1"
+    "commandName": "/anthropic:claude_2.1",
+    "provider": "anthropic"
   },
   "32": {
     "id": "anthropic/claude-2.1:beta",
@@ -651,7 +672,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_2.1:beta"
+    "commandName": "/anthropic:claude_2.1:beta",
+    "provider": "anthropic"
   },
   "33": {
     "id": "anthropic/claude-3-haiku",
@@ -680,7 +702,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_3_haiku"
+    "commandName": "/anthropic:claude_3_haiku",
+    "provider": "anthropic"
   },
   "34": {
     "id": "anthropic/claude-3-haiku:beta",
@@ -710,6 +733,7 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3_haiku:beta",
+    "provider": "anthropic",
     "straico": {
       "coins": 1,
       "max_output": 4096
@@ -743,6 +767,7 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3_opus",
+    "provider": "anthropic",
     "straico": {
       "coins": 24,
       "max_output": 4096
@@ -775,7 +800,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_3_opus:beta"
+    "commandName": "/anthropic:claude_3_opus:beta",
+    "provider": "anthropic"
   },
   "37": {
     "id": "anthropic/claude-3-sonnet",
@@ -805,6 +831,7 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3_sonnet",
+    "provider": "anthropic",
     "straico": {
       "coins": 5,
       "max_output": 4096
@@ -837,7 +864,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_3_sonnet:beta"
+    "commandName": "/anthropic:claude_3_sonnet:beta",
+    "provider": "anthropic"
   },
   "39": {
     "id": "anthropic/claude-3.5-haiku",
@@ -866,7 +894,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_3.5_haiku"
+    "commandName": "/anthropic:claude_3.5_haiku",
+    "provider": "anthropic"
   },
   "40": {
     "id": "anthropic/claude-3.5-haiku-20241022",
@@ -895,7 +924,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_3.5_haiku_20241022"
+    "commandName": "/anthropic:claude_3.5_haiku_20241022",
+    "provider": "anthropic"
   },
   "41": {
     "id": "anthropic/claude-3.5-haiku-20241022:beta",
@@ -924,7 +954,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_3.5_haiku_20241022:beta"
+    "commandName": "/anthropic:claude_3.5_haiku_20241022:beta",
+    "provider": "anthropic"
   },
   "42": {
     "id": "anthropic/claude-3.5-haiku:beta",
@@ -953,7 +984,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_3.5_haiku:beta"
+    "commandName": "/anthropic:claude_3.5_haiku:beta",
+    "provider": "anthropic"
   },
   "43": {
     "id": "anthropic/claude-3.5-sonnet",
@@ -983,6 +1015,7 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.5_sonnet",
+    "provider": "anthropic",
     "straico": {
       "coins": 4.8,
       "max_output": 8192
@@ -1015,7 +1048,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_3.5_sonnet_20240620"
+    "commandName": "/anthropic:claude_3.5_sonnet_20240620",
+    "provider": "anthropic"
   },
   "45": {
     "id": "anthropic/claude-3.5-sonnet-20240620:beta",
@@ -1044,7 +1078,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_3.5_sonnet_20240620:beta"
+    "commandName": "/anthropic:claude_3.5_sonnet_20240620:beta",
+    "provider": "anthropic"
   },
   "46": {
     "id": "anthropic/claude-3.5-sonnet:beta",
@@ -1073,7 +1108,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_3.5_sonnet:beta"
+    "commandName": "/anthropic:claude_3.5_sonnet:beta",
+    "provider": "anthropic"
   },
   "47": {
     "id": "anthropic/claude-3.7-sonnet",
@@ -1103,6 +1139,7 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.7_sonnet",
+    "provider": "anthropic",
     "straico": {
       "coins": 5,
       "max_output": 8192
@@ -1135,7 +1172,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/anthropic:claude_3.7_sonnet:beta"
+    "commandName": "/anthropic:claude_3.7_sonnet:beta",
+    "provider": "anthropic"
   },
   "49": {
     "id": "anthropic/claude-3.7-sonnet:thinking",
@@ -1165,6 +1203,7 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.7_sonnet:thinking",
+    "provider": "anthropic",
     "straico": {
       "coins": 5,
       "max_output": 8192
@@ -1197,7 +1236,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/cognitivecomputations:dolphin_mixtral_8x22b"
+    "commandName": "/cognitivecomputations:dolphin_mixtral_8x22b",
+    "provider": "cognitivecomputations"
   },
   "51": {
     "id": "cognitivecomputations/dolphin-mixtral-8x7b",
@@ -1227,6 +1267,7 @@
     },
     "per_request_limits": null,
     "commandName": "/cognitivecomputations:dolphin_mixtral_8x7b",
+    "provider": "cognitivecomputations",
     "straico": {
       "coins": 1,
       "max_output": 32768
@@ -1259,7 +1300,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/cognitivecomputations:dolphin3.0_mistral_24b:free"
+    "commandName": "/cognitivecomputations:dolphin3.0_mistral_24b:free",
+    "provider": "cognitivecomputations"
   },
   "53": {
     "id": "cognitivecomputations/dolphin3.0-r1-mistral-24b:free",
@@ -1270,7 +1312,7 @@
     "architecture": {
       "modality": "text->text",
       "tokenizer": "Other",
-      "instruct_type": null
+      "instruct_type": "deepseek-r1"
     },
     "pricing": {
       "prompt": "0",
@@ -1288,7 +1330,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/cognitivecomputations:dolphin3.0_r1_mistral_24b:free"
+    "commandName": "/cognitivecomputations:dolphin3.0_r1_mistral_24b:free",
+    "provider": "cognitivecomputations"
   },
   "54": {
     "id": "cohere/command",
@@ -1317,7 +1360,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/cohere:command"
+    "commandName": "/cohere:command",
+    "provider": "cohere"
   },
   "55": {
     "id": "cohere/command-r",
@@ -1346,7 +1390,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/cohere:command_r"
+    "commandName": "/cohere:command_r",
+    "provider": "cohere"
   },
   "56": {
     "id": "cohere/command-r-03-2024",
@@ -1375,7 +1420,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/cohere:command_r_03_2024"
+    "commandName": "/cohere:command_r_03_2024",
+    "provider": "cohere"
   },
   "57": {
     "id": "cohere/command-r-08-2024",
@@ -1405,6 +1451,7 @@
     },
     "per_request_limits": null,
     "commandName": "/cohere:command_r_08_2024",
+    "provider": "cohere",
     "straico": {
       "coins": 0.2,
       "max_output": 4000
@@ -1437,7 +1484,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/cohere:command_r_plus"
+    "commandName": "/cohere:command_r_plus",
+    "provider": "cohere"
   },
   "59": {
     "id": "cohere/command-r-plus-04-2024",
@@ -1466,7 +1514,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/cohere:command_r_plus_04_2024"
+    "commandName": "/cohere:command_r_plus_04_2024",
+    "provider": "cohere"
   },
   "60": {
     "id": "cohere/command-r-plus-08-2024",
@@ -1496,6 +1545,7 @@
     },
     "per_request_limits": null,
     "commandName": "/cohere:command_r_plus_08_2024",
+    "provider": "cohere",
     "straico": {
       "coins": 3.4,
       "max_output": 4000
@@ -1528,7 +1578,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/cohere:command_r7b_12_2024"
+    "commandName": "/cohere:command_r7b_12_2024",
+    "provider": "cohere"
   },
   "62": {
     "id": "databricks/dbrx-instruct",
@@ -1557,7 +1608,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/databricks:dbrx_instruct"
+    "commandName": "/databricks:dbrx_instruct",
+    "provider": "databricks"
   },
   "63": {
     "id": "deepseek/deepseek-chat",
@@ -1587,6 +1639,7 @@
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_chat",
+    "provider": "deepseek",
     "straico": {
       "coins": 1.1,
       "max_output": 8000
@@ -1619,7 +1672,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_chat:free"
+    "commandName": "/deepseek:deepseek_chat:free",
+    "provider": "deepseek"
   },
   "66": {
     "id": "deepseek/deepseek-r1",
@@ -1649,6 +1703,7 @@
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_r1",
+    "provider": "deepseek",
     "straico": {
       "coins": 4.3,
       "max_output": 8000
@@ -1681,7 +1736,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_r1_distill_llama_70b"
+    "commandName": "/deepseek:deepseek_r1_distill_llama_70b",
+    "provider": "deepseek"
   },
   "68": {
     "id": "deepseek/deepseek-r1-distill-llama-70b:free",
@@ -1710,7 +1766,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_r1_distill_llama_70b:free"
+    "commandName": "/deepseek:deepseek_r1_distill_llama_70b:free",
+    "provider": "deepseek"
   },
   "69": {
     "id": "deepseek/deepseek-r1-distill-llama-8b",
@@ -1739,7 +1796,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_r1_distill_llama_8b"
+    "commandName": "/deepseek:deepseek_r1_distill_llama_8b",
+    "provider": "deepseek"
   },
   "70": {
     "id": "deepseek/deepseek-r1-distill-qwen-1.5b",
@@ -1768,7 +1826,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_r1_distill_qwen_1.5b"
+    "commandName": "/deepseek:deepseek_r1_distill_qwen_1.5b",
+    "provider": "deepseek"
   },
   "71": {
     "id": "deepseek/deepseek-r1-distill-qwen-14b",
@@ -1797,7 +1856,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_r1_distill_qwen_14b"
+    "commandName": "/deepseek:deepseek_r1_distill_qwen_14b",
+    "provider": "deepseek"
   },
   "72": {
     "id": "deepseek/deepseek-r1-distill-qwen-32b",
@@ -1826,7 +1886,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_r1_distill_qwen_32b"
+    "commandName": "/deepseek:deepseek_r1_distill_qwen_32b",
+    "provider": "deepseek"
   },
   "73": {
     "id": "deepseek/deepseek-r1:free",
@@ -1855,7 +1916,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_r1:free"
+    "commandName": "/deepseek:deepseek_r1:free",
+    "provider": "deepseek"
   },
   "74": {
     "id": "eva-unit-01/eva-llama-3.33-70b",
@@ -1884,7 +1946,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/eva_unit_01:eva_llama_3.33_70b"
+    "commandName": "/eva_unit_01:eva_llama_3.33_70b",
+    "provider": "eva-unit-01"
   },
   "75": {
     "id": "eva-unit-01/eva-qwen-2.5-32b",
@@ -1913,7 +1976,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/eva_unit_01:eva_qwen_2.5_32b"
+    "commandName": "/eva_unit_01:eva_qwen_2.5_32b",
+    "provider": "eva-unit-01"
   },
   "76": {
     "id": "eva-unit-01/eva-qwen-2.5-72b",
@@ -1942,7 +2006,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/eva_unit_01:eva_qwen_2.5_72b"
+    "commandName": "/eva_unit_01:eva_qwen_2.5_72b",
+    "provider": "eva-unit-01"
   },
   "77": {
     "id": "google/gemini-2.0-flash-001",
@@ -1972,6 +2037,7 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_2.0_flash_001",
+    "provider": "google",
     "straico": {
       "coins": 0.2,
       "max_output": 100000
@@ -2004,7 +2070,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemini_2.0_flash_exp:free"
+    "commandName": "/google:gemini_2.0_flash_exp:free",
+    "provider": "google"
   },
   "79": {
     "id": "google/gemini-2.0-flash-lite-001",
@@ -2033,7 +2100,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemini_2.0_flash_lite_001"
+    "commandName": "/google:gemini_2.0_flash_lite_001",
+    "provider": "google"
   },
   "80": {
     "id": "google/gemini-2.0-flash-lite-preview-02-05:free",
@@ -2062,7 +2130,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemini_2.0_flash_lite_preview_02_05:free"
+    "commandName": "/google:gemini_2.0_flash_lite_preview_02_05:free",
+    "provider": "google"
   },
   "81": {
     "id": "google/gemini-2.0-flash-thinking-exp-1219:free",
@@ -2091,7 +2160,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemini_2.0_flash_thinking_exp_1219:free"
+    "commandName": "/google:gemini_2.0_flash_thinking_exp_1219:free",
+    "provider": "google"
   },
   "82": {
     "id": "google/gemini-2.0-flash-thinking-exp:free",
@@ -2120,7 +2190,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemini_2.0_flash_thinking_exp:free"
+    "commandName": "/google:gemini_2.0_flash_thinking_exp:free",
+    "provider": "google"
   },
   "83": {
     "id": "google/gemini-2.0-pro-exp-02-05:free",
@@ -2150,6 +2221,7 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_2.0_pro_exp_02_05:free",
+    "provider": "google",
     "straico": {
       "coins": 1.5,
       "max_output": 100000
@@ -2182,7 +2254,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemini_exp_1206:free"
+    "commandName": "/google:gemini_exp_1206:free",
+    "provider": "google"
   },
   "85": {
     "id": "google/gemini-flash-1.5",
@@ -2211,7 +2284,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemini_flash_1.5"
+    "commandName": "/google:gemini_flash_1.5",
+    "provider": "google"
   },
   "86": {
     "id": "google/gemini-flash-1.5-8b",
@@ -2240,7 +2314,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemini_flash_1.5_8b"
+    "commandName": "/google:gemini_flash_1.5_8b",
+    "provider": "google"
   },
   "87": {
     "id": "google/gemini-flash-1.5-8b-exp",
@@ -2269,7 +2344,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemini_flash_1.5_8b_exp"
+    "commandName": "/google:gemini_flash_1.5_8b_exp",
+    "provider": "google"
   },
   "88": {
     "id": "google/gemini-pro",
@@ -2298,7 +2374,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemini_pro"
+    "commandName": "/google:gemini_pro",
+    "provider": "google"
   },
   "89": {
     "id": "google/gemini-pro-1.5",
@@ -2328,6 +2405,7 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_pro_1.5",
+    "provider": "google",
     "straico": {
       "coins": 3.7,
       "max_output": 8192
@@ -2360,7 +2438,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemini_pro_vision"
+    "commandName": "/google:gemini_pro_vision",
+    "provider": "google"
   },
   "91": {
     "id": "google/gemma-2-27b-it",
@@ -2390,6 +2469,7 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemma_2_27b_it",
+    "provider": "google",
     "straico": {
       "coins": 0.4,
       "max_output": 8192
@@ -2422,7 +2502,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemma_2_9b_it"
+    "commandName": "/google:gemma_2_9b_it",
+    "provider": "google"
   },
   "93": {
     "id": "google/gemma-2-9b-it:free",
@@ -2451,7 +2532,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemma_2_9b_it:free"
+    "commandName": "/google:gemma_2_9b_it:free",
+    "provider": "google"
   },
   "94": {
     "id": "google/gemma-7b-it",
@@ -2480,7 +2562,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:gemma_7b_it"
+    "commandName": "/google:gemma_7b_it",
+    "provider": "google"
   },
   "95": {
     "id": "google/learnlm-1.5-pro-experimental:free",
@@ -2509,7 +2592,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:learnlm_1.5_pro_experimental:free"
+    "commandName": "/google:learnlm_1.5_pro_experimental:free",
+    "provider": "google"
   },
   "96": {
     "id": "google/palm-2-chat-bison",
@@ -2538,7 +2622,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:palm_2_chat_bison"
+    "commandName": "/google:palm_2_chat_bison",
+    "provider": "google"
   },
   "97": {
     "id": "google/palm-2-chat-bison-32k",
@@ -2567,7 +2652,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:palm_2_chat_bison_32k"
+    "commandName": "/google:palm_2_chat_bison_32k",
+    "provider": "google"
   },
   "98": {
     "id": "google/palm-2-codechat-bison",
@@ -2596,7 +2682,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:palm_2_codechat_bison"
+    "commandName": "/google:palm_2_codechat_bison",
+    "provider": "google"
   },
   "99": {
     "id": "google/palm-2-codechat-bison-32k",
@@ -2625,7 +2712,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/google:palm_2_codechat_bison_32k"
+    "commandName": "/google:palm_2_codechat_bison_32k",
+    "provider": "google"
   },
   "100": {
     "id": "gryphe/mythomax-l2-13b",
@@ -2655,6 +2743,7 @@
     },
     "per_request_limits": null,
     "commandName": "/gryphe:mythomax_l2_13b",
+    "provider": "gryphe",
     "straico": {
       "coins": 1,
       "max_output": 4096
@@ -2687,7 +2776,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/gryphe:mythomax_l2_13b:free"
+    "commandName": "/gryphe:mythomax_l2_13b:free",
+    "provider": "gryphe"
   },
   "102": {
     "id": "huggingfaceh4/zephyr-7b-beta:free",
@@ -2716,7 +2806,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/huggingfaceh4:zephyr_7b_beta:free"
+    "commandName": "/huggingfaceh4:zephyr_7b_beta:free",
+    "provider": "huggingfaceh4"
   },
   "103": {
     "id": "infermatic/mn-inferor-12b",
@@ -2745,7 +2836,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/infermatic:mn_inferor_12b"
+    "commandName": "/infermatic:mn_inferor_12b",
+    "provider": "infermatic"
   },
   "104": {
     "id": "inflection/inflection-3-pi",
@@ -2774,7 +2866,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/inflection:inflection_3_pi"
+    "commandName": "/inflection:inflection_3_pi",
+    "provider": "inflection"
   },
   "105": {
     "id": "inflection/inflection-3-productivity",
@@ -2803,7 +2896,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/inflection:inflection_3_productivity"
+    "commandName": "/inflection:inflection_3_productivity",
+    "provider": "inflection"
   },
   "106": {
     "id": "jondurbin/airoboros-l2-70b",
@@ -2832,7 +2926,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/jondurbin:airoboros_l2_70b"
+    "commandName": "/jondurbin:airoboros_l2_70b",
+    "provider": "jondurbin"
   },
   "107": {
     "id": "liquid/lfm-3b",
@@ -2861,7 +2956,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/liquid:lfm_3b"
+    "commandName": "/liquid:lfm_3b",
+    "provider": "liquid"
   },
   "108": {
     "id": "liquid/lfm-40b",
@@ -2890,7 +2986,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/liquid:lfm_40b"
+    "commandName": "/liquid:lfm_40b",
+    "provider": "liquid"
   },
   "109": {
     "id": "liquid/lfm-7b",
@@ -2919,7 +3016,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/liquid:lfm_7b"
+    "commandName": "/liquid:lfm_7b",
+    "provider": "liquid"
   },
   "110": {
     "id": "mancer/weaver",
@@ -2948,7 +3046,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mancer:weaver"
+    "commandName": "/mancer:weaver",
+    "provider": "mancer"
   },
   "111": {
     "id": "meta-llama/llama-2-13b-chat",
@@ -2977,7 +3076,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_2_13b_chat"
+    "commandName": "/meta_llama:llama_2_13b_chat",
+    "provider": "meta-llama"
   },
   "112": {
     "id": "meta-llama/llama-2-70b-chat",
@@ -3006,7 +3106,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_2_70b_chat"
+    "commandName": "/meta_llama:llama_2_70b_chat",
+    "provider": "meta-llama"
   },
   "114": {
     "id": "meta-llama/llama-3-70b-instruct",
@@ -3035,7 +3136,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3_70b_instruct"
+    "commandName": "/meta_llama:llama_3_70b_instruct",
+    "provider": "meta-llama"
   },
   "116": {
     "id": "meta-llama/llama-3-8b-instruct",
@@ -3065,6 +3167,7 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3_8b_instruct",
+    "provider": "meta-llama",
     "straico": {
       "coins": 0.5,
       "max_output": 8192
@@ -3097,7 +3200,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3_8b_instruct:free"
+    "commandName": "/meta_llama:llama_3_8b_instruct:free",
+    "provider": "meta-llama"
   },
   "118": {
     "id": "meta-llama/llama-3.1-405b",
@@ -3126,7 +3230,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3.1_405b"
+    "commandName": "/meta_llama:llama_3.1_405b",
+    "provider": "meta-llama"
   },
   "119": {
     "id": "meta-llama/llama-3.1-405b-instruct",
@@ -3156,6 +3261,7 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.1_405b_instruct",
+    "provider": "meta-llama",
     "straico": {
       "coins": 1.6,
       "max_output": 32768
@@ -3189,6 +3295,7 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.1_70b_instruct",
+    "provider": "meta-llama",
     "straico": {
       "coins": 0.7,
       "max_output": 32768
@@ -3221,7 +3328,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3.1_8b_instruct"
+    "commandName": "/meta_llama:llama_3.1_8b_instruct",
+    "provider": "meta-llama"
   },
   "122": {
     "id": "meta-llama/llama-3.1-8b-instruct:free",
@@ -3250,7 +3358,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3.1_8b_instruct:free"
+    "commandName": "/meta_llama:llama_3.1_8b_instruct:free",
+    "provider": "meta-llama"
   },
   "123": {
     "id": "meta-llama/llama-3.2-11b-vision-instruct",
@@ -3279,7 +3388,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3.2_11b_vision_instruct"
+    "commandName": "/meta_llama:llama_3.2_11b_vision_instruct",
+    "provider": "meta-llama"
   },
   "124": {
     "id": "meta-llama/llama-3.2-11b-vision-instruct:free",
@@ -3308,7 +3418,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3.2_11b_vision_instruct:free"
+    "commandName": "/meta_llama:llama_3.2_11b_vision_instruct:free",
+    "provider": "meta-llama"
   },
   "125": {
     "id": "meta-llama/llama-3.2-1b-instruct",
@@ -3337,7 +3448,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3.2_1b_instruct"
+    "commandName": "/meta_llama:llama_3.2_1b_instruct",
+    "provider": "meta-llama"
   },
   "126": {
     "id": "meta-llama/llama-3.2-1b-instruct:free",
@@ -3366,7 +3478,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3.2_1b_instruct:free"
+    "commandName": "/meta_llama:llama_3.2_1b_instruct:free",
+    "provider": "meta-llama"
   },
   "127": {
     "id": "meta-llama/llama-3.2-3b-instruct",
@@ -3395,7 +3508,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3.2_3b_instruct"
+    "commandName": "/meta_llama:llama_3.2_3b_instruct",
+    "provider": "meta-llama"
   },
   "128": {
     "id": "meta-llama/llama-3.2-90b-vision-instruct",
@@ -3424,7 +3538,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3.2_90b_vision_instruct"
+    "commandName": "/meta_llama:llama_3.2_90b_vision_instruct",
+    "provider": "meta-llama"
   },
   "129": {
     "id": "meta-llama/llama-3.3-70b-instruct",
@@ -3454,6 +3569,7 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.3_70b_instruct",
+    "provider": "meta-llama",
     "straico": {
       "coins": 0.5,
       "max_output": 131000
@@ -3486,7 +3602,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3.3_70b_instruct:free"
+    "commandName": "/meta_llama:llama_3.3_70b_instruct:free",
+    "provider": "meta-llama"
   },
   "131": {
     "id": "meta-llama/llama-guard-2-8b",
@@ -3515,7 +3632,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_guard_2_8b"
+    "commandName": "/meta_llama:llama_guard_2_8b",
+    "provider": "meta-llama"
   },
   "132": {
     "id": "meta-llama/llama-guard-3-8b",
@@ -3544,7 +3662,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/meta_llama:llama_guard_3_8b"
+    "commandName": "/meta_llama:llama_guard_3_8b",
+    "provider": "meta-llama"
   },
   "133": {
     "id": "microsoft/phi-3-medium-128k-instruct",
@@ -3573,7 +3692,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/microsoft:phi_3_medium_128k_instruct"
+    "commandName": "/microsoft:phi_3_medium_128k_instruct",
+    "provider": "microsoft"
   },
   "134": {
     "id": "microsoft/phi-3-medium-128k-instruct:free",
@@ -3602,7 +3722,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/microsoft:phi_3_medium_128k_instruct:free"
+    "commandName": "/microsoft:phi_3_medium_128k_instruct:free",
+    "provider": "microsoft"
   },
   "135": {
     "id": "microsoft/phi-3-mini-128k-instruct",
@@ -3631,7 +3752,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/microsoft:phi_3_mini_128k_instruct"
+    "commandName": "/microsoft:phi_3_mini_128k_instruct",
+    "provider": "microsoft"
   },
   "136": {
     "id": "microsoft/phi-3-mini-128k-instruct:free",
@@ -3660,7 +3782,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/microsoft:phi_3_mini_128k_instruct:free"
+    "commandName": "/microsoft:phi_3_mini_128k_instruct:free",
+    "provider": "microsoft"
   },
   "137": {
     "id": "microsoft/phi-3.5-mini-128k-instruct",
@@ -3689,7 +3812,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/microsoft:phi_3.5_mini_128k_instruct"
+    "commandName": "/microsoft:phi_3.5_mini_128k_instruct",
+    "provider": "microsoft"
   },
   "138": {
     "id": "microsoft/phi-4",
@@ -3719,6 +3843,7 @@
     },
     "per_request_limits": null,
     "commandName": "/microsoft:phi_4",
+    "provider": "microsoft",
     "straico": {
       "coins": 0.1,
       "max_output": 16000
@@ -3751,7 +3876,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/microsoft:wizardlm_2_7b"
+    "commandName": "/microsoft:wizardlm_2_7b",
+    "provider": "microsoft"
   },
   "140": {
     "id": "microsoft/wizardlm-2-8x22b",
@@ -3781,6 +3907,7 @@
     },
     "per_request_limits": null,
     "commandName": "/microsoft:wizardlm_2_8x22b",
+    "provider": "microsoft",
     "straico": {
       "coins": 0.6,
       "max_output": 66000
@@ -3813,7 +3940,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/minimax:minimax_01"
+    "commandName": "/minimax:minimax_01",
+    "provider": "minimax"
   },
   "142": {
     "id": "mistralai/codestral-2501",
@@ -3842,7 +3970,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:codestral_2501"
+    "commandName": "/mistralai:codestral_2501",
+    "provider": "mistralai"
   },
   "143": {
     "id": "mistralai/codestral-mamba",
@@ -3872,6 +4001,7 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:codestral_mamba",
+    "provider": "mistralai",
     "straico": {
       "coins": 0.2,
       "max_output": 256000
@@ -3904,7 +4034,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:ministral_3b"
+    "commandName": "/mistralai:ministral_3b",
+    "provider": "mistralai"
   },
   "145": {
     "id": "mistralai/ministral-8b",
@@ -3933,7 +4064,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:ministral_8b"
+    "commandName": "/mistralai:ministral_8b",
+    "provider": "mistralai"
   },
   "146": {
     "id": "mistralai/mistral-7b-instruct",
@@ -3962,7 +4094,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_7b_instruct"
+    "commandName": "/mistralai:mistral_7b_instruct",
+    "provider": "mistralai"
   },
   "147": {
     "id": "mistralai/mistral-7b-instruct-v0.1",
@@ -3991,7 +4124,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_7b_instruct_v0.1"
+    "commandName": "/mistralai:mistral_7b_instruct_v0.1",
+    "provider": "mistralai"
   },
   "148": {
     "id": "mistralai/mistral-7b-instruct-v0.3",
@@ -4020,7 +4154,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_7b_instruct_v0.3"
+    "commandName": "/mistralai:mistral_7b_instruct_v0.3",
+    "provider": "mistralai"
   },
   "149": {
     "id": "mistralai/mistral-7b-instruct:free",
@@ -4049,7 +4184,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_7b_instruct:free"
+    "commandName": "/mistralai:mistral_7b_instruct:free",
+    "provider": "mistralai"
   },
   "150": {
     "id": "mistralai/mistral-large",
@@ -4079,6 +4215,7 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_large",
+    "provider": "mistralai",
     "straico": {
       "coins": 3,
       "max_output": 128000
@@ -4111,7 +4248,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_large_2407"
+    "commandName": "/mistralai:mistral_large_2407",
+    "provider": "mistralai"
   },
   "152": {
     "id": "mistralai/mistral-large-2411",
@@ -4140,7 +4278,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_large_2411"
+    "commandName": "/mistralai:mistral_large_2411",
+    "provider": "mistralai"
   },
   "153": {
     "id": "mistralai/mistral-medium",
@@ -4169,7 +4308,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_medium"
+    "commandName": "/mistralai:mistral_medium",
+    "provider": "mistralai"
   },
   "154": {
     "id": "mistralai/mistral-nemo",
@@ -4198,7 +4338,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_nemo"
+    "commandName": "/mistralai:mistral_nemo",
+    "provider": "mistralai"
   },
   "155": {
     "id": "mistralai/mistral-nemo:free",
@@ -4227,7 +4368,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_nemo:free"
+    "commandName": "/mistralai:mistral_nemo:free",
+    "provider": "mistralai"
   },
   "156": {
     "id": "mistralai/mistral-saba",
@@ -4256,7 +4398,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_saba"
+    "commandName": "/mistralai:mistral_saba",
+    "provider": "mistralai"
   },
   "157": {
     "id": "mistralai/mistral-small",
@@ -4285,7 +4428,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_small"
+    "commandName": "/mistralai:mistral_small",
+    "provider": "mistralai"
   },
   "158": {
     "id": "mistralai/mistral-small-24b-instruct-2501",
@@ -4314,7 +4458,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_small_24b_instruct_2501"
+    "commandName": "/mistralai:mistral_small_24b_instruct_2501",
+    "provider": "mistralai"
   },
   "159": {
     "id": "mistralai/mistral-small-24b-instruct-2501:free",
@@ -4343,7 +4488,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_small_24b_instruct_2501:free"
+    "commandName": "/mistralai:mistral_small_24b_instruct_2501:free",
+    "provider": "mistralai"
   },
   "160": {
     "id": "mistralai/mistral-tiny",
@@ -4372,7 +4518,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mistral_tiny"
+    "commandName": "/mistralai:mistral_tiny",
+    "provider": "mistralai"
   },
   "161": {
     "id": "mistralai/mixtral-8x22b-instruct",
@@ -4401,7 +4548,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mixtral_8x22b_instruct"
+    "commandName": "/mistralai:mixtral_8x22b_instruct",
+    "provider": "mistralai"
   },
   "162": {
     "id": "mistralai/mixtral-8x7b",
@@ -4430,7 +4578,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:mixtral_8x7b"
+    "commandName": "/mistralai:mixtral_8x7b",
+    "provider": "mistralai"
   },
   "163": {
     "id": "mistralai/mixtral-8x7b-instruct",
@@ -4460,6 +4609,7 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mixtral_8x7b_instruct",
+    "provider": "mistralai",
     "straico": {
       "coins": 1,
       "max_output": 32768
@@ -4492,7 +4642,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:pixtral_12b"
+    "commandName": "/mistralai:pixtral_12b",
+    "provider": "mistralai"
   },
   "165": {
     "id": "mistralai/pixtral-large-2411",
@@ -4521,7 +4672,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/mistralai:pixtral_large_2411"
+    "commandName": "/mistralai:pixtral_large_2411",
+    "provider": "mistralai"
   },
   "166": {
     "id": "moonshotai/moonlight-16b-a3b-instruct:free",
@@ -4550,7 +4702,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/moonshotai:moonlight_16b_a3b_instruct:free"
+    "commandName": "/moonshotai:moonlight_16b_a3b_instruct:free",
+    "provider": "moonshotai"
   },
   "167": {
     "id": "neversleep/llama-3-lumimaid-70b",
@@ -4579,7 +4732,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/neversleep:llama_3_lumimaid_70b"
+    "commandName": "/neversleep:llama_3_lumimaid_70b",
+    "provider": "neversleep"
   },
   "168": {
     "id": "neversleep/llama-3-lumimaid-8b",
@@ -4608,7 +4762,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/neversleep:llama_3_lumimaid_8b"
+    "commandName": "/neversleep:llama_3_lumimaid_8b",
+    "provider": "neversleep"
   },
   "169": {
     "id": "neversleep/llama-3-lumimaid-8b:extended",
@@ -4637,7 +4792,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/neversleep:llama_3_lumimaid_8b:extended"
+    "commandName": "/neversleep:llama_3_lumimaid_8b:extended",
+    "provider": "neversleep"
   },
   "170": {
     "id": "neversleep/llama-3.1-lumimaid-70b",
@@ -4666,7 +4822,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/neversleep:llama_3.1_lumimaid_70b"
+    "commandName": "/neversleep:llama_3.1_lumimaid_70b",
+    "provider": "neversleep"
   },
   "171": {
     "id": "neversleep/llama-3.1-lumimaid-8b",
@@ -4695,7 +4852,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/neversleep:llama_3.1_lumimaid_8b"
+    "commandName": "/neversleep:llama_3.1_lumimaid_8b",
+    "provider": "neversleep"
   },
   "172": {
     "id": "neversleep/noromaid-20b",
@@ -4724,7 +4882,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/neversleep:noromaid_20b"
+    "commandName": "/neversleep:noromaid_20b",
+    "provider": "neversleep"
   },
   "173": {
     "id": "nothingiisreal/mn-celeste-12b",
@@ -4753,7 +4912,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/nothingiisreal:mn_celeste_12b"
+    "commandName": "/nothingiisreal:mn_celeste_12b",
+    "provider": "nothingiisreal"
   },
   "174": {
     "id": "nousresearch/deephermes-3-llama-3-8b-preview:free",
@@ -4782,7 +4942,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/nousresearch:deephermes_3_llama_3_8b_preview:free"
+    "commandName": "/nousresearch:deephermes_3_llama_3_8b_preview:free",
+    "provider": "nousresearch"
   },
   "175": {
     "id": "nousresearch/hermes-2-pro-llama-3-8b",
@@ -4811,7 +4972,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/nousresearch:hermes_2_pro_llama_3_8b"
+    "commandName": "/nousresearch:hermes_2_pro_llama_3_8b",
+    "provider": "nousresearch"
   },
   "176": {
     "id": "nousresearch/hermes-3-llama-3.1-405b",
@@ -4841,6 +5003,7 @@
     },
     "per_request_limits": null,
     "commandName": "/nousresearch:hermes_3_llama_3.1_405b",
+    "provider": "nousresearch",
     "straico": {
       "coins": 0.5,
       "max_output": 12000
@@ -4873,7 +5036,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/nousresearch:hermes_3_llama_3.1_70b"
+    "commandName": "/nousresearch:hermes_3_llama_3.1_70b",
+    "provider": "nousresearch"
   },
   "178": {
     "id": "nousresearch/nous-hermes-2-mixtral-8x7b-dpo",
@@ -4902,7 +5066,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/nousresearch:nous_hermes_2_mixtral_8x7b_dpo"
+    "commandName": "/nousresearch:nous_hermes_2_mixtral_8x7b_dpo",
+    "provider": "nousresearch"
   },
   "179": {
     "id": "nousresearch/nous-hermes-llama2-13b",
@@ -4931,7 +5096,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/nousresearch:nous_hermes_llama2_13b"
+    "commandName": "/nousresearch:nous_hermes_llama2_13b",
+    "provider": "nousresearch"
   },
   "180": {
     "id": "nvidia/llama-3.1-nemotron-70b-instruct",
@@ -4961,6 +5127,7 @@
     },
     "per_request_limits": null,
     "commandName": "/nvidia:llama_3.1_nemotron_70b_instruct",
+    "provider": "nvidia",
     "straico": {
       "coins": 0.5,
       "max_output": 131072
@@ -4993,7 +5160,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/nvidia:llama_3.1_nemotron_70b_instruct:free"
+    "commandName": "/nvidia:llama_3.1_nemotron_70b_instruct:free",
+    "provider": "nvidia"
   },
   "182": {
     "id": "openai/chatgpt-4o-latest",
@@ -5022,7 +5190,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:chatgpt_4o_latest"
+    "commandName": "/openai:chatgpt_4o_latest",
+    "provider": "openai"
   },
   "183": {
     "id": "openai/gpt-3.5-turbo",
@@ -5051,7 +5220,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_3.5_turbo"
+    "commandName": "/openai:gpt_3.5_turbo",
+    "provider": "openai"
   },
   "184": {
     "id": "openai/gpt-3.5-turbo-0125",
@@ -5080,7 +5250,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_3.5_turbo_0125"
+    "commandName": "/openai:gpt_3.5_turbo_0125",
+    "provider": "openai"
   },
   "185": {
     "id": "openai/gpt-3.5-turbo-0613",
@@ -5109,7 +5280,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_3.5_turbo_0613"
+    "commandName": "/openai:gpt_3.5_turbo_0613",
+    "provider": "openai"
   },
   "186": {
     "id": "openai/gpt-3.5-turbo-1106",
@@ -5138,7 +5310,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_3.5_turbo_1106"
+    "commandName": "/openai:gpt_3.5_turbo_1106",
+    "provider": "openai"
   },
   "187": {
     "id": "openai/gpt-3.5-turbo-16k",
@@ -5167,7 +5340,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_3.5_turbo_16k"
+    "commandName": "/openai:gpt_3.5_turbo_16k",
+    "provider": "openai"
   },
   "188": {
     "id": "openai/gpt-3.5-turbo-instruct",
@@ -5196,7 +5370,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_3.5_turbo_instruct"
+    "commandName": "/openai:gpt_3.5_turbo_instruct",
+    "provider": "openai"
   },
   "189": {
     "id": "openai/gpt-4",
@@ -5225,7 +5400,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4"
+    "commandName": "/openai:gpt_4",
+    "provider": "openai"
   },
   "190": {
     "id": "openai/gpt-4-0314",
@@ -5254,7 +5430,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4_0314"
+    "commandName": "/openai:gpt_4_0314",
+    "provider": "openai"
   },
   "191": {
     "id": "openai/gpt-4-1106-preview",
@@ -5283,7 +5460,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4_1106_preview"
+    "commandName": "/openai:gpt_4_1106_preview",
+    "provider": "openai"
   },
   "192": {
     "id": "openai/gpt-4-32k",
@@ -5312,7 +5490,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4_32k"
+    "commandName": "/openai:gpt_4_32k",
+    "provider": "openai"
   },
   "193": {
     "id": "openai/gpt-4-32k-0314",
@@ -5341,7 +5520,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4_32k_0314"
+    "commandName": "/openai:gpt_4_32k_0314",
+    "provider": "openai"
   },
   "194": {
     "id": "openai/gpt-4-turbo",
@@ -5370,7 +5550,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4_turbo"
+    "commandName": "/openai:gpt_4_turbo",
+    "provider": "openai"
   },
   "195": {
     "id": "openai/gpt-4-turbo-preview",
@@ -5399,7 +5580,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4_turbo_preview"
+    "commandName": "/openai:gpt_4_turbo_preview",
+    "provider": "openai"
   },
   "196": {
     "id": "openai/gpt-4.5-preview",
@@ -5429,6 +5611,7 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4.5_preview",
+    "provider": "openai",
     "straico": {
       "model": "gpt-4.5-preview",
       "coins": 60,
@@ -5462,7 +5645,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4o"
+    "commandName": "/openai:gpt_4o",
+    "provider": "openai"
   },
   "198": {
     "id": "openai/gpt-4o-2024-05-13",
@@ -5491,7 +5675,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4o_2024_05_13"
+    "commandName": "/openai:gpt_4o_2024_05_13",
+    "provider": "openai"
   },
   "199": {
     "id": "openai/gpt-4o-2024-08-06",
@@ -5521,6 +5706,7 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4o_2024_08_06",
+    "provider": "openai",
     "straico": {
       "coins": 3,
       "max_output": 16384
@@ -5554,6 +5740,7 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4o_2024_11_20",
+    "provider": "openai",
     "straico": {
       "coins": 3.3,
       "max_output": 16000
@@ -5587,6 +5774,7 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4o_mini",
+    "provider": "openai",
     "straico": {
       "coins": 0.4,
       "max_output": 16384
@@ -5619,7 +5807,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4o_mini_2024_07_18"
+    "commandName": "/openai:gpt_4o_mini_2024_07_18",
+    "provider": "openai"
   },
   "203": {
     "id": "openai/gpt-4o:extended",
@@ -5648,7 +5837,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4o:extended"
+    "commandName": "/openai:gpt_4o:extended",
+    "provider": "openai"
   },
   "204": {
     "id": "openai/o1",
@@ -5678,6 +5868,7 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:o1",
+    "provider": "openai",
     "straico": {
       "coins": 20,
       "max_output": 100000
@@ -5711,6 +5902,7 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:o1_mini",
+    "provider": "openai",
     "straico": {
       "coins": 4,
       "max_output": 65536
@@ -5743,7 +5935,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:o1_mini_2024_09_12"
+    "commandName": "/openai:o1_mini_2024_09_12",
+    "provider": "openai"
   },
   "207": {
     "id": "openai/o1-preview",
@@ -5773,6 +5966,7 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:o1_preview",
+    "provider": "openai",
     "straico": {
       "coins": 20,
       "max_output": 33000
@@ -5805,7 +5999,8 @@
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:o1_preview_2024_09_12"
+    "commandName": "/openai:o1_preview_2024_09_12",
+    "provider": "openai"
   },
   "209": {
     "id": "openai/o3-mini",
@@ -5835,6 +6030,7 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:o3_mini",
+    "provider": "openai",
     "straico": {
       "coins": 1.5,
       "max_output": 100000
@@ -5868,6 +6064,7 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:o3_mini_high",
+    "provider": "openai",
     "straico": {
       "coins": 3,
       "max_output": 100000
@@ -5900,7 +6097,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/openchat:openchat_7b"
+    "commandName": "/openchat:openchat_7b",
+    "provider": "openchat"
   },
   "212": {
     "id": "openchat/openchat-7b:free",
@@ -5929,7 +6127,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/openchat:openchat_7b:free"
+    "commandName": "/openchat:openchat_7b:free",
+    "provider": "openchat"
   },
   "213": {
     "id": "openrouter/auto",
@@ -5958,7 +6157,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/openrouter:auto"
+    "commandName": "/openrouter:auto",
+    "provider": "openrouter"
   },
   "214": {
     "id": "perplexity/llama-3.1-sonar-large-128k-chat",
@@ -5987,7 +6187,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/perplexity:llama_3.1_sonar_large_128k_chat"
+    "commandName": "/perplexity:llama_3.1_sonar_large_128k_chat",
+    "provider": "perplexity"
   },
   "215": {
     "id": "perplexity/llama-3.1-sonar-large-128k-online",
@@ -6017,6 +6218,7 @@
     },
     "per_request_limits": null,
     "commandName": "/perplexity:llama_3.1_sonar_large_128k_online",
+    "provider": "perplexity",
     "straico": {
       "coins": 0.6,
       "max_output": 127072
@@ -6049,7 +6251,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/perplexity:llama_3.1_sonar_small_128k_chat"
+    "commandName": "/perplexity:llama_3.1_sonar_small_128k_chat",
+    "provider": "perplexity"
   },
   "217": {
     "id": "perplexity/llama-3.1-sonar-small-128k-online",
@@ -6079,6 +6282,7 @@
     },
     "per_request_limits": null,
     "commandName": "/perplexity:llama_3.1_sonar_small_128k_online",
+    "provider": "perplexity",
     "straico": {
       "coins": 0.2,
       "max_output": 127072
@@ -6111,7 +6315,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/perplexity:r1_1776"
+    "commandName": "/perplexity:r1_1776",
+    "provider": "perplexity"
   },
   "219": {
     "id": "perplexity/sonar",
@@ -6141,6 +6346,7 @@
     },
     "per_request_limits": null,
     "commandName": "/perplexity:sonar",
+    "provider": "perplexity",
     "straico": {
       "coins": 1,
       "max_output": 127072
@@ -6174,6 +6380,7 @@
     },
     "per_request_limits": null,
     "commandName": "/perplexity:sonar_reasoning",
+    "provider": "perplexity",
     "straico": {
       "coins": 2,
       "max_output": 127072
@@ -6206,7 +6413,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/pygmalionai:mythalion_13b"
+    "commandName": "/pygmalionai:mythalion_13b",
+    "provider": "pygmalionai"
   },
   "223": {
     "id": "qwen/qwen-2-72b-instruct",
@@ -6236,6 +6444,7 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_2_72b_instruct",
+    "provider": "qwen",
     "straico": {
       "coins": 0.5,
       "max_output": 32768
@@ -6268,7 +6477,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen_2_7b_instruct"
+    "commandName": "/qwen:qwen_2_7b_instruct",
+    "provider": "qwen"
   },
   "225": {
     "id": "qwen/qwen-2-7b-instruct:free",
@@ -6297,69 +6507,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen_2_7b_instruct:free"
-  },
-  "226": {
-    "id": "qwen/qwen-2-vl-72b-instruct",
-    "name": "Qwen: Qwen2-VL 72B Instruct",
-    "created": 1726617600,
-    "description": "Qwen2 VL 72B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
-    "context_length": 4096,
-    "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "Qwen",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000004",
-      "completion": "0.0000004",
-      "image": "0.000578",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 4096,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/qwen:qwen_2_vl_72b_instruct",
-    "straico": {
-      "coins": 0.2,
-      "max_output": 4096
-    }
-  },
-  "227": {
-    "id": "qwen/qwen-2-vl-7b-instruct",
-    "name": "Qwen: Qwen2-VL 7B Instruct",
-    "created": 1724803200,
-    "description": "Qwen2 VL 7B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
-    "context_length": 4096,
-    "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "Qwen",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000001",
-      "completion": "0.0000001",
-      "image": "0.0001445",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 4096,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/qwen:qwen_2_vl_7b_instruct"
+    "commandName": "/qwen:qwen_2_7b_instruct:free",
+    "provider": "qwen"
   },
   "228": {
     "id": "qwen/qwen-2.5-72b-instruct",
@@ -6389,6 +6538,7 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_2.5_72b_instruct",
+    "provider": "qwen",
     "straico": {
       "coins": 0.2,
       "max_output": 32768
@@ -6421,7 +6571,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen_2.5_7b_instruct"
+    "commandName": "/qwen:qwen_2.5_7b_instruct",
+    "provider": "qwen"
   },
   "230": {
     "id": "qwen/qwen-2.5-coder-32b-instruct",
@@ -6451,6 +6602,7 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_2.5_coder_32b_instruct",
+    "provider": "qwen",
     "straico": {
       "coins": 0.5,
       "max_output": 4000
@@ -6483,7 +6635,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen_2.5_coder_32b_instruct:free"
+    "commandName": "/qwen:qwen_2.5_coder_32b_instruct:free",
+    "provider": "qwen"
   },
   "232": {
     "id": "qwen/qwen-max",
@@ -6512,7 +6665,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen_max"
+    "commandName": "/qwen:qwen_max",
+    "provider": "qwen"
   },
   "233": {
     "id": "qwen/qwen-plus",
@@ -6541,7 +6695,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen_plus"
+    "commandName": "/qwen:qwen_plus",
+    "provider": "qwen"
   },
   "234": {
     "id": "qwen/qwen-turbo",
@@ -6570,7 +6725,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen_turbo"
+    "commandName": "/qwen:qwen_turbo",
+    "provider": "qwen"
   },
   "236": {
     "id": "qwen/qwen2.5-vl-72b-instruct",
@@ -6599,7 +6755,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen2.5_vl_72b_instruct"
+    "commandName": "/qwen:qwen2.5_vl_72b_instruct",
+    "provider": "qwen"
   },
   "237": {
     "id": "qwen/qwen2.5-vl-72b-instruct:free",
@@ -6628,7 +6785,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen2.5_vl_72b_instruct:free"
+    "commandName": "/qwen:qwen2.5_vl_72b_instruct:free",
+    "provider": "qwen"
   },
   "238": {
     "id": "qwen/qwq-32b-preview",
@@ -6658,6 +6816,7 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwq_32b_preview",
+    "provider": "qwen",
     "straico": {
       "coins": 0.7,
       "max_output": 33000
@@ -6691,6 +6850,7 @@
     },
     "per_request_limits": null,
     "commandName": "/raifle:sorcererlm_8x22b",
+    "provider": "raifle",
     "straico": {
       "coins": 2.4,
       "max_output": 16000
@@ -6723,7 +6883,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/sao10k:fimbulvetr_11b_v2"
+    "commandName": "/sao10k:fimbulvetr_11b_v2",
+    "provider": "sao10k"
   },
   "241": {
     "id": "sao10k/l3-euryale-70b",
@@ -6752,7 +6913,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/sao10k:l3_euryale_70b"
+    "commandName": "/sao10k:l3_euryale_70b",
+    "provider": "sao10k"
   },
   "242": {
     "id": "sao10k/l3-lunaris-8b",
@@ -6781,7 +6943,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/sao10k:l3_lunaris_8b"
+    "commandName": "/sao10k:l3_lunaris_8b",
+    "provider": "sao10k"
   },
   "243": {
     "id": "sao10k/l3.1-70b-hanami-x1",
@@ -6810,7 +6973,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/sao10k:l3.1_70b_hanami_x1"
+    "commandName": "/sao10k:l3.1_70b_hanami_x1",
+    "provider": "sao10k"
   },
   "244": {
     "id": "sao10k/l3.1-euryale-70b",
@@ -6839,7 +7003,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/sao10k:l3.1_euryale_70b"
+    "commandName": "/sao10k:l3.1_euryale_70b",
+    "provider": "sao10k"
   },
   "245": {
     "id": "sao10k/l3.3-euryale-70b",
@@ -6868,7 +7033,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/sao10k:l3.3_euryale_70b"
+    "commandName": "/sao10k:l3.3_euryale_70b",
+    "provider": "sao10k"
   },
   "246": {
     "id": "sophosympatheia/midnight-rose-70b",
@@ -6897,7 +7063,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/sophosympatheia:midnight_rose_70b"
+    "commandName": "/sophosympatheia:midnight_rose_70b",
+    "provider": "sophosympatheia"
   },
   "247": {
     "id": "sophosympatheia/rogue-rose-103b-v0.2:free",
@@ -6926,7 +7093,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/sophosympatheia:rogue_rose_103b_v0.2:free"
+    "commandName": "/sophosympatheia:rogue_rose_103b_v0.2:free",
+    "provider": "sophosympatheia"
   },
   "248": {
     "id": "teknium/openhermes-2.5-mistral-7b",
@@ -6955,7 +7123,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/teknium:openhermes_2.5_mistral_7b"
+    "commandName": "/teknium:openhermes_2.5_mistral_7b",
+    "provider": "teknium"
   },
   "249": {
     "id": "thedrummer/rocinante-12b",
@@ -6984,7 +7153,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/thedrummer:rocinante_12b"
+    "commandName": "/thedrummer:rocinante_12b",
+    "provider": "thedrummer"
   },
   "250": {
     "id": "thedrummer/unslopnemo-12b",
@@ -7014,6 +7184,7 @@
     },
     "per_request_limits": null,
     "commandName": "/thedrummer:unslopnemo_12b",
+    "provider": "thedrummer",
     "straico": {
       "coins": 0.3,
       "max_output": 32000
@@ -7046,7 +7217,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/undi95:remm_slerp_l2_13b"
+    "commandName": "/undi95:remm_slerp_l2_13b",
+    "provider": "undi95"
   },
   "252": {
     "id": "undi95/toppy-m-7b",
@@ -7075,7 +7247,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/undi95:toppy_m_7b"
+    "commandName": "/undi95:toppy_m_7b",
+    "provider": "undi95"
   },
   "253": {
     "id": "undi95/toppy-m-7b:free",
@@ -7104,7 +7277,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/undi95:toppy_m_7b:free"
+    "commandName": "/undi95:toppy_m_7b:free",
+    "provider": "undi95"
   },
   "254": {
     "id": "x-ai/grok-2-1212",
@@ -7134,6 +7308,7 @@
     },
     "per_request_limits": null,
     "commandName": "/x_ai:grok_2_1212",
+    "provider": "x-ai",
     "straico": {
       "coins": 3.2,
       "max_output": 131000
@@ -7167,6 +7342,7 @@
     },
     "per_request_limits": null,
     "commandName": "/x_ai:grok_2_vision_1212",
+    "provider": "x-ai",
     "straico": {
       "coins": 3.2,
       "max_output": 33000
@@ -7200,6 +7376,7 @@
     },
     "per_request_limits": null,
     "commandName": "/x_ai:grok_beta",
+    "provider": "x-ai",
     "straico": {
       "coins": 5.3,
       "max_output": 32768
@@ -7232,7 +7409,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/x_ai:grok_vision_beta"
+    "commandName": "/x_ai:grok_vision_beta",
+    "provider": "x-ai"
   },
   "258": {
     "id": "xwin-lm/xwin-lm-70b",
@@ -7261,7 +7439,8 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/xwin_lm:xwin_lm_70b"
+    "commandName": "/xwin_lm:xwin_lm_70b",
+    "provider": "xwin-lm"
   },
   "259": {
     "id": "qwen/qwen-vl-plus",
@@ -7290,183 +7469,10 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen_vl_plus"
+    "commandName": "/qwen:qwen_vl_plus",
+    "provider": "qwen"
   },
-  "147295": {
-    "id": "deepseek/deepseek-r1-zero:free",
-    "name": "DeepSeek: DeepSeek R1 Zero (free)",
-    "created": 1741297434,
-    "description": "DeepSeek-R1-Zero is a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step. It's 671B parameters in size, with 37B active in an inference pass.\n\nIt demonstrates remarkable performance on reasoning. With RL, DeepSeek-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors.\n\nDeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. See [DeepSeek R1](/deepseek/deekseek-r1) for the SFT model.\n\n",
-    "context_length": 163840,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": "deepseek-r1"
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 163840,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_r1_zero:free"
-  },
-  "345136": {
-    "id": "qwen/qwq-32b",
-    "name": "Qwen: QwQ 32B",
-    "created": 1741208814,
-    "description": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks, especially hard problems. QwQ-32B is the medium-sized reasoning model, which is capable of achieving competitive performance against state-of-the-art reasoning models, e.g., DeepSeek-R1, o1-mini.",
-    "context_length": 131072,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Qwen",
-      "instruct_type": "qwq"
-    },
-    "pricing": {
-      "prompt": "0.00000015",
-      "completion": "0.00000045",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/qwen:qwq_32b"
-  },
-  "510154": {
-    "id": "perplexity/sonar-deep-research",
-    "name": "Perplexity: Sonar Deep Research",
-    "created": 1741311246,
-    "description": "Sonar Deep Research is a research-focused model designed for multi-step retrieval, synthesis, and reasoning across complex topics. It autonomously searches, reads, and evaluates sources, refining its approach as it gathers information. This enables comprehensive report generation across domains like finance, technology, health, and current events.\n\nNotes on Pricing ([Source](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-deep-research)) \n- Input tokens comprise of Prompt tokens (user prompt) + Citation tokens (these are processed tokens from running searches)\n- Deep Research runs multiple searches to conduct exhaustive research. Searches are priced at $5/1000 searches. A request that does 30 searches will cost $0.15 in this step.\n- Reasoning is a distinct step in Deep Research since it does extensive automated reasoning through all the material it gathers during its research phase. Reasoning tokens here are a bit different than the CoTs in the answer - these are tokens that we use to reason through the research material prior to generating the outputs via the CoTs. Reasoning tokens are priced at $3/1M tokens",
-    "context_length": 200000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": "deepseek-r1"
-    },
-    "pricing": {
-      "prompt": "0.000002",
-      "completion": "0.000008",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 200000,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/perplexity:sonar_deep_research"
-  },
-  "876060": {
-    "id": "qwen/qwen2.5-32b-instruct",
-    "name": "Qwen: Qwen2.5 32B Instruct",
-    "created": 1741042744,
-    "description": "Qwen2.5 32B Instruct is the instruction-tuned variant of the latest Qwen large language model series. It provides enhanced instruction-following capabilities, improved proficiency in coding and mathematical reasoning, and robust handling of structured data and outputs such as JSON. It supports long-context processing up to 128K tokens and multilingual tasks across 29+ languages. The model has 32.5 billion parameters, 64 layers, and utilizes an advanced transformer architecture with RoPE, SwiGLU, RMSNorm, and Attention QKV bias.\n\nFor details, please refer to the [Qwen2.5 Blog](https://qwenlm.github.io/blog/qwen2.5/).",
-    "context_length": 131072,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Qwen",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.00000079",
-      "completion": "0.00000079",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/qwen:qwen2.5_32b_instruct"
-  },
-  "880389": {
-    "id": "perplexity/sonar-pro",
-    "name": "Perplexity: Sonar Pro",
-    "created": 1741312423,
-    "description": "Note: Sonar Pro pricing includes Perplexity search pricing. See [details here](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-reasoning-pro-and-sonar-pro)\n\nFor enterprises seeking more advanced capabilities, the Sonar Pro API can handle in-depth, multi-step queries with added extensibility, like double the number of citations per search as Sonar on average. Plus, with a larger context window, it can handle longer and more nuanced searches and follow-up questions. ",
-    "context_length": 200000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.000003",
-      "completion": "0.000015",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 200000,
-      "max_completion_tokens": 8000,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/perplexity:sonar_pro"
-  },
-  "898513": {
-    "id": "perplexity/sonar-reasoning-pro",
-    "name": "Perplexity: Sonar Reasoning Pro",
-    "created": 1741313308,
-    "description": "Note: Sonar Pro pricing includes Perplexity search pricing. See [details here](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-reasoning-pro-and-sonar-pro)\n\nSonar Reasoning Pro is a premier reasoning model powered by DeepSeek R1 with Chain of Thought (CoT). Designed for advanced use cases, it supports in-depth, multi-step queries with a larger context window and can surface more citations per search, enabling more comprehensive and extensible responses.",
-    "context_length": 128000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": "deepseek-r1"
-    },
-    "pricing": {
-      "prompt": "0.000002",
-      "completion": "0.000008",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/perplexity:sonar_reasoning_pro"
-  },
-  "979141": {
+  "4240": {
     "id": "qwen/qwq-32b:free",
     "name": "Qwen: QwQ 32B (free)",
     "created": 1741208814,
@@ -7493,6 +7499,307 @@
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwq_32b:free"
+    "commandName": "/qwen:qwq_32b:free",
+    "provider": "qwen"
+  },
+  "44352": {
+    "id": "qwen/qwen-vl-max",
+    "name": "Qwen: Qwen VL Max",
+    "created": 1738434304,
+    "description": "Qwen VL Max is a visual understanding model with 7500 tokens context length. It excels in delivering optimal performance for a broader spectrum of complex tasks.\n",
+    "context_length": 7500,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000008",
+      "completion": "0.0000032",
+      "image": "0.001024",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 7500,
+      "max_completion_tokens": 1500,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen_vl_max",
+    "provider": "qwen"
+  },
+  "115292": {
+    "id": "perplexity/sonar-deep-research",
+    "name": "Perplexity: Sonar Deep Research",
+    "created": 1741311246,
+    "description": "Sonar Deep Research is a research-focused model designed for multi-step retrieval, synthesis, and reasoning across complex topics. It autonomously searches, reads, and evaluates sources, refining its approach as it gathers information. This enables comprehensive report generation across domains like finance, technology, health, and current events.\n\nNotes on Pricing ([Source](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-deep-research)) \n- Input tokens comprise of Prompt tokens (user prompt) + Citation tokens (these are processed tokens from running searches)\n- Deep Research runs multiple searches to conduct exhaustive research. Searches are priced at $5/1000 searches. A request that does 30 searches will cost $0.15 in this step.\n- Reasoning is a distinct step in Deep Research since it does extensive automated reasoning through all the material it gathers during its research phase. Reasoning tokens here are a bit different than the CoTs in the answer - these are tokens that we use to reason through the research material prior to generating the outputs via the CoTs. Reasoning tokens are priced at $3/1M tokens",
+    "context_length": 200000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000008",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 200000,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/perplexity:sonar_deep_research",
+    "provider": "perplexity"
+  },
+  "116985": {
+    "id": "qwen/qwen2.5-32b-instruct",
+    "name": "Qwen: Qwen2.5 32B Instruct",
+    "created": 1741042744,
+    "description": "Qwen2.5 32B Instruct is the instruction-tuned variant of the latest Qwen large language model series. It provides enhanced instruction-following capabilities, improved proficiency in coding and mathematical reasoning, and robust handling of structured data and outputs such as JSON. It supports long-context processing up to 128K tokens and multilingual tasks across 29+ languages. The model has 32.5 billion parameters, 64 layers, and utilizes an advanced transformer architecture with RoPE, SwiGLU, RMSNorm, and Attention QKV bias.\n\nFor details, please refer to the [Qwen2.5 Blog](https://qwenlm.github.io/blog/qwen2.5/).",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000079",
+      "completion": "0.00000079",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen2.5_32b_instruct",
+    "provider": "qwen"
+  },
+  "118939": {
+    "id": "microsoft/phi-4-multimodal-instruct",
+    "name": "Microsoft: Phi 4 Multimodal Instruct",
+    "created": 1741396284,
+    "description": "Phi-4 Multimodal Instruct is a versatile 5.6B parameter foundation model that combines advanced reasoning and instruction-following capabilities across both text and visual inputs, providing accurate text outputs. The unified architecture enables efficient, low-latency inference, suitable for edge and mobile deployments. Phi-4 Multimodal Instruct supports text inputs in multiple languages including Arabic, Chinese, English, French, German, Japanese, Spanish, and more, with visual input optimized primarily for English. It delivers impressive performance on multimodal tasks involving mathematical, scientific, and document reasoning, providing developers and enterprises a powerful yet compact model for sophisticated interactive applications. For more information, see the [Phi-4 Multimodal blog post](https://azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family/).\n",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000007",
+      "completion": "0.00000014",
+      "image": "0.0002476",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/microsoft:phi_4_multimodal_instruct",
+    "provider": "microsoft"
+  },
+  "125432": {
+    "id": "perplexity/sonar-reasoning-pro",
+    "name": "Perplexity: Sonar Reasoning Pro",
+    "created": 1741313308,
+    "description": "Note: Sonar Pro pricing includes Perplexity search pricing. See [details here](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-reasoning-pro-and-sonar-pro)\n\nSonar Reasoning Pro is a premier reasoning model powered by DeepSeek R1 with Chain of Thought (CoT). Designed for advanced use cases, it supports in-depth, multi-step queries with a larger context window and can surface more citations per search, enabling more comprehensive and extensible responses.",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000008",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/perplexity:sonar_reasoning_pro",
+    "provider": "perplexity"
+  },
+  "312932": {
+    "id": "perplexity/sonar-pro",
+    "name": "Perplexity: Sonar Pro",
+    "created": 1741312423,
+    "description": "Note: Sonar Pro pricing includes Perplexity search pricing. See [details here](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-reasoning-pro-and-sonar-pro)\n\nFor enterprises seeking more advanced capabilities, the Sonar Pro API can handle in-depth, multi-step queries with added extensibility, like double the number of citations per search as Sonar on average. Plus, with a larger context window, it can handle longer and more nuanced searches and follow-up questions. ",
+    "context_length": 200000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000003",
+      "completion": "0.000015",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 200000,
+      "max_completion_tokens": 8000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/perplexity:sonar_pro",
+    "provider": "perplexity"
+  },
+  "455624": {
+    "id": "qwen/qwq-32b",
+    "name": "Qwen: QwQ 32B",
+    "created": 1741208814,
+    "description": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks, especially hard problems. QwQ-32B is the medium-sized reasoning model, which is capable of achieving competitive performance against state-of-the-art reasoning models, e.g., DeepSeek-R1, o1-mini.",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Qwen",
+      "instruct_type": "qwq"
+    },
+    "pricing": {
+      "prompt": "0.00000012",
+      "completion": "0.00000018",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwq_32b",
+    "provider": "qwen"
+  },
+  "591027": {
+    "id": "qwen/qwen-2.5-vl-7b-instruct",
+    "name": "Qwen: Qwen2-VL 7B Instruct",
+    "created": 1724803200,
+    "description": "Qwen2 VL 7B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
+    "context_length": 4096,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000001",
+      "completion": "0.0000001",
+      "image": "0.0001445",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 4096,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen_2.5_vl_7b_instruct",
+    "provider": "qwen"
+  },
+  "611820": {
+    "id": "deepseek/deepseek-r1-zero:free",
+    "name": "DeepSeek: DeepSeek R1 Zero (free)",
+    "created": 1741297434,
+    "description": "DeepSeek-R1-Zero is a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step. It's 671B parameters in size, with 37B active in an inference pass.\n\nIt demonstrates remarkable performance on reasoning. With RL, DeepSeek-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors.\n\nDeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. See [DeepSeek R1](/deepseek/deekseek-r1) for the SFT model.\n\n",
+    "context_length": 163840,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 163840,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/deepseek:deepseek_r1_zero:free",
+    "provider": "deepseek"
+  },
+  "646867": {
+    "id": "qwen/qwen-2.5-vl-72b-instruct",
+    "name": "Qwen: Qwen2-VL 72B Instruct",
+    "created": 1726617600,
+    "description": "Qwen2 VL 72B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
+    "context_length": 4096,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000004",
+      "completion": "0.0000004",
+      "image": "0.000578",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 4096,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen_2.5_vl_72b_instruct",
+    "provider": "qwen"
   }
 }

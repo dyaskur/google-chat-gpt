@@ -5,6 +5,7 @@ export interface AbangModel extends OpenrouterModel {
     max_output: number
   }
   commandName?: string
+  provider?: string
 }
 
 export type OpenrouterModel = {

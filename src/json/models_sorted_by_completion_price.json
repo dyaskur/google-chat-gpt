@@ -3,6 +3,14 @@
     "prompt": "-1",
     "completion": "-1"
   },
+  "deepseek/deepseek-r1-zero:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "qwen/qwq-32b:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
   "moonshotai/moonlight-16b-a3b-instruct:free": {
     "prompt": "0",
     "completion": "0"
@@ -27,10 +35,6 @@
     "prompt": "0",
     "completion": "0",
     "coins": 1.5
-  },
-  "qwen/qwen-vl-plus:free": {
-    "prompt": "0",
-    "completion": "0"
   },
   "qwen/qwen2.5-vl-72b-instruct:free": {
     "prompt": "0",
@@ -234,10 +238,6 @@
     "prompt": "0.000000035",
     "completion": "0.00000008"
   },
-  "meta-llama/llama-3-8b": {
-    "prompt": "0.00000005",
-    "completion": "0.00000008"
-  },
   "mistralai/ministral-8b": {
     "prompt": "0.0000001",
     "completion": "0.0000001"
@@ -246,7 +246,7 @@
     "prompt": "0.0000001",
     "completion": "0.0000001"
   },
-  "qwen/qwen-2-vl-7b-instruct": {
+  "qwen/qwen-2.5-vl-7b-instruct": {
     "prompt": "0.0000001",
     "completion": "0.0000001"
   },
@@ -262,6 +262,10 @@
     "prompt": "0.000000035",
     "completion": "0.00000014",
     "coins": 0.1
+  },
+  "microsoft/phi-4-multimodal-instruct": {
+    "prompt": "0.00000007",
+    "completion": "0.00000014"
   },
   "mistralai/mistral-small-24b-instruct-2501": {
     "prompt": "0.00000007",
@@ -297,14 +301,13 @@
     "prompt": "0.00000017",
     "completion": "0.00000017"
   },
-  "deepseek/deepseek-r1-distill-qwen-32b": {
+  "qwen/qwq-32b": {
     "prompt": "0.00000012",
     "completion": "0.00000018"
   },
-  "qwen/qwq-32b-preview": {
+  "deepseek/deepseek-r1-distill-qwen-32b": {
     "prompt": "0.00000012",
-    "completion": "0.00000018",
-    "coins": 0.7
+    "completion": "0.00000018"
   },
   "deepseek/deepseek-r1-distill-qwen-1.5b": {
     "prompt": "0.00000018",
@@ -325,6 +328,11 @@
   "aion-labs/aion-rp-llama-3.1-8b": {
     "prompt": "0.0000002",
     "completion": "0.0000002"
+  },
+  "qwen/qwq-32b-preview": {
+    "prompt": "0.0000002",
+    "completion": "0.0000002",
+    "coins": 0.7
   },
   "perplexity/llama-3.1-sonar-small-128k-chat": {
     "prompt": "0.0000002",
@@ -416,14 +424,9 @@
     "prompt": "0.00000023",
     "completion": "0.0000004"
   },
-  "qwen/qwen-2-vl-72b-instruct": {
+  "qwen/qwen-2.5-vl-72b-instruct": {
     "prompt": "0.0000004",
-    "completion": "0.0000004",
-    "coins": 0.2
-  },
-  "qwen/qvq-72b-preview": {
-    "prompt": "0.00000025",
-    "completion": "0.0000005"
+    "completion": "0.0000004"
   },
   "thedrummer/rocinante-12b": {
     "prompt": "0.00000025",
@@ -478,6 +481,10 @@
     "prompt": "0.0000006",
     "completion": "0.0000006"
   },
+  "qwen/qwen-vl-plus": {
+    "prompt": "0.00000021",
+    "completion": "0.00000063"
+  },
   "deepseek/deepseek-r1-distill-llama-70b": {
     "prompt": "0.00000023",
     "completion": "0.00000069"
@@ -494,8 +501,8 @@
     "prompt": "0.0000007",
     "completion": "0.0000007"
   },
-  "meta-llama/llama-3-70b": {
-    "prompt": "0.00000059",
+  "qwen/qwen2.5-32b-instruct": {
+    "prompt": "0.00000079",
     "completion": "0.00000079"
   },
   "sao10k/l3.3-euryale-70b": {
@@ -607,6 +614,11 @@
     "prompt": "0.0000008",
     "completion": "0.0000012"
   },
+  "deepseek/deepseek-chat": {
+    "prompt": "0.0000012",
+    "completion": "0.0000012",
+    "coins": 1.1
+  },
   "databricks/dbrx-instruct": {
     "prompt": "0.0000012",
     "completion": "0.0000012"
@@ -619,11 +631,6 @@
   "anthropic/claude-3-haiku": {
     "prompt": "0.00000025",
     "completion": "0.00000125"
-  },
-  "deepseek/deepseek-chat": {
-    "prompt": "0.00000125",
-    "completion": "0.00000125",
-    "coins": 1.1
   },
   "aion-labs/aion-1.0-mini": {
     "prompt": "0.0000007",
@@ -697,10 +704,6 @@
     "prompt": "0.000002",
     "completion": "0.000002"
   },
-  "deepseek/deepseek-chat-v2.5": {
-    "prompt": "0.000002",
-    "completion": "0.000002"
-  },
   "deepseek/deepseek-r1": {
     "prompt": "0.00000055",
     "completion": "0.00000219",
@@ -733,6 +736,10 @@
   "01-ai/yi-large": {
     "prompt": "0.000003",
     "completion": "0.000003"
+  },
+  "qwen/qwen-vl-max": {
+    "prompt": "0.0000008",
+    "completion": "0.0000032"
   },
   "amazon/nova-pro-v1": {
     "prompt": "0.0000008",
@@ -834,6 +841,14 @@
     "prompt": "0.0000016",
     "completion": "0.0000064"
   },
+  "perplexity/sonar-reasoning-pro": {
+    "prompt": "0.000002",
+    "completion": "0.000008"
+  },
+  "perplexity/sonar-deep-research": {
+    "prompt": "0.000002",
+    "completion": "0.000008"
+  },
   "perplexity/r1-1776": {
     "prompt": "0.000002",
     "completion": "0.000008"
@@ -903,6 +918,10 @@
   "cohere/command-r-plus-04-2024": {
     "prompt": "0.00000285",
     "completion": "0.00001425"
+  },
+  "perplexity/sonar-pro": {
+    "prompt": "0.000003",
+    "completion": "0.000015"
   },
   "anthropic/claude-3.7-sonnet:beta": {
     "prompt": "0.000003",
