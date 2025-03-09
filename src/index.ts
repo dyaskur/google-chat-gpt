@@ -2,12 +2,14 @@ import {HttpFunction} from '@google-cloud/functions-framework'
 import {ChatEvent} from './types/event'
 import {createActionResponse, createMessageResponse, formatForGoogleChat} from './utils/chat'
 import * as fs from 'node:fs'
-import {getCache, getUser} from './utils/cache'
-import {fetchCompletion} from './apis/straico'
+import {getCache, getDefaultModel, getUser} from './utils/cache'
 import {createUserIntegration} from './db/user'
 import {CreateUserInput} from './db/user.types'
 import * as commands from './json/models_by_command_id.json'
 import {AbangModel} from './types/model'
+import {generateCompletionRequest} from './apis/router'
+
+const commandsTyped = commands as {[key: string]: object}
 
 export const app: HttpFunction = async (req, res) => {
   if (!(req.method === 'POST' && req.body)) {
@@ -53,7 +55,6 @@ export const app: HttpFunction = async (req, res) => {
       const commandId = event.chat.appCommandPayload.appCommandMetadata.appCommandId
       console.log('commandId', commandId)
       if (commandId) {
-        const commandsTyped = commands as {[key: string]: object}
         const commandModel: AbangModel = commandsTyped[commandId.toString()] as AbangModel
         console.log(commandModel)
         const messageText = event.chat.appCommandPayload?.message?.argumentText
@@ -64,9 +65,8 @@ export const app: HttpFunction = async (req, res) => {
         } else {
           const model: string = commandModel?.straico?.model ?? commandModel.id
           try {
-            // @ts-ignore
-            const response = await fetchCompletion(messageText, model)
-            res.json(createMessageResponse(formatForGoogleChat(response.data.completion.choices[0].message.content)))
+            const response = await generateCompletionRequest(messageText, commandModel)
+            res.json(createMessageResponse(formatForGoogleChat(response)))
           } catch (error) {
             res.json(
               createMessageResponse(
@@ -95,8 +95,10 @@ export const app: HttpFunction = async (req, res) => {
         res.json(createActionResponse())
       } else {
         const messageText = event.chat.messagePayload.message.text
-        const response = await fetchCompletion(messageText)
-        res.json(createMessageResponse(formatForGoogleChat(response.data.completion.choices[0].message.content)))
+        const defaultModel = await getDefaultModel(event.chat.user.name)
+        const commandModel: AbangModel = commandsTyped[defaultModel || '138'] as AbangModel
+        const response = await generateCompletionRequest(messageText, commandModel)
+        res.json(createMessageResponse(formatForGoogleChat(response)))
       }
     } else {
       res.json(createMessageResponse('Hi, what can I do for you?'))

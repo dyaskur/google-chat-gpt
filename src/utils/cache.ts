@@ -1,6 +1,6 @@
 import type {RedisClientType} from 'redis'
 import {createClient} from 'redis'
-import {getUserIntegrationByEmail} from '../db/user'
+import {getUserIntegrationByEmail, getUserIntegrationByUid} from '../db/user'
 
 let redisClient: RedisClientType | null = null
 let isReady = false
@@ -52,4 +52,16 @@ export async function getUser(email: string): Promise<string | null> {
   if (!user) return null
   cache.set(email, user.user_id).catch((err) => console.error(`Failed to cache user: ${err}`))
   return user.user_id
+}
+
+export async function getDefaultModel(userId: string): Promise<string | null> {
+  const cache = await getCache()
+  const model = await cache.get(`default_model_${userId}`)
+  if (model !== null) return model
+  const user = await getUserIntegrationByUid(userId)
+  if (!user) return null
+  cache
+    .set(`default_model_${userId}`, user.default_model || '138')
+    .catch((err) => console.error(`Failed to cache default model: ${err}`))
+  return user.default_model
 }
