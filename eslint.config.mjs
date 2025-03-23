@@ -18,6 +18,8 @@ export default [
         fetch: true,
         process: true,
         console: 'readonly',
+        setTimeout: 'readonly', // Allow global `setTimeout`
+        clearTimeout: 'readonly',
       },
       // env: {
       //   node: true, // Enable Node.js environment (includes process, setTimeout, etc.)

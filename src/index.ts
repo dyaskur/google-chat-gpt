@@ -2,11 +2,12 @@ import {HttpFunction} from '@google-cloud/functions-framework'
 import {ChatEvent} from './types/event'
 import {createActionResponse, createMessageResponse, formatForGoogleChat} from './utils/chat'
 import * as fs from 'node:fs'
-import {createUserIntegration} from './db/user'
+import {getCache, getCachedUserCredits, getDefaultModel, getUser} from './utils/cache'
 import {CreateUserInput} from './db/user.types'
 import * as commands from './json/models_by_command_id.json'
 import {AbangModel} from './types/model'
 import {generateCompletionRequest} from './apis/router'
+import {createUser} from './api'
 
 const commandsTyped = commands as {[key: string]: object}
 
@@ -44,9 +45,14 @@ export const app: HttpFunction = async (req, res) => {
         domainId: event.chat.user.domainId,
         metadata: event.commonEventObject,
       }
-      userId = await createUserIntegration(userData)
+      // userId = await createUserIntegration(userData)
+      userId = await createUser(userData)
       console.log('a new registered user', userId)
+      if (!userId) {
+        res.status(500).send('Error creating user')
+      }
     }
+
     console.log(event.chat.appCommandPayload, event.chat.addedToSpacePayload, event.chat.messagePayload)
     // const user = event.chat.user
     if (event.chat.addedToSpacePayload) {
