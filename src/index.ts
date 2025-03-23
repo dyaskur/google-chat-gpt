@@ -2,7 +2,6 @@ import {HttpFunction} from '@google-cloud/functions-framework'
 import {ChatEvent} from './types/event'
 import {createActionResponse, createMessageResponse, formatForGoogleChat} from './utils/chat'
 import * as fs from 'node:fs'
-import {getCache, getDefaultModel, getUser} from './utils/cache'
 import {createUserIntegration} from './db/user'
 import {CreateUserInput} from './db/user.types'
 import * as commands from './json/models_by_command_id.json'
@@ -43,6 +42,7 @@ export const app: HttpFunction = async (req, res) => {
         type: event.chat.user.type,
         avatarUrl: event.chat.user.avatarUrl,
         domainId: event.chat.user.domainId,
+        metadata: event.commonEventObject,
       }
       userId = await createUserIntegration(userData)
       console.log('a new registered user', userId)
@@ -85,9 +85,9 @@ export const app: HttpFunction = async (req, res) => {
       if (message.attachment) {
         res.json(
           createMessageResponse(
-            "Currently, we don't support attachments. " +
-              'We will try to support them in the future.  ' +
-              'But for now pLease only send text only',
+            `Currently, we don't support attachments. 
+            We will try to support them in the future.  
+            But for now, please only send text only`,
           ),
         )
       } else if (message.quotedMessageMetadata) {
@@ -97,6 +97,16 @@ export const app: HttpFunction = async (req, res) => {
         const messageText = event.chat.messagePayload.message.text
         const defaultModel = await getDefaultModel(event.chat.user.name)
         const commandModel: AbangModel = commandsTyped[defaultModel || '138'] as AbangModel
+
+        if (commandModel.abangPricing.completion) {
+          const currentCredits = await getCachedUserCredits(BigInt(userId))
+          console.log('currentCredits', currentCredits, userId)
+          if (currentCredits < commandModel.abangPricing.completion) {
+            res.json(createMessageResponse("Sorry, you don't have enough credits"))
+            // return
+          }
+        }
+
         const response = await generateCompletionRequest(messageText, commandModel)
         res.json(createMessageResponse(formatForGoogleChat(response)))
       }

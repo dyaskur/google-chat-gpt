@@ -27,6 +27,10 @@
     },
     "per_request_limits": null,
     "commandName": "/01_ai:yi_large",
+    "abangPricing": {
+      "completion": 21,
+      "image": 0
+    },
     "provider": "01-ai"
   },
   "12": {
@@ -57,6 +61,10 @@
     },
     "per_request_limits": null,
     "commandName": "/aetherwiing:mn_starcannon_12b",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
     "provider": "aetherwiing"
   },
   "13": {
@@ -87,6 +95,10 @@
     },
     "per_request_limits": null,
     "commandName": "/ai21:jamba_1_5_large",
+    "abangPricing": {
+      "completion": 56,
+      "image": 0
+    },
     "provider": "ai21"
   },
   "14": {
@@ -117,6 +129,10 @@
     },
     "per_request_limits": null,
     "commandName": "/ai21:jamba_1_5_mini",
+    "abangPricing": {
+      "completion": 3,
+      "image": 0
+    },
     "provider": "ai21"
   },
   "15": {
@@ -147,6 +163,10 @@
     },
     "per_request_limits": null,
     "commandName": "/ai21:jamba_instruct",
+    "abangPricing": {
+      "completion": 5,
+      "image": 0
+    },
     "provider": "ai21"
   },
   "16": {
@@ -177,6 +197,10 @@
     },
     "per_request_limits": null,
     "commandName": "/aion_labs:aion_1.0",
+    "abangPricing": {
+      "completion": 56,
+      "image": 0
+    },
     "provider": "aion-labs"
   },
   "17": {
@@ -207,6 +231,10 @@
     },
     "per_request_limits": null,
     "commandName": "/aion_labs:aion_1.0_mini",
+    "abangPricing": {
+      "completion": 10,
+      "image": 0
+    },
     "provider": "aion-labs"
   },
   "18": {
@@ -237,6 +265,10 @@
     },
     "per_request_limits": null,
     "commandName": "/aion_labs:aion_rp_llama_3.1_8b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "aion-labs"
   },
   "19": {
@@ -244,7 +276,7 @@
     "name": "Llama 3.1 Tulu 3 405B",
     "created": 1739053421,
     "description": "Tülu 3 405B is the largest model in the Tülu 3 family, applying fully open post-training recipes at a 405B parameter scale. Built on the Llama 3.1 405B base, it leverages Reinforcement Learning with Verifiable Rewards (RLVR) to enhance instruction following, MATH, GSM8K, and IFEval performance. As part of Tülu 3’s fully open-source approach, it offers state-of-the-art capabilities while surpassing prior open-weight models like Llama 3.1 405B Instruct and Nous Hermes 3 405B on multiple benchmarks. To read more, [click here.](https://allenai.org/blog/tulu-3-405B)",
-    "context_length": 16000,
+    "context_length": 16384,
     "architecture": {
       "modality": "text->text",
       "tokenizer": "Other",
@@ -261,12 +293,16 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 16000,
-      "max_completion_tokens": null,
+      "context_length": 16384,
+      "max_completion_tokens": 4096,
       "is_moderated": false
     },
     "per_request_limits": null,
     "commandName": "/allenai:llama_3.1_tulu_3_405b",
+    "abangPricing": {
+      "completion": 70,
+      "image": 0
+    },
     "provider": "allenai"
   },
   "20": {
@@ -297,6 +333,10 @@
     },
     "per_request_limits": null,
     "commandName": "/alpindale:goliath_120b",
+    "abangPricing": {
+      "completion": 66,
+      "image": 0
+    },
     "provider": "alpindale",
     "straico": {
       "coins": 5,
@@ -331,6 +371,10 @@
     },
     "per_request_limits": null,
     "commandName": "/alpindale:magnum_72b",
+    "abangPricing": {
+      "completion": 16,
+      "image": 0
+    },
     "provider": "alpindale"
   },
   "22": {
@@ -361,6 +405,10 @@
     },
     "per_request_limits": null,
     "commandName": "/amazon:nova_lite_v1",
+    "abangPricing": {
+      "completion": 2,
+      "image": 180
+    },
     "provider": "amazon",
     "straico": {
       "coins": 0.2,
@@ -395,6 +443,10 @@
     },
     "per_request_limits": null,
     "commandName": "/amazon:nova_micro_v1",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "amazon",
     "straico": {
       "coins": 0.1,
@@ -429,6 +481,10 @@
     },
     "per_request_limits": null,
     "commandName": "/amazon:nova_pro_v1",
+    "abangPricing": {
+      "completion": 22,
+      "image": 2400
+    },
     "provider": "amazon",
     "straico": {
       "coins": 1,
@@ -463,6 +519,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthracite_org:magnum_v2_72b",
+    "abangPricing": {
+      "completion": 21,
+      "image": 0
+    },
     "provider": "anthracite-org"
   },
   "26": {
@@ -493,6 +553,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthracite_org:magnum_v4_72b",
+    "abangPricing": {
+      "completion": 16,
+      "image": 0
+    },
     "provider": "anthracite-org"
   },
   "27": {
@@ -523,6 +587,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_2",
+    "abangPricing": {
+      "completion": 168,
+      "image": 0
+    },
     "provider": "anthropic"
   },
   "28": {
@@ -553,6 +621,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_2:beta",
+    "abangPricing": {
+      "completion": 168,
+      "image": 0
+    },
     "provider": "anthropic"
   },
   "29": {
@@ -583,6 +655,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_2.0",
+    "abangPricing": {
+      "completion": 168,
+      "image": 0
+    },
     "provider": "anthropic"
   },
   "30": {
@@ -613,6 +689,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_2.0:beta",
+    "abangPricing": {
+      "completion": 168,
+      "image": 0
+    },
     "provider": "anthropic"
   },
   "31": {
@@ -643,6 +723,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_2.1",
+    "abangPricing": {
+      "completion": 168,
+      "image": 0
+    },
     "provider": "anthropic"
   },
   "32": {
@@ -673,6 +757,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_2.1:beta",
+    "abangPricing": {
+      "completion": 168,
+      "image": 0
+    },
     "provider": "anthropic"
   },
   "33": {
@@ -703,6 +791,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3_haiku",
+    "abangPricing": {
+      "completion": 9,
+      "image": 800
+    },
     "provider": "anthropic"
   },
   "34": {
@@ -733,6 +825,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3_haiku:beta",
+    "abangPricing": {
+      "completion": 9,
+      "image": 800
+    },
     "provider": "anthropic",
     "straico": {
       "coins": 1,
@@ -767,6 +863,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3_opus",
+    "abangPricing": {
+      "completion": 525,
+      "image": 48000
+    },
     "provider": "anthropic",
     "straico": {
       "coins": 24,
@@ -801,6 +901,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3_opus:beta",
+    "abangPricing": {
+      "completion": 525,
+      "image": 48000
+    },
     "provider": "anthropic"
   },
   "37": {
@@ -831,6 +935,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3_sonnet",
+    "abangPricing": {
+      "completion": 105,
+      "image": 9600
+    },
     "provider": "anthropic",
     "straico": {
       "coins": 5,
@@ -865,6 +973,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3_sonnet:beta",
+    "abangPricing": {
+      "completion": 105,
+      "image": 9600
+    },
     "provider": "anthropic"
   },
   "39": {
@@ -895,6 +1007,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.5_haiku",
+    "abangPricing": {
+      "completion": 28,
+      "image": 0
+    },
     "provider": "anthropic"
   },
   "40": {
@@ -925,6 +1041,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.5_haiku_20241022",
+    "abangPricing": {
+      "completion": 28,
+      "image": 0
+    },
     "provider": "anthropic"
   },
   "41": {
@@ -955,6 +1075,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.5_haiku_20241022:beta",
+    "abangPricing": {
+      "completion": 28,
+      "image": 0
+    },
     "provider": "anthropic"
   },
   "42": {
@@ -985,6 +1109,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.5_haiku:beta",
+    "abangPricing": {
+      "completion": 28,
+      "image": 0
+    },
     "provider": "anthropic"
   },
   "43": {
@@ -1015,6 +1143,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.5_sonnet",
+    "abangPricing": {
+      "completion": 105,
+      "image": 9600
+    },
     "provider": "anthropic",
     "straico": {
       "coins": 4.8,
@@ -1049,6 +1181,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.5_sonnet_20240620",
+    "abangPricing": {
+      "completion": 105,
+      "image": 9600
+    },
     "provider": "anthropic"
   },
   "45": {
@@ -1079,6 +1215,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.5_sonnet_20240620:beta",
+    "abangPricing": {
+      "completion": 105,
+      "image": 9600
+    },
     "provider": "anthropic"
   },
   "46": {
@@ -1109,6 +1249,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.5_sonnet:beta",
+    "abangPricing": {
+      "completion": 105,
+      "image": 9600
+    },
     "provider": "anthropic"
   },
   "47": {
@@ -1139,6 +1283,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.7_sonnet",
+    "abangPricing": {
+      "completion": 105,
+      "image": 9600
+    },
     "provider": "anthropic",
     "straico": {
       "coins": 5,
@@ -1173,6 +1321,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.7_sonnet:beta",
+    "abangPricing": {
+      "completion": 105,
+      "image": 9600
+    },
     "provider": "anthropic"
   },
   "49": {
@@ -1203,6 +1355,10 @@
     },
     "per_request_limits": null,
     "commandName": "/anthropic:claude_3.7_sonnet:thinking",
+    "abangPricing": {
+      "completion": 105,
+      "image": 9600
+    },
     "provider": "anthropic",
     "straico": {
       "coins": 5,
@@ -1237,6 +1393,10 @@
     },
     "per_request_limits": null,
     "commandName": "/cognitivecomputations:dolphin_mixtral_8x22b",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
     "provider": "cognitivecomputations"
   },
   "51": {
@@ -1267,6 +1427,10 @@
     },
     "per_request_limits": null,
     "commandName": "/cognitivecomputations:dolphin_mixtral_8x7b",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
     "provider": "cognitivecomputations",
     "straico": {
       "coins": 1,
@@ -1301,6 +1465,10 @@
     },
     "per_request_limits": null,
     "commandName": "/cognitivecomputations:dolphin3.0_mistral_24b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "cognitivecomputations"
   },
   "53": {
@@ -1331,6 +1499,10 @@
     },
     "per_request_limits": null,
     "commandName": "/cognitivecomputations:dolphin3.0_r1_mistral_24b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "cognitivecomputations"
   },
   "54": {
@@ -1361,6 +1533,10 @@
     },
     "per_request_limits": null,
     "commandName": "/cohere:command",
+    "abangPricing": {
+      "completion": 13,
+      "image": 0
+    },
     "provider": "cohere"
   },
   "55": {
@@ -1391,6 +1567,10 @@
     },
     "per_request_limits": null,
     "commandName": "/cohere:command_r",
+    "abangPricing": {
+      "completion": 10,
+      "image": 0
+    },
     "provider": "cohere"
   },
   "56": {
@@ -1421,6 +1601,10 @@
     },
     "per_request_limits": null,
     "commandName": "/cohere:command_r_03_2024",
+    "abangPricing": {
+      "completion": 10,
+      "image": 0
+    },
     "provider": "cohere"
   },
   "57": {
@@ -1451,6 +1635,10 @@
     },
     "per_request_limits": null,
     "commandName": "/cohere:command_r_08_2024",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
     "provider": "cohere",
     "straico": {
       "coins": 0.2,
@@ -1485,6 +1673,10 @@
     },
     "per_request_limits": null,
     "commandName": "/cohere:command_r_plus",
+    "abangPricing": {
+      "completion": 100,
+      "image": 0
+    },
     "provider": "cohere"
   },
   "59": {
@@ -1515,6 +1707,10 @@
     },
     "per_request_limits": null,
     "commandName": "/cohere:command_r_plus_04_2024",
+    "abangPricing": {
+      "completion": 100,
+      "image": 0
+    },
     "provider": "cohere"
   },
   "60": {
@@ -1545,6 +1741,10 @@
     },
     "per_request_limits": null,
     "commandName": "/cohere:command_r_plus_08_2024",
+    "abangPricing": {
+      "completion": 67,
+      "image": 0
+    },
     "provider": "cohere",
     "straico": {
       "coins": 3.4,
@@ -1579,52 +1779,26 @@
     },
     "per_request_limits": null,
     "commandName": "/cohere:command_r7b_12_2024",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "cohere"
-  },
-  "62": {
-    "id": "databricks/dbrx-instruct",
-    "name": "Databricks: DBRX 132B Instruct",
-    "created": 1711670400,
-    "description": "DBRX is a new open source large language model developed by Databricks. At 132B, it outperforms existing open source LLMs like Llama 2 70B and [Mixtral-8x7b](/models/mistralai/mixtral-8x7b) on standard industry benchmarks for language understanding, programming, math, and logic.\n\nIt uses a fine-grained mixture-of-experts (MoE) architecture. 36B parameters are active on any input. It was pre-trained on 12T tokens of text and code data. Compared to other open MoE models like Mixtral-8x7B and Grok-1, DBRX is fine-grained, meaning it uses a larger number of smaller experts.\n\nSee the launch announcement and benchmark results [here](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm).\n\n#moe",
-    "context_length": 32768,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": "chatml"
-    },
-    "pricing": {
-      "prompt": "0.0000012",
-      "completion": "0.0000012",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 32768,
-      "max_completion_tokens": 2048,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/databricks:dbrx_instruct",
-    "provider": "databricks"
   },
   "63": {
     "id": "deepseek/deepseek-chat",
     "name": "DeepSeek: DeepSeek V3",
     "created": 1735241320,
     "description": "DeepSeek-V3 is the latest model from the DeepSeek team, building upon the instruction following and coding abilities of the previous versions. Pre-trained on nearly 15 trillion tokens, the reported evaluations reveal that the model outperforms other open-source models and rivals leading closed-source models.\n\nFor model details, please visit [the DeepSeek-V3 repo](https://github.com/deepseek-ai/DeepSeek-V3) for more information, or see the [launch announcement](https://api-docs.deepseek.com/news/news1226).",
-    "context_length": 131072,
+    "context_length": 64000,
     "architecture": {
       "modality": "text->text",
       "tokenizer": "DeepSeek",
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.0000012",
-      "completion": "0.0000012",
+      "prompt": "0.0000004",
+      "completion": "0.0000013",
       "image": "0",
       "request": "0",
       "input_cache_read": "0",
@@ -1633,12 +1807,16 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 65536,
+      "context_length": 64000,
+      "max_completion_tokens": 16000,
       "is_moderated": false
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_chat",
+    "abangPricing": {
+      "completion": 9,
+      "image": 0
+    },
     "provider": "deepseek",
     "straico": {
       "coins": 1.1,
@@ -1673,6 +1851,10 @@
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_chat:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "deepseek"
   },
   "66": {
@@ -1687,8 +1869,8 @@
       "instruct_type": "deepseek-r1"
     },
     "pricing": {
-      "prompt": "0.00000055",
-      "completion": "0.00000219",
+      "prompt": "0.0000007",
+      "completion": "0.0000025",
       "image": "0",
       "request": "0",
       "input_cache_read": "0",
@@ -1698,11 +1880,15 @@
     },
     "top_provider": {
       "context_length": 64000,
-      "max_completion_tokens": 64000,
+      "max_completion_tokens": 16000,
       "is_moderated": false
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_r1",
+    "abangPricing": {
+      "completion": 18,
+      "image": 0
+    },
     "provider": "deepseek",
     "straico": {
       "coins": 4.3,
@@ -1737,6 +1923,10 @@
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_r1_distill_llama_70b",
+    "abangPricing": {
+      "completion": 5,
+      "image": 0
+    },
     "provider": "deepseek"
   },
   "68": {
@@ -1767,6 +1957,10 @@
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_r1_distill_llama_70b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "deepseek"
   },
   "69": {
@@ -1797,6 +1991,10 @@
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_r1_distill_llama_8b",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "deepseek"
   },
   "70": {
@@ -1827,6 +2025,10 @@
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_r1_distill_qwen_1.5b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "deepseek"
   },
   "71": {
@@ -1834,15 +2036,15 @@
     "name": "DeepSeek: R1 Distill Qwen 14B",
     "created": 1738193940,
     "description": "DeepSeek R1 Distill Qwen 14B is a distilled large language model based on [Qwen 2.5 14B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). It outperforms OpenAI's o1-mini across various benchmarks, achieving new state-of-the-art results for dense models.\n\nOther benchmark results include:\n\n- AIME 2024 pass@1: 69.7\n- MATH-500 pass@1: 93.9\n- CodeForces Rating: 1481\n\nThe model leverages fine-tuning from DeepSeek R1's outputs, enabling competitive performance comparable to larger frontier models.",
-    "context_length": 131072,
+    "context_length": 64000,
     "architecture": {
       "modality": "text->text",
       "tokenizer": "Qwen",
       "instruct_type": "deepseek-r1"
     },
     "pricing": {
-      "prompt": "0.0000016",
-      "completion": "0.0000016",
+      "prompt": "0.00000015",
+      "completion": "0.00000015",
       "image": "0",
       "request": "0",
       "input_cache_read": "0",
@@ -1851,12 +2053,16 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 32768,
+      "context_length": 64000,
+      "max_completion_tokens": 64000,
       "is_moderated": false
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_r1_distill_qwen_14b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "deepseek"
   },
   "72": {
@@ -1887,6 +2093,10 @@
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_r1_distill_qwen_32b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "deepseek"
   },
   "73": {
@@ -1917,6 +2127,10 @@
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_r1:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "deepseek"
   },
   "74": {
@@ -1947,6 +2161,10 @@
     },
     "per_request_limits": null,
     "commandName": "/eva_unit_01:eva_llama_3.33_70b",
+    "abangPricing": {
+      "completion": 42,
+      "image": 0
+    },
     "provider": "eva-unit-01"
   },
   "75": {
@@ -1977,6 +2195,10 @@
     },
     "per_request_limits": null,
     "commandName": "/eva_unit_01:eva_qwen_2.5_32b",
+    "abangPricing": {
+      "completion": 24,
+      "image": 0
+    },
     "provider": "eva-unit-01"
   },
   "76": {
@@ -2007,6 +2229,10 @@
     },
     "per_request_limits": null,
     "commandName": "/eva_unit_01:eva_qwen_2.5_72b",
+    "abangPricing": {
+      "completion": 5,
+      "image": 0
+    },
     "provider": "eva-unit-01"
   },
   "77": {
@@ -2037,6 +2263,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_2.0_flash_001",
+    "abangPricing": {
+      "completion": 3,
+      "image": 52
+    },
     "provider": "google",
     "straico": {
       "coins": 0.2,
@@ -2071,6 +2301,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_2.0_flash_exp:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "google"
   },
   "79": {
@@ -2101,6 +2335,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_2.0_flash_lite_001",
+    "abangPricing": {
+      "completion": 2,
+      "image": 0
+    },
     "provider": "google"
   },
   "80": {
@@ -2131,6 +2369,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_2.0_flash_lite_preview_02_05:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "google"
   },
   "81": {
@@ -2161,6 +2403,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_2.0_flash_thinking_exp_1219:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "google"
   },
   "82": {
@@ -2191,6 +2437,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_2.0_flash_thinking_exp:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "google"
   },
   "83": {
@@ -2221,6 +2471,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_2.0_pro_exp_02_05:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "google",
     "straico": {
       "coins": 1.5,
@@ -2255,6 +2509,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_exp_1206:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "google"
   },
   "85": {
@@ -2285,6 +2543,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_flash_1.5",
+    "abangPricing": {
+      "completion": 2,
+      "image": 80
+    },
     "provider": "google"
   },
   "86": {
@@ -2315,6 +2577,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_flash_1.5_8b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "google"
   },
   "87": {
@@ -2345,6 +2611,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_flash_1.5_8b_exp",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "google"
   },
   "88": {
@@ -2375,6 +2645,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_pro",
+    "abangPricing": {
+      "completion": 11,
+      "image": 5000
+    },
     "provider": "google"
   },
   "89": {
@@ -2405,6 +2679,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_pro_1.5",
+    "abangPricing": {
+      "completion": 35,
+      "image": 1315
+    },
     "provider": "google",
     "straico": {
       "coins": 3.7,
@@ -2439,6 +2717,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemini_pro_vision",
+    "abangPricing": {
+      "completion": 11,
+      "image": 5000
+    },
     "provider": "google"
   },
   "91": {
@@ -2469,6 +2751,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemma_2_27b_it",
+    "abangPricing": {
+      "completion": 2,
+      "image": 0
+    },
     "provider": "google",
     "straico": {
       "coins": 0.4,
@@ -2503,6 +2789,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemma_2_9b_it",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "google"
   },
   "93": {
@@ -2533,6 +2823,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemma_2_9b_it:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "google"
   },
   "94": {
@@ -2563,6 +2857,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:gemma_7b_it",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "google"
   },
   "95": {
@@ -2593,6 +2891,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:learnlm_1.5_pro_experimental:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "google"
   },
   "96": {
@@ -2623,6 +2925,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:palm_2_chat_bison",
+    "abangPricing": {
+      "completion": 14,
+      "image": 0
+    },
     "provider": "google"
   },
   "97": {
@@ -2653,6 +2959,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:palm_2_chat_bison_32k",
+    "abangPricing": {
+      "completion": 14,
+      "image": 0
+    },
     "provider": "google"
   },
   "98": {
@@ -2683,6 +2993,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:palm_2_codechat_bison",
+    "abangPricing": {
+      "completion": 14,
+      "image": 0
+    },
     "provider": "google"
   },
   "99": {
@@ -2713,6 +3027,10 @@
     },
     "per_request_limits": null,
     "commandName": "/google:palm_2_codechat_bison_32k",
+    "abangPricing": {
+      "completion": 14,
+      "image": 0
+    },
     "provider": "google"
   },
   "100": {
@@ -2743,6 +3061,10 @@
     },
     "per_request_limits": null,
     "commandName": "/gryphe:mythomax_l2_13b",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "gryphe",
     "straico": {
       "coins": 1,
@@ -2777,6 +3099,10 @@
     },
     "per_request_limits": null,
     "commandName": "/gryphe:mythomax_l2_13b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "gryphe"
   },
   "102": {
@@ -2807,6 +3133,10 @@
     },
     "per_request_limits": null,
     "commandName": "/huggingfaceh4:zephyr_7b_beta:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "huggingfaceh4"
   },
   "103": {
@@ -2837,6 +3167,10 @@
     },
     "per_request_limits": null,
     "commandName": "/infermatic:mn_inferor_12b",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
     "provider": "infermatic"
   },
   "104": {
@@ -2867,6 +3201,10 @@
     },
     "per_request_limits": null,
     "commandName": "/inflection:inflection_3_pi",
+    "abangPricing": {
+      "completion": 70,
+      "image": 0
+    },
     "provider": "inflection"
   },
   "105": {
@@ -2892,11 +3230,15 @@
     },
     "top_provider": {
       "context_length": 8000,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 1024,
       "is_moderated": false
     },
     "per_request_limits": null,
     "commandName": "/inflection:inflection_3_productivity",
+    "abangPricing": {
+      "completion": 70,
+      "image": 0
+    },
     "provider": "inflection"
   },
   "106": {
@@ -2927,6 +3269,10 @@
     },
     "per_request_limits": null,
     "commandName": "/jondurbin:airoboros_l2_70b",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
     "provider": "jondurbin"
   },
   "107": {
@@ -2957,6 +3303,10 @@
     },
     "per_request_limits": null,
     "commandName": "/liquid:lfm_3b",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "liquid"
   },
   "108": {
@@ -2987,6 +3337,10 @@
     },
     "per_request_limits": null,
     "commandName": "/liquid:lfm_40b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "liquid"
   },
   "109": {
@@ -3017,6 +3371,10 @@
     },
     "per_request_limits": null,
     "commandName": "/liquid:lfm_7b",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "liquid"
   },
   "110": {
@@ -3047,6 +3405,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mancer:weaver",
+    "abangPricing": {
+      "completion": 16,
+      "image": 0
+    },
     "provider": "mancer"
   },
   "111": {
@@ -3077,6 +3439,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_2_13b_chat",
+    "abangPricing": {
+      "completion": 2,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "112": {
@@ -3107,6 +3473,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_2_70b_chat",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "114": {
@@ -3137,6 +3507,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3_70b_instruct",
+    "abangPricing": {
+      "completion": 3,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "116": {
@@ -3167,6 +3541,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3_8b_instruct",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "meta-llama",
     "straico": {
       "coins": 0.5,
@@ -3201,6 +3579,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3_8b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "118": {
@@ -3231,6 +3613,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.1_405b",
+    "abangPricing": {
+      "completion": 14,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "119": {
@@ -3261,6 +3647,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.1_405b_instruct",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
     "provider": "meta-llama",
     "straico": {
       "coins": 1.6,
@@ -3295,6 +3685,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.1_70b_instruct",
+    "abangPricing": {
+      "completion": 2,
+      "image": 0
+    },
     "provider": "meta-llama",
     "straico": {
       "coins": 0.7,
@@ -3329,6 +3723,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.1_8b_instruct",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "122": {
@@ -3359,6 +3757,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.1_8b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "123": {
@@ -3389,6 +3791,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.2_11b_vision_instruct",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "124": {
@@ -3419,6 +3825,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.2_11b_vision_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "125": {
@@ -3449,6 +3859,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.2_1b_instruct",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "126": {
@@ -3479,6 +3893,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.2_1b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "127": {
@@ -3509,6 +3927,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.2_3b_instruct",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "128": {
@@ -3534,11 +3956,15 @@
     },
     "top_provider": {
       "context_length": 4096,
-      "max_completion_tokens": 2048,
+      "max_completion_tokens": 4096,
       "is_moderated": false
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.2_90b_vision_instruct",
+    "abangPricing": {
+      "completion": 11,
+      "image": 10291
+    },
     "provider": "meta-llama"
   },
   "129": {
@@ -3569,6 +3995,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.3_70b_instruct",
+    "abangPricing": {
+      "completion": 2,
+      "image": 0
+    },
     "provider": "meta-llama",
     "straico": {
       "coins": 0.5,
@@ -3603,6 +4033,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_3.3_70b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "131": {
@@ -3633,6 +4067,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_guard_2_8b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "132": {
@@ -3663,6 +4101,10 @@
     },
     "per_request_limits": null,
     "commandName": "/meta_llama:llama_guard_3_8b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "meta-llama"
   },
   "133": {
@@ -3693,6 +4135,10 @@
     },
     "per_request_limits": null,
     "commandName": "/microsoft:phi_3_medium_128k_instruct",
+    "abangPricing": {
+      "completion": 7,
+      "image": 0
+    },
     "provider": "microsoft"
   },
   "134": {
@@ -3723,6 +4169,10 @@
     },
     "per_request_limits": null,
     "commandName": "/microsoft:phi_3_medium_128k_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "microsoft"
   },
   "135": {
@@ -3753,6 +4203,10 @@
     },
     "per_request_limits": null,
     "commandName": "/microsoft:phi_3_mini_128k_instruct",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "microsoft"
   },
   "136": {
@@ -3783,6 +4237,10 @@
     },
     "per_request_limits": null,
     "commandName": "/microsoft:phi_3_mini_128k_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "microsoft"
   },
   "137": {
@@ -3813,6 +4271,10 @@
     },
     "per_request_limits": null,
     "commandName": "/microsoft:phi_3.5_mini_128k_instruct",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "microsoft"
   },
   "138": {
@@ -3843,6 +4305,10 @@
     },
     "per_request_limits": null,
     "commandName": "/microsoft:phi_4",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "microsoft",
     "straico": {
       "coins": 0.1,
@@ -3877,6 +4343,10 @@
     },
     "per_request_limits": null,
     "commandName": "/microsoft:wizardlm_2_7b",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "microsoft"
   },
   "140": {
@@ -3907,6 +4377,10 @@
     },
     "per_request_limits": null,
     "commandName": "/microsoft:wizardlm_2_8x22b",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
     "provider": "microsoft",
     "straico": {
       "coins": 0.6,
@@ -3941,6 +4415,10 @@
     },
     "per_request_limits": null,
     "commandName": "/minimax:minimax_01",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
     "provider": "minimax"
   },
   "142": {
@@ -3971,6 +4449,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:codestral_2501",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "143": {
@@ -4001,6 +4483,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:codestral_mamba",
+    "abangPricing": {
+      "completion": 2,
+      "image": 0
+    },
     "provider": "mistralai",
     "straico": {
       "coins": 0.2,
@@ -4035,6 +4521,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:ministral_3b",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "145": {
@@ -4065,6 +4555,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:ministral_8b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "146": {
@@ -4095,6 +4589,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_7b_instruct",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "147": {
@@ -4125,6 +4623,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_7b_instruct_v0.1",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "148": {
@@ -4155,6 +4657,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_7b_instruct_v0.3",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "149": {
@@ -4185,6 +4691,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_7b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "150": {
@@ -4215,6 +4725,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_large",
+    "abangPricing": {
+      "completion": 42,
+      "image": 0
+    },
     "provider": "mistralai",
     "straico": {
       "coins": 3,
@@ -4249,6 +4763,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_large_2407",
+    "abangPricing": {
+      "completion": 42,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "152": {
@@ -4279,6 +4797,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_large_2411",
+    "abangPricing": {
+      "completion": 42,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "153": {
@@ -4309,6 +4831,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_medium",
+    "abangPricing": {
+      "completion": 57,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "154": {
@@ -4339,6 +4865,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_nemo",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "155": {
@@ -4369,6 +4899,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_nemo:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "156": {
@@ -4399,6 +4933,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_saba",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "157": {
@@ -4429,6 +4967,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_small",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "158": {
@@ -4459,6 +5001,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_small_24b_instruct_2501",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "159": {
@@ -4466,7 +5012,7 @@
     "name": "Mistral: Mistral Small 3 (free)",
     "created": 1738255409,
     "description": "Mistral Small 3 is a 24B-parameter language model optimized for low-latency performance across common AI tasks. Released under the Apache 2.0 license, it features both pre-trained and instruction-tuned versions designed for efficient local deployment.\n\nThe model achieves 81% accuracy on the MMLU benchmark and performs competitively with larger models like Llama 3.3 70B and Qwen 32B, while operating at three times the speed on equivalent hardware. [Read the blog post about the model here.](https://mistral.ai/news/mistral-small-3/)",
-    "context_length": 32000,
+    "context_length": 32768,
     "architecture": {
       "modality": "text->text",
       "tokenizer": "Mistral",
@@ -4483,12 +5029,16 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 32000,
+      "context_length": 32768,
       "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_small_24b_instruct_2501:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "160": {
@@ -4519,6 +5069,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mistral_tiny",
+    "abangPricing": {
+      "completion": 2,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "161": {
@@ -4549,6 +5103,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mixtral_8x22b_instruct",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "162": {
@@ -4579,6 +5137,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mixtral_8x7b",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
     "provider": "mistralai"
   },
   "163": {
@@ -4609,6 +5171,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:mixtral_8x7b_instruct",
+    "abangPricing": {
+      "completion": 2,
+      "image": 0
+    },
     "provider": "mistralai",
     "straico": {
       "coins": 1,
@@ -4643,6 +5209,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:pixtral_12b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 289
+    },
     "provider": "mistralai"
   },
   "165": {
@@ -4673,6 +5243,10 @@
     },
     "per_request_limits": null,
     "commandName": "/mistralai:pixtral_large_2411",
+    "abangPricing": {
+      "completion": 42,
+      "image": 5776
+    },
     "provider": "mistralai"
   },
   "166": {
@@ -4703,6 +5277,10 @@
     },
     "per_request_limits": null,
     "commandName": "/moonshotai:moonlight_16b_a3b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "moonshotai"
   },
   "167": {
@@ -4733,6 +5311,10 @@
     },
     "per_request_limits": null,
     "commandName": "/neversleep:llama_3_lumimaid_70b",
+    "abangPricing": {
+      "completion": 32,
+      "image": 0
+    },
     "provider": "neversleep"
   },
   "168": {
@@ -4763,6 +5345,10 @@
     },
     "per_request_limits": null,
     "commandName": "/neversleep:llama_3_lumimaid_8b",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
     "provider": "neversleep"
   },
   "169": {
@@ -4793,6 +5379,10 @@
     },
     "per_request_limits": null,
     "commandName": "/neversleep:llama_3_lumimaid_8b:extended",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
     "provider": "neversleep"
   },
   "170": {
@@ -4823,6 +5413,10 @@
     },
     "per_request_limits": null,
     "commandName": "/neversleep:llama_3.1_lumimaid_70b",
+    "abangPricing": {
+      "completion": 32,
+      "image": 0
+    },
     "provider": "neversleep"
   },
   "171": {
@@ -4853,6 +5447,10 @@
     },
     "per_request_limits": null,
     "commandName": "/neversleep:llama_3.1_lumimaid_8b",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
     "provider": "neversleep"
   },
   "172": {
@@ -4883,6 +5481,10 @@
     },
     "per_request_limits": null,
     "commandName": "/neversleep:noromaid_20b",
+    "abangPricing": {
+      "completion": 16,
+      "image": 0
+    },
     "provider": "neversleep"
   },
   "173": {
@@ -4913,6 +5515,10 @@
     },
     "per_request_limits": null,
     "commandName": "/nothingiisreal:mn_celeste_12b",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
     "provider": "nothingiisreal"
   },
   "174": {
@@ -4943,6 +5549,10 @@
     },
     "per_request_limits": null,
     "commandName": "/nousresearch:deephermes_3_llama_3_8b_preview:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "nousresearch"
   },
   "175": {
@@ -4973,6 +5583,10 @@
     },
     "per_request_limits": null,
     "commandName": "/nousresearch:hermes_2_pro_llama_3_8b",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "nousresearch"
   },
   "176": {
@@ -5003,6 +5617,10 @@
     },
     "per_request_limits": null,
     "commandName": "/nousresearch:hermes_3_llama_3.1_405b",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
     "provider": "nousresearch",
     "straico": {
       "coins": 0.5,
@@ -5037,6 +5655,10 @@
     },
     "per_request_limits": null,
     "commandName": "/nousresearch:hermes_3_llama_3.1_70b",
+    "abangPricing": {
+      "completion": 2,
+      "image": 0
+    },
     "provider": "nousresearch"
   },
   "178": {
@@ -5067,6 +5689,10 @@
     },
     "per_request_limits": null,
     "commandName": "/nousresearch:nous_hermes_2_mixtral_8x7b_dpo",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
     "provider": "nousresearch"
   },
   "179": {
@@ -5081,8 +5707,8 @@
       "instruct_type": "alpaca"
     },
     "pricing": {
-      "prompt": "0.00000018",
-      "completion": "0.00000018",
+      "prompt": "0.00000017",
+      "completion": "0.00000017",
       "image": "0",
       "request": "0",
       "input_cache_read": "0",
@@ -5097,6 +5723,10 @@
     },
     "per_request_limits": null,
     "commandName": "/nousresearch:nous_hermes_llama2_13b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "nousresearch"
   },
   "180": {
@@ -5127,6 +5757,10 @@
     },
     "per_request_limits": null,
     "commandName": "/nvidia:llama_3.1_nemotron_70b_instruct",
+    "abangPricing": {
+      "completion": 2,
+      "image": 0
+    },
     "provider": "nvidia",
     "straico": {
       "coins": 0.5,
@@ -5161,6 +5795,10 @@
     },
     "per_request_limits": null,
     "commandName": "/nvidia:llama_3.1_nemotron_70b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "nvidia"
   },
   "182": {
@@ -5191,6 +5829,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:chatgpt_4o_latest",
+    "abangPricing": {
+      "completion": 105,
+      "image": 14450
+    },
     "provider": "openai"
   },
   "183": {
@@ -5221,6 +5863,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_3.5_turbo",
+    "abangPricing": {
+      "completion": 11,
+      "image": 0
+    },
     "provider": "openai"
   },
   "184": {
@@ -5251,6 +5897,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_3.5_turbo_0125",
+    "abangPricing": {
+      "completion": 11,
+      "image": 0
+    },
     "provider": "openai"
   },
   "185": {
@@ -5281,6 +5931,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_3.5_turbo_0613",
+    "abangPricing": {
+      "completion": 14,
+      "image": 0
+    },
     "provider": "openai"
   },
   "186": {
@@ -5311,6 +5965,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_3.5_turbo_1106",
+    "abangPricing": {
+      "completion": 14,
+      "image": 0
+    },
     "provider": "openai"
   },
   "187": {
@@ -5341,6 +5999,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_3.5_turbo_16k",
+    "abangPricing": {
+      "completion": 28,
+      "image": 0
+    },
     "provider": "openai"
   },
   "188": {
@@ -5371,6 +6033,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_3.5_turbo_instruct",
+    "abangPricing": {
+      "completion": 14,
+      "image": 0
+    },
     "provider": "openai"
   },
   "189": {
@@ -5401,6 +6067,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4",
+    "abangPricing": {
+      "completion": 420,
+      "image": 0
+    },
     "provider": "openai"
   },
   "190": {
@@ -5431,6 +6101,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4_0314",
+    "abangPricing": {
+      "completion": 420,
+      "image": 0
+    },
     "provider": "openai"
   },
   "191": {
@@ -5461,6 +6135,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4_1106_preview",
+    "abangPricing": {
+      "completion": 210,
+      "image": 0
+    },
     "provider": "openai"
   },
   "192": {
@@ -5491,6 +6169,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4_32k",
+    "abangPricing": {
+      "completion": 840,
+      "image": 0
+    },
     "provider": "openai"
   },
   "193": {
@@ -5521,6 +6203,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4_32k_0314",
+    "abangPricing": {
+      "completion": 840,
+      "image": 0
+    },
     "provider": "openai"
   },
   "194": {
@@ -5551,6 +6237,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4_turbo",
+    "abangPricing": {
+      "completion": 210,
+      "image": 28900
+    },
     "provider": "openai"
   },
   "195": {
@@ -5581,6 +6271,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4_turbo_preview",
+    "abangPricing": {
+      "completion": 210,
+      "image": 0
+    },
     "provider": "openai"
   },
   "196": {
@@ -5611,6 +6305,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4.5_preview",
+    "abangPricing": {
+      "completion": 1050,
+      "image": 216750
+    },
     "provider": "openai",
     "straico": {
       "model": "gpt-4.5-preview",
@@ -5646,6 +6344,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4o",
+    "abangPricing": {
+      "completion": 70,
+      "image": 7226
+    },
     "provider": "openai"
   },
   "198": {
@@ -5676,6 +6378,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4o_2024_05_13",
+    "abangPricing": {
+      "completion": 105,
+      "image": 14450
+    },
     "provider": "openai"
   },
   "199": {
@@ -5706,6 +6412,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4o_2024_08_06",
+    "abangPricing": {
+      "completion": 70,
+      "image": 7226
+    },
     "provider": "openai",
     "straico": {
       "coins": 3,
@@ -5740,6 +6450,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4o_2024_11_20",
+    "abangPricing": {
+      "completion": 70,
+      "image": 7226
+    },
     "provider": "openai",
     "straico": {
       "coins": 3.3,
@@ -5774,6 +6488,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4o_mini",
+    "abangPricing": {
+      "completion": 4,
+      "image": 434
+    },
     "provider": "openai",
     "straico": {
       "coins": 0.4,
@@ -5808,6 +6526,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4o_mini_2024_07_18",
+    "abangPricing": {
+      "completion": 4,
+      "image": 14450
+    },
     "provider": "openai"
   },
   "203": {
@@ -5838,6 +6560,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:gpt_4o:extended",
+    "abangPricing": {
+      "completion": 126,
+      "image": 14450
+    },
     "provider": "openai"
   },
   "204": {
@@ -5868,6 +6594,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:o1",
+    "abangPricing": {
+      "completion": 420,
+      "image": 43350
+    },
     "provider": "openai",
     "straico": {
       "coins": 20,
@@ -5902,6 +6632,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:o1_mini",
+    "abangPricing": {
+      "completion": 31,
+      "image": 0
+    },
     "provider": "openai",
     "straico": {
       "coins": 4,
@@ -5936,6 +6670,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:o1_mini_2024_09_12",
+    "abangPricing": {
+      "completion": 31,
+      "image": 0
+    },
     "provider": "openai"
   },
   "207": {
@@ -5966,6 +6704,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:o1_preview",
+    "abangPricing": {
+      "completion": 420,
+      "image": 0
+    },
     "provider": "openai",
     "straico": {
       "coins": 20,
@@ -6000,6 +6742,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:o1_preview_2024_09_12",
+    "abangPricing": {
+      "completion": 420,
+      "image": 0
+    },
     "provider": "openai"
   },
   "209": {
@@ -6030,6 +6776,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:o3_mini",
+    "abangPricing": {
+      "completion": 31,
+      "image": 0
+    },
     "provider": "openai",
     "straico": {
       "coins": 1.5,
@@ -6064,6 +6814,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openai:o3_mini_high",
+    "abangPricing": {
+      "completion": 31,
+      "image": 0
+    },
     "provider": "openai",
     "straico": {
       "coins": 3,
@@ -6098,6 +6852,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openchat:openchat_7b",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "openchat"
   },
   "212": {
@@ -6128,6 +6886,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openchat:openchat_7b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "openchat"
   },
   "213": {
@@ -6158,6 +6920,10 @@
     },
     "per_request_limits": null,
     "commandName": "/openrouter:auto",
+    "abangPricing": {
+      "completion": -7000000,
+      "image": -2000000
+    },
     "provider": "openrouter"
   },
   "214": {
@@ -6188,6 +6954,10 @@
     },
     "per_request_limits": null,
     "commandName": "/perplexity:llama_3.1_sonar_large_128k_chat",
+    "abangPricing": {
+      "completion": 7,
+      "image": 0
+    },
     "provider": "perplexity"
   },
   "215": {
@@ -6218,6 +6988,10 @@
     },
     "per_request_limits": null,
     "commandName": "/perplexity:llama_3.1_sonar_large_128k_online",
+    "abangPricing": {
+      "completion": 7,
+      "image": 0
+    },
     "provider": "perplexity",
     "straico": {
       "coins": 0.6,
@@ -6252,6 +7026,10 @@
     },
     "per_request_limits": null,
     "commandName": "/perplexity:llama_3.1_sonar_small_128k_chat",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "perplexity"
   },
   "217": {
@@ -6282,6 +7060,10 @@
     },
     "per_request_limits": null,
     "commandName": "/perplexity:llama_3.1_sonar_small_128k_online",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "perplexity",
     "straico": {
       "coins": 0.2,
@@ -6316,6 +7098,10 @@
     },
     "per_request_limits": null,
     "commandName": "/perplexity:r1_1776",
+    "abangPricing": {
+      "completion": 56,
+      "image": 0
+    },
     "provider": "perplexity"
   },
   "219": {
@@ -6346,6 +7132,10 @@
     },
     "per_request_limits": null,
     "commandName": "/perplexity:sonar",
+    "abangPricing": {
+      "completion": 7,
+      "image": 0
+    },
     "provider": "perplexity",
     "straico": {
       "coins": 1,
@@ -6380,6 +7170,10 @@
     },
     "per_request_limits": null,
     "commandName": "/perplexity:sonar_reasoning",
+    "abangPricing": {
+      "completion": 35,
+      "image": 0
+    },
     "provider": "perplexity",
     "straico": {
       "coins": 2,
@@ -6414,6 +7208,10 @@
     },
     "per_request_limits": null,
     "commandName": "/pygmalionai:mythalion_13b",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
     "provider": "pygmalionai"
   },
   "223": {
@@ -6444,6 +7242,10 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_2_72b_instruct",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
     "provider": "qwen",
     "straico": {
       "coins": 0.5,
@@ -6478,6 +7280,10 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_2_7b_instruct",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "qwen"
   },
   "225": {
@@ -6508,6 +7314,10 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_2_7b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "qwen"
   },
   "228": {
@@ -6538,6 +7348,10 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_2.5_72b_instruct",
+    "abangPricing": {
+      "completion": 3,
+      "image": 0
+    },
     "provider": "qwen",
     "straico": {
       "coins": 0.2,
@@ -6572,6 +7386,10 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_2.5_7b_instruct",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "qwen"
   },
   "230": {
@@ -6602,6 +7420,10 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_2.5_coder_32b_instruct",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "qwen",
     "straico": {
       "coins": 0.5,
@@ -6613,7 +7435,7 @@
     "name": "Qwen2.5 Coder 32B Instruct (free)",
     "created": 1731368400,
     "description": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). Qwen2.5-Coder brings the following improvements upon CodeQwen1.5:\n\n- Significantly improvements in **code generation**, **code reasoning** and **code fixing**. \n- A more comprehensive foundation for real-world applications such as **Code Agents**. Not only enhancing coding capabilities but also maintaining its strengths in mathematics and general competencies.\n\nTo read more about its evaluation results, check out [Qwen 2.5 Coder's blog](https://qwenlm.github.io/blog/qwen2.5-coder-family/).",
-    "context_length": 128000,
+    "context_length": 32768,
     "architecture": {
       "modality": "text->text",
       "tokenizer": "Qwen",
@@ -6630,12 +7452,16 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 128000,
+      "context_length": 32768,
       "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_2.5_coder_32b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "qwen"
   },
   "232": {
@@ -6666,6 +7492,10 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_max",
+    "abangPricing": {
+      "completion": 45,
+      "image": 0
+    },
     "provider": "qwen"
   },
   "233": {
@@ -6696,6 +7526,10 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_plus",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
     "provider": "qwen"
   },
   "234": {
@@ -6726,6 +7560,10 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_turbo",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "qwen"
   },
   "236": {
@@ -6756,6 +7594,10 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen2.5_vl_72b_instruct",
+    "abangPricing": {
+      "completion": 5,
+      "image": 0
+    },
     "provider": "qwen"
   },
   "237": {
@@ -6786,6 +7628,10 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen2.5_vl_72b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "qwen"
   },
   "238": {
@@ -6816,6 +7662,10 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwq_32b_preview",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "qwen",
     "straico": {
       "coins": 0.7,
@@ -6850,6 +7700,10 @@
     },
     "per_request_limits": null,
     "commandName": "/raifle:sorcererlm_8x22b",
+    "abangPricing": {
+      "completion": 32,
+      "image": 0
+    },
     "provider": "raifle",
     "straico": {
       "coins": 2.4,
@@ -6884,6 +7738,10 @@
     },
     "per_request_limits": null,
     "commandName": "/sao10k:fimbulvetr_11b_v2",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
     "provider": "sao10k"
   },
   "241": {
@@ -6914,6 +7772,10 @@
     },
     "per_request_limits": null,
     "commandName": "/sao10k:l3_euryale_70b",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
     "provider": "sao10k"
   },
   "242": {
@@ -6944,6 +7806,10 @@
     },
     "per_request_limits": null,
     "commandName": "/sao10k:l3_lunaris_8b",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "sao10k"
   },
   "243": {
@@ -6974,6 +7840,10 @@
     },
     "per_request_limits": null,
     "commandName": "/sao10k:l3.1_70b_hanami_x1",
+    "abangPricing": {
+      "completion": 21,
+      "image": 0
+    },
     "provider": "sao10k"
   },
   "244": {
@@ -7004,6 +7874,10 @@
     },
     "per_request_limits": null,
     "commandName": "/sao10k:l3.1_euryale_70b",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
     "provider": "sao10k"
   },
   "245": {
@@ -7034,6 +7908,10 @@
     },
     "per_request_limits": null,
     "commandName": "/sao10k:l3.3_euryale_70b",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
     "provider": "sao10k"
   },
   "246": {
@@ -7064,6 +7942,10 @@
     },
     "per_request_limits": null,
     "commandName": "/sophosympatheia:midnight_rose_70b",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
     "provider": "sophosympatheia"
   },
   "247": {
@@ -7094,6 +7976,10 @@
     },
     "per_request_limits": null,
     "commandName": "/sophosympatheia:rogue_rose_103b_v0.2:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "sophosympatheia"
   },
   "248": {
@@ -7124,6 +8010,10 @@
     },
     "per_request_limits": null,
     "commandName": "/teknium:openhermes_2.5_mistral_7b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "teknium"
   },
   "249": {
@@ -7154,6 +8044,10 @@
     },
     "per_request_limits": null,
     "commandName": "/thedrummer:rocinante_12b",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
     "provider": "thedrummer"
   },
   "250": {
@@ -7184,6 +8078,10 @@
     },
     "per_request_limits": null,
     "commandName": "/thedrummer:unslopnemo_12b",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
     "provider": "thedrummer",
     "straico": {
       "coins": 0.3,
@@ -7218,6 +8116,10 @@
     },
     "per_request_limits": null,
     "commandName": "/undi95:remm_slerp_l2_13b",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
     "provider": "undi95"
   },
   "252": {
@@ -7248,6 +8150,10 @@
     },
     "per_request_limits": null,
     "commandName": "/undi95:toppy_m_7b",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "undi95"
   },
   "253": {
@@ -7278,6 +8184,10 @@
     },
     "per_request_limits": null,
     "commandName": "/undi95:toppy_m_7b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "undi95"
   },
   "254": {
@@ -7308,6 +8218,10 @@
     },
     "per_request_limits": null,
     "commandName": "/x_ai:grok_2_1212",
+    "abangPricing": {
+      "completion": 70,
+      "image": 0
+    },
     "provider": "x-ai",
     "straico": {
       "coins": 3.2,
@@ -7342,6 +8256,10 @@
     },
     "per_request_limits": null,
     "commandName": "/x_ai:grok_2_vision_1212",
+    "abangPricing": {
+      "completion": 70,
+      "image": 7200
+    },
     "provider": "x-ai",
     "straico": {
       "coins": 3.2,
@@ -7376,6 +8294,10 @@
     },
     "per_request_limits": null,
     "commandName": "/x_ai:grok_beta",
+    "abangPricing": {
+      "completion": 105,
+      "image": 0
+    },
     "provider": "x-ai",
     "straico": {
       "coins": 5.3,
@@ -7410,6 +8332,10 @@
     },
     "per_request_limits": null,
     "commandName": "/x_ai:grok_vision_beta",
+    "abangPricing": {
+      "completion": 105,
+      "image": 18000
+    },
     "provider": "x-ai"
   },
   "258": {
@@ -7440,6 +8366,10 @@
     },
     "per_request_limits": null,
     "commandName": "/xwin_lm:xwin_lm_70b",
+    "abangPricing": {
+      "completion": 26,
+      "image": 0
+    },
     "provider": "xwin-lm"
   },
   "259": {
@@ -7470,78 +8400,22 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwen_vl_plus",
+    "abangPricing": {
+      "completion": 4,
+      "image": 538
+    },
     "provider": "qwen"
   },
-  "4240": {
-    "id": "qwen/qwq-32b:free",
-    "name": "Qwen: QwQ 32B (free)",
-    "created": 1741208814,
-    "description": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks, especially hard problems. QwQ-32B is the medium-sized reasoning model, which is capable of achieving competitive performance against state-of-the-art reasoning models, e.g., DeepSeek-R1, o1-mini.",
-    "context_length": 131072,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Qwen",
-      "instruct_type": "qwq"
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 131072,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/qwen:qwq_32b:free",
-    "provider": "qwen"
-  },
-  "44352": {
-    "id": "qwen/qwen-vl-max",
-    "name": "Qwen: Qwen VL Max",
-    "created": 1738434304,
-    "description": "Qwen VL Max is a visual understanding model with 7500 tokens context length. It excels in delivering optimal performance for a broader spectrum of complex tasks.\n",
-    "context_length": 7500,
-    "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "Qwen",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000008",
-      "completion": "0.0000032",
-      "image": "0.001024",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 7500,
-      "max_completion_tokens": 1500,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/qwen:qwen_vl_max",
-    "provider": "qwen"
-  },
-  "115292": {
-    "id": "perplexity/sonar-deep-research",
-    "name": "Perplexity: Sonar Deep Research",
-    "created": 1741311246,
-    "description": "Sonar Deep Research is a research-focused model designed for multi-step retrieval, synthesis, and reasoning across complex topics. It autonomously searches, reads, and evaluates sources, refining its approach as it gathers information. This enables comprehensive report generation across domains like finance, technology, health, and current events.\n\nNotes on Pricing ([Source](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-deep-research)) \n- Input tokens comprise of Prompt tokens (user prompt) + Citation tokens (these are processed tokens from running searches)\n- Deep Research runs multiple searches to conduct exhaustive research. Searches are priced at $5/1000 searches. A request that does 30 searches will cost $0.15 in this step.\n- Reasoning is a distinct step in Deep Research since it does extensive automated reasoning through all the material it gathers during its research phase. Reasoning tokens here are a bit different than the CoTs in the answer - these are tokens that we use to reason through the research material prior to generating the outputs via the CoTs. Reasoning tokens are priced at $3/1M tokens",
-    "context_length": 200000,
+  "29429": {
+    "id": "ai21/jamba-1.6-large",
+    "name": "AI21: Jamba 1.6 Large",
+    "created": 1741905173,
+    "description": "AI21 Jamba Large 1.6 is a high-performance hybrid foundation model combining State Space Models (Mamba) with Transformer attention mechanisms. Developed by AI21, it excels in extremely long-context handling (256K tokens), demonstrates superior inference efficiency (up to 2.5x faster than comparable models), and supports structured JSON output and tool-use capabilities. It has 94 billion active parameters (398 billion total), optimized quantization support (ExpertsInt8), and multilingual proficiency in languages such as English, Spanish, French, Portuguese, Italian, Dutch, German, Arabic, and Hebrew.\n\nUsage of this model is subject to the [Jamba Open Model License](https://www.ai21.com/licenses/jamba-open-model-license).",
+    "context_length": 256000,
     "architecture": {
       "modality": "text->text",
       "tokenizer": "Other",
-      "instruct_type": "deepseek-r1"
+      "instruct_type": null
     },
     "pricing": {
       "prompt": "0.000002",
@@ -7554,28 +8428,32 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 200000,
-      "max_completion_tokens": null,
+      "context_length": 256000,
+      "max_completion_tokens": 4096,
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/perplexity:sonar_deep_research",
-    "provider": "perplexity"
+    "commandName": "/ai21:jamba_1.6_large",
+    "abangPricing": {
+      "completion": 56,
+      "image": 0
+    },
+    "provider": "ai21"
   },
-  "116985": {
-    "id": "qwen/qwen2.5-32b-instruct",
-    "name": "Qwen: Qwen2.5 32B Instruct",
-    "created": 1741042744,
-    "description": "Qwen2.5 32B Instruct is the instruction-tuned variant of the latest Qwen large language model series. It provides enhanced instruction-following capabilities, improved proficiency in coding and mathematical reasoning, and robust handling of structured data and outputs such as JSON. It supports long-context processing up to 128K tokens and multilingual tasks across 29+ languages. The model has 32.5 billion parameters, 64 layers, and utilizes an advanced transformer architecture with RoPE, SwiGLU, RMSNorm, and Attention QKV bias.\n\nFor details, please refer to the [Qwen2.5 Blog](https://qwenlm.github.io/blog/qwen2.5/).",
-    "context_length": 131072,
+  "42577": {
+    "id": "tokyotech-llm/llama-3.1-swallow-70b-instruct-v0.3",
+    "name": "Swallow: Llama 3.1 Swallow 70B Instruct V0.3",
+    "created": 1741813936,
+    "description": "Llama 3.1 Swallow 70B is a large language model that was built by continual pre-training on the Meta Llama 3.1 70B. Llama 3.1 Swallow enhanced the Japanese language capabilities of the original Llama 3.1 while retaining the English language capabilities. Swallow used approximately 200 billion tokens that were sampled from a large Japanese web corpus (Swallow Corpus Version 2), Japanese and English Wikipedia articles, and mathematical and coding contents, etc (see the Training Datasets section of the base model) for continual pre-training. The instruction-tuned models (Instruct) were built by supervised fine-tuning (SFT) on the synthetic data specially built for Japanese. ",
+    "context_length": 16384,
     "architecture": {
       "modality": "text->text",
-      "tokenizer": "Qwen",
+      "tokenizer": "Llama3",
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000079",
-      "completion": "0.00000079",
+      "prompt": "0.0000006",
+      "completion": "0.0000012",
       "image": "0",
       "request": "0",
       "input_cache_read": "0",
@@ -7584,75 +8462,19 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": null,
+      "context_length": 16384,
+      "max_completion_tokens": 4096,
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen2.5_32b_instruct",
-    "provider": "qwen"
+    "commandName": "/tokyotech_llm:llama_3.1_swallow_70b_instruct_v0.3",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
+    "provider": "tokyotech-llm"
   },
-  "118939": {
-    "id": "microsoft/phi-4-multimodal-instruct",
-    "name": "Microsoft: Phi 4 Multimodal Instruct",
-    "created": 1741396284,
-    "description": "Phi-4 Multimodal Instruct is a versatile 5.6B parameter foundation model that combines advanced reasoning and instruction-following capabilities across both text and visual inputs, providing accurate text outputs. The unified architecture enables efficient, low-latency inference, suitable for edge and mobile deployments. Phi-4 Multimodal Instruct supports text inputs in multiple languages including Arabic, Chinese, English, French, German, Japanese, Spanish, and more, with visual input optimized primarily for English. It delivers impressive performance on multimodal tasks involving mathematical, scientific, and document reasoning, providing developers and enterprises a powerful yet compact model for sophisticated interactive applications. For more information, see the [Phi-4 Multimodal blog post](https://azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family/).\n",
-    "context_length": 131072,
-    "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "Other",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.00000007",
-      "completion": "0.00000014",
-      "image": "0.0002476",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/microsoft:phi_4_multimodal_instruct",
-    "provider": "microsoft"
-  },
-  "125432": {
-    "id": "perplexity/sonar-reasoning-pro",
-    "name": "Perplexity: Sonar Reasoning Pro",
-    "created": 1741313308,
-    "description": "Note: Sonar Pro pricing includes Perplexity search pricing. See [details here](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-reasoning-pro-and-sonar-pro)\n\nSonar Reasoning Pro is a premier reasoning model powered by DeepSeek R1 with Chain of Thought (CoT). Designed for advanced use cases, it supports in-depth, multi-step queries with a larger context window and can surface more citations per search, enabling more comprehensive and extensible responses.",
-    "context_length": 128000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": "deepseek-r1"
-    },
-    "pricing": {
-      "prompt": "0.000002",
-      "completion": "0.000008",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/perplexity:sonar_reasoning_pro",
-    "provider": "perplexity"
-  },
-  "312932": {
+  "125669": {
     "id": "perplexity/sonar-pro",
     "name": "Perplexity: Sonar Pro",
     "created": 1741312423,
@@ -7680,9 +8502,931 @@
     },
     "per_request_limits": null,
     "commandName": "/perplexity:sonar_pro",
+    "abangPricing": {
+      "completion": 105,
+      "image": 0
+    },
     "provider": "perplexity"
   },
-  "455624": {
+  "145343": {
+    "id": "perplexity/sonar-deep-research",
+    "name": "Perplexity: Sonar Deep Research",
+    "created": 1741311246,
+    "description": "Sonar Deep Research is a research-focused model designed for multi-step retrieval, synthesis, and reasoning across complex topics. It autonomously searches, reads, and evaluates sources, refining its approach as it gathers information. This enables comprehensive report generation across domains like finance, technology, health, and current events.\n\nNotes on Pricing ([Source](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-deep-research)) \n- Input tokens comprise of Prompt tokens (user prompt) + Citation tokens (these are processed tokens from running searches)\n- Deep Research runs multiple searches to conduct exhaustive research. Searches are priced at $5/1000 searches. A request that does 30 searches will cost $0.15 in this step.\n- Reasoning is a distinct step in Deep Research since it does extensive automated reasoning through all the material it gathers during its research phase. Reasoning tokens here are a bit different than the CoTs in the answer - these are tokens that we use to reason through the research material prior to generating the outputs via the CoTs. Reasoning tokens are priced at $3/1M tokens",
+    "context_length": 200000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000008",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 200000,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/perplexity:sonar_deep_research",
+    "abangPricing": {
+      "completion": 56,
+      "image": 0
+    },
+    "provider": "perplexity"
+  },
+  "146310": {
+    "id": "steelskull/l3.3-electra-r1-70b",
+    "name": "SteelSkull: L3.3 Electra R1 70B",
+    "created": 1742067611,
+    "description": "L3.3-Electra-R1-70 is the newest release of the Unnamed series. Built on a DeepSeek R1 Distill base, Electra-R1 integrates various models together to provide an intelligent and coherent model capable of providing deep character insights. Through proper prompting, the model demonstrates advanced reasoning capabilities and unprompted exploration of character inner thoughts and motivations. Read more about the model and [prompting here](https://huggingface.co/Steelskull/L3.3-Electra-R1-70b)",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0.0000007",
+      "completion": "0.0000007",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/steelskull:l3.3_electra_r1_70b",
+    "abangPricing": {
+      "completion": 5,
+      "image": 0
+    },
+    "provider": "steelskull"
+  },
+  "177293": {
+    "id": "perplexity/sonar-reasoning-pro",
+    "name": "Perplexity: Sonar Reasoning Pro",
+    "created": 1741313308,
+    "description": "Note: Sonar Pro pricing includes Perplexity search pricing. See [details here](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-reasoning-pro-and-sonar-pro)\n\nSonar Reasoning Pro is a premier reasoning model powered by DeepSeek R1 with Chain of Thought (CoT). Designed for advanced use cases, it supports in-depth, multi-step queries with a larger context window and can surface more citations per search, enabling more comprehensive and extensible responses.",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000008",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/perplexity:sonar_reasoning_pro",
+    "abangPricing": {
+      "completion": 56,
+      "image": 0
+    },
+    "provider": "perplexity"
+  },
+  "186694": {
+    "id": "deepseek/deepseek-r1-distill-qwen-14b:free",
+    "name": "DeepSeek: R1 Distill Qwen 14B (free)",
+    "created": 1738193940,
+    "description": "DeepSeek R1 Distill Qwen 14B is a distilled large language model based on [Qwen 2.5 14B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). It outperforms OpenAI's o1-mini across various benchmarks, achieving new state-of-the-art results for dense models.\n\nOther benchmark results include:\n\n- AIME 2024 pass@1: 69.7\n- MATH-500 pass@1: 93.9\n- CodeForces Rating: 1481\n\nThe model leverages fine-tuning from DeepSeek R1's outputs, enabling competitive performance comparable to larger frontier models.",
+    "context_length": 64000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Qwen",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 64000,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/deepseek:deepseek_r1_distill_qwen_14b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "deepseek"
+  },
+  "222906": {
+    "id": "google/gemma-3-12b-it:free",
+    "name": "Google: Gemma 3 12B (free)",
+    "created": 1741902625,
+    "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 12B is the second largest in the family of Gemma 3 models after [Gemma 3 27B](google/gemma-3-27b-it)",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Gemini",
+      "instruct_type": "gemma"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/google:gemma_3_12b_it:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "google"
+  },
+  "231805": {
+    "id": "deepseek/deepseek-r1-distill-qwen-32b:free",
+    "name": "DeepSeek: R1 Distill Qwen 32B (free)",
+    "created": 1738194830,
+    "description": "DeepSeek R1 Distill Qwen 32B is a distilled large language model based on [Qwen 2.5 32B](https://huggingface.co/Qwen/Qwen2.5-32B), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). It outperforms OpenAI's o1-mini across various benchmarks, achieving new state-of-the-art results for dense models.\n\nOther benchmark results include:\n\n- AIME 2024 pass@1: 72.6\n- MATH-500 pass@1: 94.3\n- CodeForces Rating: 1691\n\nThe model leverages fine-tuning from DeepSeek R1's outputs, enabling competitive performance comparable to larger frontier models.",
+    "context_length": 16000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Qwen",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 16000,
+      "max_completion_tokens": 16000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/deepseek:deepseek_r1_distill_qwen_32b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "deepseek"
+  },
+  "237789": {
+    "id": "thedrummer/anubis-pro-105b-v1",
+    "name": "TheDrummer: Anubis Pro 105B V1",
+    "created": 1741642290,
+    "description": "Anubis Pro 105B v1 is an expanded and refined variant of Meta’s Llama 3.3 70B, featuring 50% additional layers and further fine-tuning to leverage its increased capacity. Designed for advanced narrative, roleplay, and instructional tasks, it demonstrates enhanced emotional intelligence, creativity, nuanced character portrayal, and superior prompt adherence compared to smaller models. Its larger parameter count allows for deeper contextual understanding and extended reasoning capabilities, optimized for engaging, intelligent, and coherent interactions.",
+    "context_length": 64000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000008",
+      "completion": "0.0000008",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 64000,
+      "max_completion_tokens": 64000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/thedrummer:anubis_pro_105b_v1",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
+    "provider": "thedrummer"
+  },
+  "262592": {
+    "id": "qwen/qwen-2.5-vl-7b-instruct",
+    "name": "Qwen: Qwen2.5-VL 7B Instruct",
+    "created": 1724803200,
+    "description": "Qwen2.5 VL 7B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2.5-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2.5-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2.5-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2.5-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
+    "context_length": 4096,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000002",
+      "completion": "0.0000002",
+      "image": "0.0001445",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 4096,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen_2.5_vl_7b_instruct",
+    "abangPricing": {
+      "completion": 1,
+      "image": 289
+    },
+    "provider": "qwen"
+  },
+  "265917": {
+    "id": "mistralai/mistral-7b-instruct-v0.2",
+    "name": "Mistral: Mistral 7B Instruct v0.2",
+    "created": 1703721600,
+    "description": "A high-performing, industry-standard 7.3B parameter model, with optimizations for speed and context length.\n\nAn improved version of [Mistral 7B Instruct](/modelsmistralai/mistral-7b-instruct-v0.1), with the following changes:\n\n- 32k context window (vs 8k context in v0.1)\n- Rope-theta = 1e6\n- No Sliding-Window Attention",
+    "context_length": 32768,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Mistral",
+      "instruct_type": "mistral"
+    },
+    "pricing": {
+      "prompt": "0.0000002",
+      "completion": "0.0000002",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 32768,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/mistralai:mistral_7b_instruct_v0.2",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
+    "provider": "mistralai"
+  },
+  "304166": {
+    "id": "open-r1/olympiccoder-32b:free",
+    "name": "OlympicCoder 32B (free)",
+    "created": 1742077228,
+    "description": "OlympicCoder-32B is a high-performing open-source model fine-tuned using the CodeForces-CoTs dataset, containing approximately 100,000 chain-of-thought programming samples. It excels at complex competitive programming benchmarks, such as IOI 2024 and Codeforces-style challenges, frequently surpassing state-of-the-art closed-source models. OlympicCoder-32B provides advanced reasoning, coherent multi-step problem-solving, and robust code generation capabilities, demonstrating significant potential for olympiad-level competitive programming applications.",
+    "context_length": 32768,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 32768,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/open_r1:olympiccoder_32b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "open-r1"
+  },
+  "384839": {
+    "id": "qwen/qwen-2.5-72b-instruct:free",
+    "name": "Qwen2.5 72B Instruct (free)",
+    "created": 1726704000,
+    "description": "Qwen2.5 72B is the latest series of Qwen large language models. Qwen2.5 brings the following improvements upon Qwen2:\n\n- Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our specialized expert models in these domains.\n\n- Significant improvements in instruction following, generating long texts (over 8K tokens), understanding structured data (e.g, tables), and generating structured outputs especially JSON. More resilient to the diversity of system prompts, enhancing role-play implementation and condition-setting for chatbots.\n\n- Long-context Support up to 128K tokens and can generate up to 8K tokens.\n\n- Multilingual support for over 29 languages, including Chinese, English, French, Spanish, Portuguese, German, Italian, Russian, Japanese, Korean, Vietnamese, Thai, Arabic, and more.\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
+    "context_length": 32768,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Qwen",
+      "instruct_type": "chatml"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 32768,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen_2.5_72b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "qwen"
+  },
+  "447201": {
+    "id": "qwen/qwen-vl-max",
+    "name": "Qwen: Qwen VL Max",
+    "created": 1738434304,
+    "description": "Qwen VL Max is a visual understanding model with 7500 tokens context length. It excels in delivering optimal performance for a broader spectrum of complex tasks.\n",
+    "context_length": 7500,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000008",
+      "completion": "0.0000032",
+      "image": "0.001024",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 7500,
+      "max_completion_tokens": 1500,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen_vl_max",
+    "abangPricing": {
+      "completion": 22,
+      "image": 2048
+    },
+    "provider": "qwen"
+  },
+  "448148": {
+    "id": "google/gemma-3-27b-it",
+    "name": "Google: Gemma 3 27B",
+    "created": 1741756359,
+    "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to [Gemma 2](google/gemma-2-27b-it)",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Gemini",
+      "instruct_type": "gemma"
+    },
+    "pricing": {
+      "prompt": "0.0000001",
+      "completion": "0.0000002",
+      "image": "0.0000256",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/google:gemma_3_27b_it",
+    "abangPricing": {
+      "completion": 1,
+      "image": 51
+    },
+    "provider": "google"
+  },
+  "458363": {
+    "id": "meta-llama/llama-3.2-3b-instruct:free",
+    "name": "Meta: Llama 3.2 3B Instruct (free)",
+    "created": 1727222400,
+    "description": "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it supports eight languages, including English, Spanish, and Hindi, and is adaptable for additional languages.\n\nTrained on 9 trillion tokens, the Llama 3.2 3B model excels in instruction-following, complex reasoning, and tool use. Its balanced performance makes it ideal for applications needing accuracy and efficiency in text generation across multilingual settings.\n\nClick here for the [original model card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md).\n\nUsage of this model is subject to [Meta's Acceptable Use Policy](https://www.llama.com/llama3/use-policy/).",
+    "context_length": 20000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Llama3",
+      "instruct_type": "llama3"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 20000,
+      "max_completion_tokens": 20000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/meta_llama:llama_3.2_3b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "meta-llama"
+  },
+  "459586": {
+    "id": "thedrummer/skyfall-36b-v2",
+    "name": "TheDrummer: Skyfall 36B V2",
+    "created": 1741636566,
+    "description": "Skyfall 36B v2 is an enhanced iteration of Mistral Small 2501, specifically fine-tuned for improved creativity, nuanced writing, role-playing, and coherent storytelling.",
+    "context_length": 32768,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000005",
+      "completion": "0.0000005",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 32768,
+      "max_completion_tokens": 32768,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/thedrummer:skyfall_36b_v2",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
+    "provider": "thedrummer"
+  },
+  "481166": {
+    "id": "cohere/command-a",
+    "name": "Cohere: Command A",
+    "created": 1741894342,
+    "description": "Command A is an open-weights 111B parameter model with a 256k context window focused on delivering great performance across agentic, multilingual, and coding use cases.\nCompared to other leading proprietary and open-weights models Command A delivers maximum performance with minimum hardware costs, excelling on business-critical agentic and multilingual tasks.",
+    "context_length": 256000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000025",
+      "completion": "0.00001",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 256000,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/cohere:command_a",
+    "abangPricing": {
+      "completion": 70,
+      "image": 0
+    },
+    "provider": "cohere"
+  },
+  "491316": {
+    "id": "openai/gpt-4o-mini-search-preview",
+    "name": "OpenAI: GPT-4o-mini Search Preview",
+    "created": 1741818122,
+    "description": "GPT-4o mini Search Preview is a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries.",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000015",
+      "completion": "0.0000006",
+      "image": "0.000217",
+      "request": "0.0275",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 16384,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "commandName": "/openai:gpt_4o_mini_search_preview",
+    "abangPricing": {
+      "completion": 4,
+      "image": 434
+    },
+    "provider": "openai"
+  },
+  "536018": {
+    "id": "qwen/qwen-2.5-vl-72b-instruct",
+    "name": "Qwen: Qwen2.5-VL 72B Instruct",
+    "created": 1726617600,
+    "description": "Qwen2.5 VL 72B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2.5-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2.5-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2.5-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2.5-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
+    "context_length": 4096,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000006",
+      "completion": "0.0000006",
+      "image": "0.000578",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 4096,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen_2.5_vl_72b_instruct",
+    "abangPricing": {
+      "completion": 4,
+      "image": 1156
+    },
+    "provider": "qwen"
+  },
+  "554848": {
+    "id": "microsoft/phi-4-multimodal-instruct",
+    "name": "Microsoft: Phi 4 Multimodal Instruct",
+    "created": 1741396284,
+    "description": "Phi-4 Multimodal Instruct is a versatile 5.6B parameter foundation model that combines advanced reasoning and instruction-following capabilities across both text and visual inputs, providing accurate text outputs. The unified architecture enables efficient, low-latency inference, suitable for edge and mobile deployments. Phi-4 Multimodal Instruct supports text inputs in multiple languages including Arabic, Chinese, English, French, German, Japanese, Spanish, and more, with visual input optimized primarily for English. It delivers impressive performance on multimodal tasks involving mathematical, scientific, and document reasoning, providing developers and enterprises a powerful yet compact model for sophisticated interactive applications. For more information, see the [Phi-4 Multimodal blog post](https://azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family/).\n",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000007",
+      "completion": "0.00000011",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/microsoft:phi_4_multimodal_instruct",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
+    "provider": "microsoft"
+  },
+  "565305": {
+    "id": "qwen/qwq-32b:free",
+    "name": "Qwen: QwQ 32B (free)",
+    "created": 1741208814,
+    "description": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks, especially hard problems. QwQ-32B is the medium-sized reasoning model, which is capable of achieving competitive performance against state-of-the-art reasoning models, e.g., DeepSeek-R1, o1-mini.",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Qwen",
+      "instruct_type": "qwq"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwq_32b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "qwen"
+  },
+  "581893": {
+    "id": "google/gemma-3-1b-it:free",
+    "name": "Google: Gemma 3 1B (free)",
+    "created": 1741963556,
+    "description": "Gemma 3 1B is the smallest of the new Gemma 3 family. It handles context windows up to 32k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Note: Gemma 3 1B is not multimodal. For the smallest multimodal Gemma 3 model, please see [Gemma 3 4B](google/gemma-3-4b-it)",
+    "context_length": 32000,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Gemini",
+      "instruct_type": "gemma"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 32000,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/google:gemma_3_1b_it:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "google"
+  },
+  "699629": {
+    "id": "google/gemma-3-4b-it:free",
+    "name": "Google: Gemma 3 4B (free)",
+    "created": 1741905510,
+    "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling.",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Gemini",
+      "instruct_type": "gemma"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/google:gemma_3_4b_it:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "google"
+  },
+  "723559": {
+    "id": "qwen/qwen2.5-32b-instruct",
+    "name": "Qwen: Qwen2.5 32B Instruct",
+    "created": 1741042744,
+    "description": "Qwen2.5 32B Instruct is the instruction-tuned variant of the latest Qwen large language model series. It provides enhanced instruction-following capabilities, improved proficiency in coding and mathematical reasoning, and robust handling of structured data and outputs such as JSON. It supports long-context processing up to 128K tokens and multilingual tasks across 29+ languages. The model has 32.5 billion parameters, 64 layers, and utilizes an advanced transformer architecture with RoPE, SwiGLU, RMSNorm, and Attention QKV bias.\n\nFor details, please refer to the [Qwen2.5 Blog](https://qwenlm.github.io/blog/qwen2.5/).",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000079",
+      "completion": "0.00000079",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen2.5_32b_instruct",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
+    "provider": "qwen"
+  },
+  "753685": {
+    "id": "deepseek/deepseek-r1-zero:free",
+    "name": "DeepSeek: DeepSeek R1 Zero (free)",
+    "created": 1741297434,
+    "description": "DeepSeek-R1-Zero is a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step. It's 671B parameters in size, with 37B active in an inference pass.\n\nIt demonstrates remarkable performance on reasoning. With RL, DeepSeek-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors.\n\nDeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. See [DeepSeek R1](/deepseek/deepseek-r1) for the SFT model.\n\n",
+    "context_length": 163840,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 163840,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/deepseek:deepseek_r1_zero:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "deepseek"
+  },
+  "780228": {
+    "id": "ai21/jamba-1.6-mini",
+    "name": "AI21: Jamba Mini 1.6",
+    "created": 1741905171,
+    "description": "AI21 Jamba Mini 1.6 is a hybrid foundation model combining State Space Models (Mamba) with Transformer attention mechanisms. With 12 billion active parameters (52 billion total), this model excels in extremely long-context tasks (up to 256K tokens) and achieves superior inference efficiency, outperforming comparable open models on tasks such as retrieval-augmented generation (RAG) and grounded question answering. Jamba Mini 1.6 supports multilingual tasks across English, Spanish, French, Portuguese, Italian, Dutch, German, Arabic, and Hebrew, along with structured JSON output and tool-use capabilities.\n\nUsage of this model is subject to the [Jamba Open Model License](https://www.ai21.com/licenses/jamba-open-model-license).",
+    "context_length": 256000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000002",
+      "completion": "0.0000004",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 256000,
+      "max_completion_tokens": 4096,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/ai21:jamba_1.6_mini",
+    "abangPricing": {
+      "completion": 3,
+      "image": 0
+    },
+    "provider": "ai21"
+  },
+  "796187": {
+    "id": "openai/gpt-4o-search-preview",
+    "name": "OpenAI: GPT-4o Search Preview",
+    "created": 1741817949,
+    "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries.",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000025",
+      "completion": "0.00001",
+      "image": "0.003613",
+      "request": "0.035",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 16384,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "commandName": "/openai:gpt_4o_search_preview",
+    "abangPricing": {
+      "completion": 70,
+      "image": 7226
+    },
+    "provider": "openai"
+  },
+  "822279": {
+    "id": "rekaai/reka-flash-3:free",
+    "name": "Reka: Flash 3 (free)",
+    "created": 1741812813,
+    "description": "Reka Flash 3 is a general-purpose, instruction-tuned large language model with 21 billion parameters, developed by Reka. It excels at general chat, coding tasks, instruction-following, and function calling. Featuring a 32K context length and optimized through reinforcement learning (RLOO), it provides competitive performance comparable to proprietary models within a smaller parameter footprint. Ideal for low-latency, local, or on-device deployments, Reka Flash 3 is compact, supports efficient quantization (down to 11GB at 4-bit precision), and employs explicit reasoning tags (\"<reasoning>\") to indicate its internal thought process.\n\nReka Flash 3 is primarily an English model with limited multilingual understanding capabilities. The model weights are released under the Apache 2.0 license.",
+    "context_length": 32768,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 32768,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/rekaai:reka_flash_3:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "rekaai"
+  },
+  "840460": {
     "id": "qwen/qwq-32b",
     "name": "Qwen: QwQ 32B",
     "created": 1741208814,
@@ -7710,23 +9454,95 @@
     },
     "per_request_limits": null,
     "commandName": "/qwen:qwq_32b",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
     "provider": "qwen"
   },
-  "591027": {
-    "id": "qwen/qwen-2.5-vl-7b-instruct",
-    "name": "Qwen: Qwen2-VL 7B Instruct",
-    "created": 1724803200,
-    "description": "Qwen2 VL 7B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
-    "context_length": 4096,
+  "854805": {
+    "id": "latitudegames/wayfarer-large-70b-llama-3.3",
+    "name": "LatitudeGames: Wayfarer Large 70B Llama 3.3",
+    "created": 1741636885,
+    "description": "Wayfarer Large 70B is a roleplay and text-adventure model fine-tuned from Meta’s Llama-3.3-70B-Instruct. Specifically optimized for narrative-driven, challenging scenarios, it introduces realistic stakes, conflicts, and consequences often avoided by standard RLHF-aligned models. Trained using a curated blend of adventure, roleplay, and instructive fiction datasets, Wayfarer emphasizes tense storytelling, authentic player failure scenarios, and robust narrative immersion, making it uniquely suited for interactive fiction and gaming experiences.",
+    "context_length": 128000,
     "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "Qwen",
+      "modality": "text->text",
+      "tokenizer": "Llama3",
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.0000001",
-      "completion": "0.0000001",
-      "image": "0.0001445",
+      "prompt": "0.0000007",
+      "completion": "0.0000007",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 128000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/latitudegames:wayfarer_large_70b_llama_3.3",
+    "abangPricing": {
+      "completion": 5,
+      "image": 0
+    },
+    "provider": "latitudegames"
+  },
+  "885352": {
+    "id": "google/gemma-3-27b-it:free",
+    "name": "Google: Gemma 3 27B (free)",
+    "created": 1741756359,
+    "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to [Gemma 2](google/gemma-2-27b-it)",
+    "context_length": 96000,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Gemini",
+      "instruct_type": "gemma"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 96000,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/google:gemma_3_27b_it:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "google"
+  },
+  "910089": {
+    "id": "allenai/olmo-2-0325-32b-instruct",
+    "name": "AllenAI: Olmo 2 32B Instruct",
+    "created": 1741988556,
+    "description": "OLMo-2 32B Instruct is a supervised instruction-finetuned variant of the OLMo-2 32B March 2025 base model. It excels in complex reasoning and instruction-following tasks across diverse benchmarks such as GSM8K, MATH, IFEval, and general NLP evaluation. Developed by AI2, OLMo-2 32B is part of an open, research-oriented initiative, trained primarily on English-language datasets to advance the understanding and development of open-source language models.",
+    "context_length": 4096,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000005",
+      "completion": "0.0000005",
+      "image": "0",
       "request": "0",
       "input_cache_read": "0",
       "input_cache_write": "0",
@@ -7735,19 +9551,23 @@
     },
     "top_provider": {
       "context_length": 4096,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 4096,
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen_2.5_vl_7b_instruct",
-    "provider": "qwen"
+    "commandName": "/allenai:olmo_2_0325_32b_instruct",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
+    "provider": "allenai"
   },
-  "611820": {
-    "id": "deepseek/deepseek-r1-zero:free",
-    "name": "DeepSeek: DeepSeek R1 Zero (free)",
-    "created": 1741297434,
-    "description": "DeepSeek-R1-Zero is a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step. It's 671B parameters in size, with 37B active in an inference pass.\n\nIt demonstrates remarkable performance on reasoning. With RL, DeepSeek-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors.\n\nDeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. See [DeepSeek R1](/deepseek/deekseek-r1) for the SFT model.\n\n",
-    "context_length": 163840,
+  "911267": {
+    "id": "open-r1/olympiccoder-7b:free",
+    "name": "OlympicCoder 7B (free)",
+    "created": 1742078265,
+    "description": "OlympicCoder-7B is an open-source language model fine-tuned on the CodeForces-CoTs dataset, consisting of nearly 100,000 high-quality chain-of-thought examples from competitive programming contexts. Optimized specifically for olympiad-level coding problems, this model demonstrates strong chain-of-thought reasoning and competitive code generation capabilities, achieving performance competitive with frontier closed-source models on tasks from the IOI 2024 and similar coding contests.",
+    "context_length": 32768,
     "architecture": {
       "modality": "text->text",
       "tokenizer": "Other",
@@ -7764,29 +9584,33 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 163840,
+      "context_length": 32768,
       "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_r1_zero:free",
-    "provider": "deepseek"
+    "commandName": "/open_r1:olympiccoder_7b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "open-r1"
   },
-  "646867": {
-    "id": "qwen/qwen-2.5-vl-72b-instruct",
-    "name": "Qwen: Qwen2-VL 72B Instruct",
-    "created": 1726617600,
-    "description": "Qwen2 VL 72B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
-    "context_length": 4096,
+  "931190": {
+    "id": "qwen/qwq-32b-preview:free",
+    "name": "Qwen: QwQ 32B Preview (free)",
+    "created": 1732754541,
+    "description": "QwQ-32B-Preview is an experimental research model focused on AI reasoning capabilities developed by the Qwen Team. As a preview release, it demonstrates promising analytical abilities while having several important limitations:\n\n1. **Language Mixing and Code-Switching**: The model may mix languages or switch between them unexpectedly, affecting response clarity.\n2. **Recursive Reasoning Loops**: The model may enter circular reasoning patterns, leading to lengthy responses without a conclusive answer.\n3. **Safety and Ethical Considerations**: The model requires enhanced safety measures to ensure reliable and secure performance, and users should exercise caution when deploying it.\n4. **Performance and Benchmark Limitations**: The model excels in math and coding but has room for improvement in other areas, such as common sense reasoning and nuanced language understanding.\n\n",
+    "context_length": 16384,
     "architecture": {
-      "modality": "text+image->text",
+      "modality": "text->text",
       "tokenizer": "Qwen",
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.0000004",
-      "completion": "0.0000004",
-      "image": "0.000578",
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
       "request": "0",
       "input_cache_read": "0",
       "input_cache_write": "0",
@@ -7794,12 +9618,16 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 4096,
+      "context_length": 16384,
       "max_completion_tokens": null,
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/qwen:qwen_2.5_vl_72b_instruct",
+    "commandName": "/qwen:qwq_32b_preview:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
     "provider": "qwen"
   }
 }

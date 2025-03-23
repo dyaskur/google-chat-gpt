@@ -60,6 +60,7 @@ export async function createOrGetUser(data: CreateUserInput) {
 export async function createUserIntegration(data: CreateUserInput) {
   const userId = await createOrGetUser(data)
   const metadata = JSON.stringify({
+    ...data.metadata,
     avatarUrl: data.avatarUrl,
     displayName: data.displayName,
     type: data.type,
@@ -70,4 +71,16 @@ export async function createUserIntegration(data: CreateUserInput) {
     [userId, data.email, data.name, metadata],
   )
   return userIntegration.rows[0].id
+}
+
+export async function getUserCredits(userId: bigint) {
+  try {
+    console.log('userId:', userId, typeof userId)
+    const {rows} = await query(`SELECT * FROM user_credits WHERE user_id = $1`, [userId])
+    console.log('rows', rows)
+    return rows[0] || null
+  } catch (error) {
+    console.error('Error fetching user credits:', error)
+    throw error
+  }
 }

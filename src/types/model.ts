@@ -6,6 +6,10 @@ export interface AbangModel extends OpenrouterModel {
   }
   commandName?: string
   provider?: string
+  abangPricing: {
+    completion: number
+    image: number
+  }
 }
 
 export type OpenrouterModel = {

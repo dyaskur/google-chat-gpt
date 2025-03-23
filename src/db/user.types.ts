@@ -5,4 +5,5 @@ export type CreateUserInput = {
   displayName?: string
   type?: 'HUMAN' | 'BOT'
   domainId?: string
+  metadata?: object
 }

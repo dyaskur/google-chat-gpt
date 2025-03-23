@@ -3,6 +3,34 @@
     "prompt": "-1",
     "completion": "-1"
   },
+  "open-r1/olympiccoder-7b:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "open-r1/olympiccoder-32b:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "google/gemma-3-1b-it:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "google/gemma-3-4b-it:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "google/gemma-3-12b-it:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "rekaai/reka-flash-3:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "google/gemma-3-27b-it:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
   "deepseek/deepseek-r1-zero:free": {
     "prompt": "0",
     "completion": "0"
@@ -44,6 +72,14 @@
     "prompt": "0",
     "completion": "0"
   },
+  "deepseek/deepseek-r1-distill-qwen-32b:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "deepseek/deepseek-r1-distill-qwen-14b:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
   "deepseek/deepseek-r1-distill-llama-70b:free": {
     "prompt": "0",
     "completion": "0"
@@ -80,6 +116,10 @@
     "prompt": "0",
     "completion": "0"
   },
+  "qwen/qwq-32b-preview:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
   "google/learnlm-1.5-pro-experimental:free": {
     "prompt": "0",
     "completion": "0"
@@ -92,11 +132,19 @@
     "prompt": "0",
     "completion": "0"
   },
+  "meta-llama/llama-3.2-3b-instruct:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
   "meta-llama/llama-3.2-1b-instruct:free": {
     "prompt": "0",
     "completion": "0"
   },
   "meta-llama/llama-3.2-11b-vision-instruct:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "qwen/qwen-2.5-72b-instruct:free": {
     "prompt": "0",
     "completion": "0"
   },
@@ -246,10 +294,6 @@
     "prompt": "0.0000001",
     "completion": "0.0000001"
   },
-  "qwen/qwen-2.5-vl-7b-instruct": {
-    "prompt": "0.0000001",
-    "completion": "0.0000001"
-  },
   "microsoft/phi-3.5-mini-128k-instruct": {
     "prompt": "0.0000001",
     "completion": "0.0000001"
@@ -258,14 +302,14 @@
     "prompt": "0.0000001",
     "completion": "0.0000001"
   },
+  "microsoft/phi-4-multimodal-instruct": {
+    "prompt": "0.00000007",
+    "completion": "0.00000011"
+  },
   "amazon/nova-micro-v1": {
     "prompt": "0.000000035",
     "completion": "0.00000014",
     "coins": 0.1
-  },
-  "microsoft/phi-4-multimodal-instruct": {
-    "prompt": "0.00000007",
-    "completion": "0.00000014"
   },
   "mistralai/mistral-small-24b-instruct-2501": {
     "prompt": "0.00000007",
@@ -282,6 +326,10 @@
   },
   "google/gemini-flash-1.5-8b": {
     "prompt": "0.0000000375",
+    "completion": "0.00000015"
+  },
+  "deepseek/deepseek-r1-distill-qwen-14b": {
+    "prompt": "0.00000015",
     "completion": "0.00000015"
   },
   "liquid/lfm-40b": {
@@ -301,6 +349,10 @@
     "prompt": "0.00000017",
     "completion": "0.00000017"
   },
+  "nousresearch/nous-hermes-llama2-13b": {
+    "prompt": "0.00000017",
+    "completion": "0.00000017"
+  },
   "qwen/qwq-32b": {
     "prompt": "0.00000012",
     "completion": "0.00000018"
@@ -313,12 +365,12 @@
     "prompt": "0.00000018",
     "completion": "0.00000018"
   },
-  "nousresearch/nous-hermes-llama2-13b": {
-    "prompt": "0.00000018",
-    "completion": "0.00000018"
-  },
   "qwen/qwen-turbo": {
     "prompt": "0.00000005",
+    "completion": "0.0000002"
+  },
+  "google/gemma-3-27b-it": {
+    "prompt": "0.0000001",
     "completion": "0.0000002"
   },
   "meta-llama/llama-guard-3-8b": {
@@ -334,6 +386,10 @@
     "completion": "0.0000002",
     "coins": 0.7
   },
+  "qwen/qwen-2.5-vl-7b-instruct": {
+    "prompt": "0.0000002",
+    "completion": "0.0000002"
+  },
   "perplexity/llama-3.1-sonar-small-128k-chat": {
     "prompt": "0.0000002",
     "completion": "0.0000002"
@@ -344,6 +400,10 @@
     "coins": 0.2
   },
   "meta-llama/llama-guard-2-8b": {
+    "prompt": "0.0000002",
+    "completion": "0.0000002"
+  },
+  "mistralai/mistral-7b-instruct-v0.2": {
     "prompt": "0.0000002",
     "completion": "0.0000002"
   },
@@ -416,6 +476,10 @@
     "completion": "0.0000004",
     "coins": 0.2
   },
+  "ai21/jamba-1.6-mini": {
+    "prompt": "0.0000002",
+    "completion": "0.0000004"
+  },
   "ai21/jamba-1-5-mini": {
     "prompt": "0.0000002",
     "completion": "0.0000004"
@@ -424,12 +488,16 @@
     "prompt": "0.00000023",
     "completion": "0.0000004"
   },
-  "qwen/qwen-2.5-vl-72b-instruct": {
-    "prompt": "0.0000004",
-    "completion": "0.0000004"
-  },
   "thedrummer/rocinante-12b": {
     "prompt": "0.00000025",
+    "completion": "0.0000005"
+  },
+  "allenai/olmo-2-0325-32b-instruct": {
+    "prompt": "0.0000005",
+    "completion": "0.0000005"
+  },
+  "thedrummer/skyfall-36b-v2": {
+    "prompt": "0.0000005",
     "completion": "0.0000005"
   },
   "thedrummer/unslopnemo-12b": {
@@ -456,6 +524,10 @@
     "completion": "0.00000057",
     "coins": 0.2
   },
+  "openai/gpt-4o-mini-search-preview": {
+    "prompt": "0.00000015",
+    "completion": "0.0000006"
+  },
   "openai/gpt-4o-mini": {
     "prompt": "0.00000015",
     "completion": "0.0000006",
@@ -471,6 +543,10 @@
   },
   "mistralai/mistral-small": {
     "prompt": "0.0000002",
+    "completion": "0.0000006"
+  },
+  "qwen/qwen-2.5-vl-72b-instruct": {
+    "prompt": "0.0000006",
     "completion": "0.0000006"
   },
   "nousresearch/nous-hermes-2-mixtral-8x7b-dpo": {
@@ -491,6 +567,14 @@
   },
   "ai21/jamba-instruct": {
     "prompt": "0.0000005",
+    "completion": "0.0000007"
+  },
+  "steelskull/l3.3-electra-r1-70b": {
+    "prompt": "0.0000007",
+    "completion": "0.0000007"
+  },
+  "latitudegames/wayfarer-large-70b-llama-3.3": {
+    "prompt": "0.0000007",
     "completion": "0.0000007"
   },
   "qwen/qwen2.5-vl-72b-instruct": {
@@ -515,6 +599,10 @@
   },
   "sao10k/l3-euryale-70b": {
     "prompt": "0.0000007",
+    "completion": "0.0000008"
+  },
+  "thedrummer/anubis-pro-105b-v1": {
+    "prompt": "0.0000008",
     "completion": "0.0000008"
   },
   "nousresearch/hermes-3-llama-3.1-405b": {
@@ -590,6 +678,10 @@
     "prompt": "0.0000004",
     "completion": "0.0000012"
   },
+  "tokyotech-llm/llama-3.1-swallow-70b-instruct-v0.3": {
+    "prompt": "0.0000006",
+    "completion": "0.0000012"
+  },
   "infermatic/mn-inferor-12b": {
     "prompt": "0.0000008",
     "completion": "0.0000012"
@@ -614,15 +706,6 @@
     "prompt": "0.0000008",
     "completion": "0.0000012"
   },
-  "deepseek/deepseek-chat": {
-    "prompt": "0.0000012",
-    "completion": "0.0000012",
-    "coins": 1.1
-  },
-  "databricks/dbrx-instruct": {
-    "prompt": "0.0000012",
-    "completion": "0.0000012"
-  },
   "anthropic/claude-3-haiku:beta": {
     "prompt": "0.00000025",
     "completion": "0.00000125",
@@ -631,6 +714,11 @@
   "anthropic/claude-3-haiku": {
     "prompt": "0.00000025",
     "completion": "0.00000125"
+  },
+  "deepseek/deepseek-chat": {
+    "prompt": "0.0000004",
+    "completion": "0.0000013",
+    "coins": 1.1
   },
   "aion-labs/aion-1.0-mini": {
     "prompt": "0.0000007",
@@ -662,10 +750,6 @@
   },
   "meta-llama/llama-3.2-90b-vision-instruct": {
     "prompt": "0.0000008",
-    "completion": "0.0000016"
-  },
-  "deepseek/deepseek-r1-distill-qwen-14b": {
-    "prompt": "0.0000016",
     "completion": "0.0000016"
   },
   "cohere/command": {
@@ -704,11 +788,6 @@
     "prompt": "0.000002",
     "completion": "0.000002"
   },
-  "deepseek/deepseek-r1": {
-    "prompt": "0.00000055",
-    "completion": "0.00000219",
-    "coins": 4.3
-  },
   "neversleep/noromaid-20b": {
     "prompt": "0.0000015",
     "completion": "0.00000225"
@@ -724,6 +803,11 @@
   "alpindale/magnum-72b": {
     "prompt": "0.000001875",
     "completion": "0.00000225"
+  },
+  "deepseek/deepseek-r1": {
+    "prompt": "0.0000007",
+    "completion": "0.0000025",
+    "coins": 4.3
   },
   "sao10k/l3.1-70b-hanami-x1": {
     "prompt": "0.000003",
@@ -841,6 +925,10 @@
     "prompt": "0.0000016",
     "completion": "0.0000064"
   },
+  "ai21/jamba-1.6-large": {
+    "prompt": "0.000002",
+    "completion": "0.000008"
+  },
   "perplexity/sonar-reasoning-pro": {
     "prompt": "0.000002",
     "completion": "0.000008"
@@ -884,6 +972,14 @@
     "prompt": "0.000002",
     "completion": "0.00001",
     "coins": 3.2
+  },
+  "cohere/command-a": {
+    "prompt": "0.0000025",
+    "completion": "0.00001"
+  },
+  "openai/gpt-4o-search-preview": {
+    "prompt": "0.0000025",
+    "completion": "0.00001"
   },
   "openai/gpt-4o-2024-11-20": {
     "prompt": "0.0000025",

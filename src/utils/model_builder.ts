@@ -51,6 +51,10 @@ async function exportModels() {
     const abangModel: AbangModel = {
       ...model,
       commandName: '/' + model.id.replace(/-/g, '_').replace(/\//g, ':'),
+      abangPricing: {
+        completion: Math.round(Number(model.pricing.completion) * 350 * 20000),
+        image: Math.round(Number(model.pricing.image) * 100 * 20000),
+      },
     }
     const modelExploded = model.id.split('/')
     abangModel['provider'] = modelExploded[0]
@@ -85,8 +89,8 @@ async function exportModels() {
     }
     models[commandId] = abangModel
   }
-  fs.writeFileSync('models_by_command_id.json', JSON.stringify(models))
-  fs.writeFileSync('simplified.json', JSON.stringify(straicoModels))
+  fs.writeFileSync('../json/models_by_command_id.json', JSON.stringify(models, null, 2))
+  fs.writeFileSync('../json/simplified.json', JSON.stringify(straicoModels, null, 2))
   // generate commands
   // result.sort((a, b) => a.id.localeCompare(b.id))
   // const startIndex = 11
@@ -101,7 +105,7 @@ async function exportModels() {
     ]),
   )
 
-  fs.writeFileSync('models_sorted_by_prompt_price.json', JSON.stringify(pricing))
+  fs.writeFileSync('../json/models_sorted_by_prompt_price.json', JSON.stringify(pricing, null, 2))
   // sort by prompt pricing
   result.sort((a, b) => a.pricing.completion.localeCompare(b.pricing.completion))
   const completion = Object.fromEntries(
@@ -111,7 +115,7 @@ async function exportModels() {
     ]),
   )
 
-  fs.writeFileSync('models_sorted_by_completion_price.json', JSON.stringify(completion))
+  fs.writeFileSync('../json/models_sorted_by_completion_price.json', JSON.stringify(completion, null, 2))
 
   // console.log(result, 'result')
   // console.log(openrouter, 'openrouter')
