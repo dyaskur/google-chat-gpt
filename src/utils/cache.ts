@@ -1,6 +1,6 @@
 import type {RedisClientType} from 'redis'
 import {createClient} from 'redis'
-import {getUserIntegrationByEmail, getUserIntegrationByUid} from '../db/user'
+import {getUserCredits, getUserIntegrationByEmail, getUserIntegrationByUid} from '../db/user'
 
 let redisClient: RedisClientType | null = null
 let isReady = false
@@ -64,4 +64,34 @@ export async function getDefaultModel(userId: string): Promise<string | null> {
     .set(`default_model_${userId}`, user.default_model || '138')
     .catch((err) => console.error(`Failed to cache default model: ${err}`))
   return user.default_model
+}
+
+export async function getCachedUserCredits(userId: bigint): Promise<number> {
+  const cache = await getCache()
+  const credits = await cache.get(`credits_${userId}`)
+  console.log('credit from cache', credits)
+  if (credits !== null) return Number(credits)
+  const userCredit = await getUserCredits(userId)
+  if (!userCredit) return 0
+  console.log('userCredit', userCredit)
+
+  const now = new Date()
+  now.setUTCHours(0, 0, 0, 0)
+  // Get the next midnight (00:00 GMT of the next day)
+  const nextMidnight = new Date(now)
+  nextMidnight.setUTCDate(now.getUTCDate() + 1)
+
+  const expireInSeconds = Math.floor((nextMidnight.getTime() - Date.now()) / 1000)
+
+  cache
+    .setEx(`credits_${userId}`, expireInSeconds, String(userCredit.balance))
+    .catch((err) => console.error(`Failed to cache user credits: ${err}`))
+  return Number(userCredit.balance)
+}
+
+export async function setUserCreditsCache(userId: bigint, amount: number) {
+  const cache = await getCache()
+  const newCredits = amount
+  cache.set(`credits_${userId}`, newCredits).catch((err) => console.error(`Failed to cache user credits: ${err}`))
+  return newCredits
 }

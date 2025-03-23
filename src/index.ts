@@ -2,12 +2,13 @@ import {HttpFunction} from '@google-cloud/functions-framework'
 import {ChatEvent} from './types/event'
 import {createActionResponse, createMessageResponse, formatForGoogleChat} from './utils/chat'
 import * as fs from 'node:fs'
-import {getCache, getCachedUserCredits, getDefaultModel, getUser} from './utils/cache'
+import {getCache, getCachedUserCredits, getDefaultModel, getUser, setUserCreditsCache} from './utils/cache'
 import {CreateUserInput} from './db/user.types'
 import * as commands from './json/models_by_command_id.json'
 import {AbangModel} from './types/model'
 import {generateCompletionRequest} from './apis/router'
 import {createUser} from './api'
+import {reduceUserCredits} from './db/user'
 
 const commandsTyped = commands as {[key: string]: object}
 
@@ -103,18 +104,18 @@ export const app: HttpFunction = async (req, res) => {
         const messageText = event.chat.messagePayload.message.text
         const defaultModel = await getDefaultModel(event.chat.user.name)
         const commandModel: AbangModel = commandsTyped[defaultModel || '138'] as AbangModel
-
-        if (commandModel.abangPricing.completion) {
-          const currentCredits = await getCachedUserCredits(BigInt(userId))
-          console.log('currentCredits', currentCredits, userId)
-          if (currentCredits < commandModel.abangPricing.completion) {
-            res.json(createMessageResponse("Sorry, you don't have enough credits"))
-            // return
-          }
+        const currentCredits = await getCachedUserCredits(BigInt(userId))
+        const price = commandModel.abangPricing.completion
+        if (currentCredits < price) {
+          res.json(createMessageResponse("Sorry, you don't have enough credits"))
         }
-
         const response = await generateCompletionRequest(messageText, commandModel)
-        res.json(createMessageResponse(formatForGoogleChat(response)))
+
+        const remainingCredits = currentCredits - price
+        reduceUserCredits(BigInt(userId), price)
+        setUserCreditsCache(BigInt(userId), remainingCredits)
+        const creditInfo = `\n_Deducted ${price} credits. You have ${remainingCredits} credits left_`
+        res.json(createMessageResponse(formatForGoogleChat(response) + creditInfo))
       }
     } else {
       res.json(createMessageResponse('Hi, what can I do for you?'))

@@ -75,10 +75,21 @@ export async function createUserIntegration(data: CreateUserInput) {
 
 export async function getUserCredits(userId: bigint) {
   try {
-    console.log('userId:', userId, typeof userId)
     const {rows} = await query(`SELECT * FROM user_credits WHERE user_id = $1`, [userId])
-    console.log('rows', rows)
     return rows[0] || null
+  } catch (error) {
+    console.error('Error fetching user credits:', error)
+    throw error
+  }
+}
+
+export async function reduceUserCredits(userId: bigint, amount: number) {
+  try {
+    const {rows} = await query(`UPDATE user_credits SET balance = balance - $1 WHERE user_id = $2 RETURNING balance`, [
+      amount,
+      userId,
+    ])
+    return rows[0]
   } catch (error) {
     console.error('Error fetching user credits:', error)
     throw error
