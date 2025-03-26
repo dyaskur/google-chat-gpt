@@ -83,12 +83,38 @@ export async function getUserCredits(userId: bigint) {
   }
 }
 
-export async function reduceUserCredits(userId: bigint, amount: number) {
+export async function deductUserCredits(userId: bigint, amount: number) {
   try {
     const {rows} = await query(`UPDATE user_credits SET balance = balance - $1 WHERE user_id = $2 RETURNING balance`, [
       amount,
       userId,
     ])
+    return rows[0]
+  } catch (error) {
+    console.error('Error update user credits:', error)
+    throw error
+  }
+}
+
+export async function addUserCredits(userId: bigint, amount: number) {
+  try {
+    const {rows} = await query(`UPDATE user_credits SET balance = balance + $1 WHERE user_id = $2 RETURNING balance`, [
+      amount,
+      userId,
+    ])
+    return rows[0]
+  } catch (error) {
+    console.error('Error fetching user credits:', error)
+    throw error
+  }
+}
+
+export async function addCreditTransaction(userId: bigint, amount: number, type: string, description: string) {
+  try {
+    const {rows} = await query(
+      `INSERT INTO credit_transactions (user_id, amount, type, description) VALUES ($1, $2, $3, $4) RETURNING *`,
+      [userId, amount, type, description],
+    )
     return rows[0]
   } catch (error) {
     console.error('Error fetching user credits:', error)

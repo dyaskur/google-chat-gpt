@@ -27,6 +27,7 @@ export async function generateCompletionRequest(prompt: string, model: AbangMode
   try {
     if (model.straico && retry === 0) {
       const {data} = await fetchCompletion(prompt, model.straico.model ?? model.id)
+      console.timeLog('process', 'straico price', data.price.total, 'coin')
       return data.completion.choices[0].message.content
     }
 
@@ -34,7 +35,7 @@ export async function generateCompletionRequest(prompt: string, model: AbangMode
 
     const openai = new OpenAI(MODEL_URLS[provider])
     const response = await openai.createCompletion({prompt, model: model.id})
-
+    console.timeLog('process', 'price', response.usage.total_tokens, 'token')
     return response.choices[0].text
   } catch (error) {
     console.error(`Error generating completion (retry: ${retry}):`, error)
