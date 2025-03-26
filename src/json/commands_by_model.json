@@ -247,5 +247,6 @@
   "x-ai/grok-beta": 256,
   "x-ai/grok-vision-beta": 257,
   "xwin-lm/xwin-lm-70b": 258,
-  "qwen/qwen-vl-plus": 259
+  "qwen/qwen-vl-plus": 259,
+  "openai/o1-pro": 260
 }

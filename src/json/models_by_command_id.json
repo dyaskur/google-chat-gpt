@@ -986,7 +986,7 @@
     "description": "Claude 3.5 Haiku features offers enhanced capabilities in speed, coding accuracy, and tool use. Engineered to excel in real-time applications, it delivers quick response times that are essential for dynamic tasks such as chat interactions and immediate coding suggestions.\n\nThis makes it highly suitable for environments that demand both speed and precision, such as software development, customer service bots, and data management systems.\n\nThis model is currently pointing to [Claude 3.5 Haiku (2024-10-22)](/anthropic/claude-3-5-haiku-20241022).",
     "context_length": 200000,
     "architecture": {
-      "modality": "text->text",
+      "modality": "text+image->text",
       "tokenizer": "Claude",
       "instruct_type": null
     },
@@ -1020,7 +1020,7 @@
     "description": "Claude 3.5 Haiku features enhancements across all skill sets including coding, tool use, and reasoning. As the fastest model in the Anthropic lineup, it offers rapid response times suitable for applications that require high interactivity and low latency, such as user-facing chatbots and on-the-fly code completions. It also excels in specialized tasks like data extraction and real-time content moderation, making it a versatile tool for a broad range of industries.\n\nIt does not support image inputs.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/3-5-models-and-computer-use)",
     "context_length": 200000,
     "architecture": {
-      "modality": "text->text",
+      "modality": "text+image->text",
       "tokenizer": "Claude",
       "instruct_type": null
     },
@@ -1054,7 +1054,7 @@
     "description": "Claude 3.5 Haiku features enhancements across all skill sets including coding, tool use, and reasoning. As the fastest model in the Anthropic lineup, it offers rapid response times suitable for applications that require high interactivity and low latency, such as user-facing chatbots and on-the-fly code completions. It also excels in specialized tasks like data extraction and real-time content moderation, making it a versatile tool for a broad range of industries.\n\nIt does not support image inputs.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/3-5-models-and-computer-use)",
     "context_length": 200000,
     "architecture": {
-      "modality": "text->text",
+      "modality": "text+image->text",
       "tokenizer": "Claude",
       "instruct_type": null
     },
@@ -1088,7 +1088,7 @@
     "description": "Claude 3.5 Haiku features offers enhanced capabilities in speed, coding accuracy, and tool use. Engineered to excel in real-time applications, it delivers quick response times that are essential for dynamic tasks such as chat interactions and immediate coding suggestions.\n\nThis makes it highly suitable for environments that demand both speed and precision, such as software development, customer service bots, and data management systems.\n\nThis model is currently pointing to [Claude 3.5 Haiku (2024-10-22)](/anthropic/claude-3-5-haiku-20241022).",
     "context_length": 200000,
     "architecture": {
-      "modality": "text->text",
+      "modality": "text+image->text",
       "tokenizer": "Claude",
       "instruct_type": null
     },
@@ -1862,15 +1862,15 @@
     "name": "DeepSeek: R1",
     "created": 1737381095,
     "description": "DeepSeek R1 is here: Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass.\n\nFully open-source model & [technical report](https://api-docs.deepseek.com/news/news250120).\n\nMIT licensed: Distill & commercialize freely!",
-    "context_length": 64000,
+    "context_length": 65536,
     "architecture": {
       "modality": "text->text",
       "tokenizer": "DeepSeek",
       "instruct_type": "deepseek-r1"
     },
     "pricing": {
-      "prompt": "0.0000007",
-      "completion": "0.0000025",
+      "prompt": "0.00000055",
+      "completion": "0.00000219",
       "image": "0",
       "request": "0",
       "input_cache_read": "0",
@@ -1879,14 +1879,14 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 64000,
-      "max_completion_tokens": 16000,
+      "context_length": 65536,
+      "max_completion_tokens": 8192,
       "is_moderated": false
     },
     "per_request_limits": null,
     "commandName": "/deepseek:deepseek_r1",
     "abangPricing": {
-      "completion": 18,
+      "completion": 15,
       "image": 0
     },
     "provider": "deepseek",
@@ -3246,7 +3246,7 @@
     "name": "Airoboros 70B",
     "created": 1698537600,
     "description": "A Llama 2 70B fine-tune using synthetic data (the Airoboros dataset).\n\nCurrently based on [jondurbin/airoboros-l2-70b](https://huggingface.co/jondurbin/airoboros-l2-70b-2.2.1), but might get updated in the future.",
-    "context_length": 4000,
+    "context_length": 4096,
     "architecture": {
       "modality": "text->text",
       "tokenizer": "Llama2",
@@ -3263,7 +3263,7 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 4000,
+      "context_length": 4096,
       "max_completion_tokens": null,
       "is_moderated": false
     },
@@ -4010,7 +4010,7 @@
     "name": "Meta: Llama 3.3 70B Instruct (free)",
     "created": 1733506137,
     "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model is optimized for multilingual dialogue use cases and outperforms many of the available open source and closed chat models on common industry benchmarks.\n\nSupported languages: English, German, French, Italian, Portuguese, Hindi, Spanish, and Thai.\n\n[Model Card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md)",
-    "context_length": 131072,
+    "context_length": 8000,
     "architecture": {
       "modality": "text->text",
       "tokenizer": "Llama3",
@@ -4027,8 +4027,8 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": null,
+      "context_length": 8000,
+      "max_completion_tokens": 8000,
       "is_moderated": false
     },
     "per_request_limits": null,
@@ -6926,40 +6926,6 @@
     },
     "provider": "openrouter"
   },
-  "214": {
-    "id": "perplexity/llama-3.1-sonar-large-128k-chat",
-    "name": "Perplexity: Llama 3.1 Sonar 70B",
-    "created": 1722470400,
-    "description": "Llama 3.1 Sonar is Perplexity's latest model family. It surpasses their earlier Sonar models in cost-efficiency, speed, and performance.\n\nThis is a normal offline LLM, but the [online version](/models/perplexity/llama-3.1-sonar-large-128k-online) of this model has Internet access.",
-    "context_length": 131072,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Llama3",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.000001",
-      "completion": "0.000001",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/perplexity:llama_3.1_sonar_large_128k_chat",
-    "abangPricing": {
-      "completion": 7,
-      "image": 0
-    },
-    "provider": "perplexity"
-  },
   "215": {
     "id": "perplexity/llama-3.1-sonar-large-128k-online",
     "name": "Perplexity: Llama 3.1 Sonar 70B Online",
@@ -6997,40 +6963,6 @@
       "coins": 0.6,
       "max_output": 127072
     }
-  },
-  "216": {
-    "id": "perplexity/llama-3.1-sonar-small-128k-chat",
-    "name": "Perplexity: Llama 3.1 Sonar 8B",
-    "created": 1722470400,
-    "description": "Llama 3.1 Sonar is Perplexity's latest model family. It surpasses their earlier Sonar models in cost-efficiency, speed, and performance.\n\nThis is a normal offline LLM, but the [online version](/models/perplexity/llama-3.1-sonar-small-128k-online) of this model has Internet access.",
-    "context_length": 131072,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Llama3",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000002",
-      "completion": "0.0000002",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/perplexity:llama_3.1_sonar_small_128k_chat",
-    "abangPricing": {
-      "completion": 1,
-      "image": 0
-    },
-    "provider": "perplexity"
   },
   "217": {
     "id": "perplexity/llama-3.1-sonar-small-128k-online",
@@ -7151,7 +7083,7 @@
     "architecture": {
       "modality": "text->text",
       "tokenizer": "Other",
-      "instruct_type": null
+      "instruct_type": "deepseek-r1"
     },
     "pricing": {
       "prompt": "0.000001",
@@ -8406,789 +8338,45 @@
     },
     "provider": "qwen"
   },
-  "29429": {
-    "id": "ai21/jamba-1.6-large",
-    "name": "AI21: Jamba 1.6 Large",
-    "created": 1741905173,
-    "description": "AI21 Jamba Large 1.6 is a high-performance hybrid foundation model combining State Space Models (Mamba) with Transformer attention mechanisms. Developed by AI21, it excels in extremely long-context handling (256K tokens), demonstrates superior inference efficiency (up to 2.5x faster than comparable models), and supports structured JSON output and tool-use capabilities. It has 94 billion active parameters (398 billion total), optimized quantization support (ExpertsInt8), and multilingual proficiency in languages such as English, Spanish, French, Portuguese, Italian, Dutch, German, Arabic, and Hebrew.\n\nUsage of this model is subject to the [Jamba Open Model License](https://www.ai21.com/licenses/jamba-open-model-license).",
-    "context_length": 256000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.000002",
-      "completion": "0.000008",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 256000,
-      "max_completion_tokens": 4096,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/ai21:jamba_1.6_large",
-    "abangPricing": {
-      "completion": 56,
-      "image": 0
-    },
-    "provider": "ai21"
-  },
-  "42577": {
-    "id": "tokyotech-llm/llama-3.1-swallow-70b-instruct-v0.3",
-    "name": "Swallow: Llama 3.1 Swallow 70B Instruct V0.3",
-    "created": 1741813936,
-    "description": "Llama 3.1 Swallow 70B is a large language model that was built by continual pre-training on the Meta Llama 3.1 70B. Llama 3.1 Swallow enhanced the Japanese language capabilities of the original Llama 3.1 while retaining the English language capabilities. Swallow used approximately 200 billion tokens that were sampled from a large Japanese web corpus (Swallow Corpus Version 2), Japanese and English Wikipedia articles, and mathematical and coding contents, etc (see the Training Datasets section of the base model) for continual pre-training. The instruction-tuned models (Instruct) were built by supervised fine-tuning (SFT) on the synthetic data specially built for Japanese. ",
-    "context_length": 16384,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Llama3",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000006",
-      "completion": "0.0000012",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 16384,
-      "max_completion_tokens": 4096,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/tokyotech_llm:llama_3.1_swallow_70b_instruct_v0.3",
-    "abangPricing": {
-      "completion": 8,
-      "image": 0
-    },
-    "provider": "tokyotech-llm"
-  },
-  "125669": {
-    "id": "perplexity/sonar-pro",
-    "name": "Perplexity: Sonar Pro",
-    "created": 1741312423,
-    "description": "Note: Sonar Pro pricing includes Perplexity search pricing. See [details here](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-reasoning-pro-and-sonar-pro)\n\nFor enterprises seeking more advanced capabilities, the Sonar Pro API can handle in-depth, multi-step queries with added extensibility, like double the number of citations per search as Sonar on average. Plus, with a larger context window, it can handle longer and more nuanced searches and follow-up questions. ",
+  "260": {
+    "id": "openai/o1-pro",
+    "name": "OpenAI: o1-pro",
+    "created": 1742423211,
+    "description": "The o1 series of models are trained with reinforcement learning to think before they answer and perform complex reasoning. The o1-pro model uses more compute to think harder and provide consistently better answers.",
     "context_length": 200000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.000003",
-      "completion": "0.000015",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 200000,
-      "max_completion_tokens": 8000,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/perplexity:sonar_pro",
-    "abangPricing": {
-      "completion": 105,
-      "image": 0
-    },
-    "provider": "perplexity"
-  },
-  "145343": {
-    "id": "perplexity/sonar-deep-research",
-    "name": "Perplexity: Sonar Deep Research",
-    "created": 1741311246,
-    "description": "Sonar Deep Research is a research-focused model designed for multi-step retrieval, synthesis, and reasoning across complex topics. It autonomously searches, reads, and evaluates sources, refining its approach as it gathers information. This enables comprehensive report generation across domains like finance, technology, health, and current events.\n\nNotes on Pricing ([Source](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-deep-research)) \n- Input tokens comprise of Prompt tokens (user prompt) + Citation tokens (these are processed tokens from running searches)\n- Deep Research runs multiple searches to conduct exhaustive research. Searches are priced at $5/1000 searches. A request that does 30 searches will cost $0.15 in this step.\n- Reasoning is a distinct step in Deep Research since it does extensive automated reasoning through all the material it gathers during its research phase. Reasoning tokens here are a bit different than the CoTs in the answer - these are tokens that we use to reason through the research material prior to generating the outputs via the CoTs. Reasoning tokens are priced at $3/1M tokens",
-    "context_length": 200000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": "deepseek-r1"
-    },
-    "pricing": {
-      "prompt": "0.000002",
-      "completion": "0.000008",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 200000,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/perplexity:sonar_deep_research",
-    "abangPricing": {
-      "completion": 56,
-      "image": 0
-    },
-    "provider": "perplexity"
-  },
-  "146310": {
-    "id": "steelskull/l3.3-electra-r1-70b",
-    "name": "SteelSkull: L3.3 Electra R1 70B",
-    "created": 1742067611,
-    "description": "L3.3-Electra-R1-70 is the newest release of the Unnamed series. Built on a DeepSeek R1 Distill base, Electra-R1 integrates various models together to provide an intelligent and coherent model capable of providing deep character insights. Through proper prompting, the model demonstrates advanced reasoning capabilities and unprompted exploration of character inner thoughts and motivations. Read more about the model and [prompting here](https://huggingface.co/Steelskull/L3.3-Electra-R1-70b)",
-    "context_length": 128000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": "deepseek-r1"
-    },
-    "pricing": {
-      "prompt": "0.0000007",
-      "completion": "0.0000007",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/steelskull:l3.3_electra_r1_70b",
-    "abangPricing": {
-      "completion": 5,
-      "image": 0
-    },
-    "provider": "steelskull"
-  },
-  "177293": {
-    "id": "perplexity/sonar-reasoning-pro",
-    "name": "Perplexity: Sonar Reasoning Pro",
-    "created": 1741313308,
-    "description": "Note: Sonar Pro pricing includes Perplexity search pricing. See [details here](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-reasoning-pro-and-sonar-pro)\n\nSonar Reasoning Pro is a premier reasoning model powered by DeepSeek R1 with Chain of Thought (CoT). Designed for advanced use cases, it supports in-depth, multi-step queries with a larger context window and can surface more citations per search, enabling more comprehensive and extensible responses.",
-    "context_length": 128000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": "deepseek-r1"
-    },
-    "pricing": {
-      "prompt": "0.000002",
-      "completion": "0.000008",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/perplexity:sonar_reasoning_pro",
-    "abangPricing": {
-      "completion": 56,
-      "image": 0
-    },
-    "provider": "perplexity"
-  },
-  "186694": {
-    "id": "deepseek/deepseek-r1-distill-qwen-14b:free",
-    "name": "DeepSeek: R1 Distill Qwen 14B (free)",
-    "created": 1738193940,
-    "description": "DeepSeek R1 Distill Qwen 14B is a distilled large language model based on [Qwen 2.5 14B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). It outperforms OpenAI's o1-mini across various benchmarks, achieving new state-of-the-art results for dense models.\n\nOther benchmark results include:\n\n- AIME 2024 pass@1: 69.7\n- MATH-500 pass@1: 93.9\n- CodeForces Rating: 1481\n\nThe model leverages fine-tuning from DeepSeek R1's outputs, enabling competitive performance comparable to larger frontier models.",
-    "context_length": 64000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Qwen",
-      "instruct_type": "deepseek-r1"
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 64000,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_r1_distill_qwen_14b:free",
-    "abangPricing": {
-      "completion": 0,
-      "image": 0
-    },
-    "provider": "deepseek"
-  },
-  "222906": {
-    "id": "google/gemma-3-12b-it:free",
-    "name": "Google: Gemma 3 12B (free)",
-    "created": 1741902625,
-    "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 12B is the second largest in the family of Gemma 3 models after [Gemma 3 27B](google/gemma-3-27b-it)",
-    "context_length": 131072,
-    "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "Gemini",
-      "instruct_type": "gemma"
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 8192,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/google:gemma_3_12b_it:free",
-    "abangPricing": {
-      "completion": 0,
-      "image": 0
-    },
-    "provider": "google"
-  },
-  "231805": {
-    "id": "deepseek/deepseek-r1-distill-qwen-32b:free",
-    "name": "DeepSeek: R1 Distill Qwen 32B (free)",
-    "created": 1738194830,
-    "description": "DeepSeek R1 Distill Qwen 32B is a distilled large language model based on [Qwen 2.5 32B](https://huggingface.co/Qwen/Qwen2.5-32B), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). It outperforms OpenAI's o1-mini across various benchmarks, achieving new state-of-the-art results for dense models.\n\nOther benchmark results include:\n\n- AIME 2024 pass@1: 72.6\n- MATH-500 pass@1: 94.3\n- CodeForces Rating: 1691\n\nThe model leverages fine-tuning from DeepSeek R1's outputs, enabling competitive performance comparable to larger frontier models.",
-    "context_length": 16000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Qwen",
-      "instruct_type": "deepseek-r1"
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 16000,
-      "max_completion_tokens": 16000,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_r1_distill_qwen_32b:free",
-    "abangPricing": {
-      "completion": 0,
-      "image": 0
-    },
-    "provider": "deepseek"
-  },
-  "237789": {
-    "id": "thedrummer/anubis-pro-105b-v1",
-    "name": "TheDrummer: Anubis Pro 105B V1",
-    "created": 1741642290,
-    "description": "Anubis Pro 105B v1 is an expanded and refined variant of Meta’s Llama 3.3 70B, featuring 50% additional layers and further fine-tuning to leverage its increased capacity. Designed for advanced narrative, roleplay, and instructional tasks, it demonstrates enhanced emotional intelligence, creativity, nuanced character portrayal, and superior prompt adherence compared to smaller models. Its larger parameter count allows for deeper contextual understanding and extended reasoning capabilities, optimized for engaging, intelligent, and coherent interactions.",
-    "context_length": 64000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000008",
-      "completion": "0.0000008",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 64000,
-      "max_completion_tokens": 64000,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/thedrummer:anubis_pro_105b_v1",
-    "abangPricing": {
-      "completion": 6,
-      "image": 0
-    },
-    "provider": "thedrummer"
-  },
-  "262592": {
-    "id": "qwen/qwen-2.5-vl-7b-instruct",
-    "name": "Qwen: Qwen2.5-VL 7B Instruct",
-    "created": 1724803200,
-    "description": "Qwen2.5 VL 7B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2.5-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2.5-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2.5-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2.5-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
-    "context_length": 4096,
-    "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "Qwen",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000002",
-      "completion": "0.0000002",
-      "image": "0.0001445",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 4096,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/qwen:qwen_2.5_vl_7b_instruct",
-    "abangPricing": {
-      "completion": 1,
-      "image": 289
-    },
-    "provider": "qwen"
-  },
-  "265917": {
-    "id": "mistralai/mistral-7b-instruct-v0.2",
-    "name": "Mistral: Mistral 7B Instruct v0.2",
-    "created": 1703721600,
-    "description": "A high-performing, industry-standard 7.3B parameter model, with optimizations for speed and context length.\n\nAn improved version of [Mistral 7B Instruct](/modelsmistralai/mistral-7b-instruct-v0.1), with the following changes:\n\n- 32k context window (vs 8k context in v0.1)\n- Rope-theta = 1e6\n- No Sliding-Window Attention",
-    "context_length": 32768,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Mistral",
-      "instruct_type": "mistral"
-    },
-    "pricing": {
-      "prompt": "0.0000002",
-      "completion": "0.0000002",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 32768,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/mistralai:mistral_7b_instruct_v0.2",
-    "abangPricing": {
-      "completion": 1,
-      "image": 0
-    },
-    "provider": "mistralai"
-  },
-  "304166": {
-    "id": "open-r1/olympiccoder-32b:free",
-    "name": "OlympicCoder 32B (free)",
-    "created": 1742077228,
-    "description": "OlympicCoder-32B is a high-performing open-source model fine-tuned using the CodeForces-CoTs dataset, containing approximately 100,000 chain-of-thought programming samples. It excels at complex competitive programming benchmarks, such as IOI 2024 and Codeforces-style challenges, frequently surpassing state-of-the-art closed-source models. OlympicCoder-32B provides advanced reasoning, coherent multi-step problem-solving, and robust code generation capabilities, demonstrating significant potential for olympiad-level competitive programming applications.",
-    "context_length": 32768,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": "deepseek-r1"
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 32768,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/open_r1:olympiccoder_32b:free",
-    "abangPricing": {
-      "completion": 0,
-      "image": 0
-    },
-    "provider": "open-r1"
-  },
-  "384839": {
-    "id": "qwen/qwen-2.5-72b-instruct:free",
-    "name": "Qwen2.5 72B Instruct (free)",
-    "created": 1726704000,
-    "description": "Qwen2.5 72B is the latest series of Qwen large language models. Qwen2.5 brings the following improvements upon Qwen2:\n\n- Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our specialized expert models in these domains.\n\n- Significant improvements in instruction following, generating long texts (over 8K tokens), understanding structured data (e.g, tables), and generating structured outputs especially JSON. More resilient to the diversity of system prompts, enhancing role-play implementation and condition-setting for chatbots.\n\n- Long-context Support up to 128K tokens and can generate up to 8K tokens.\n\n- Multilingual support for over 29 languages, including Chinese, English, French, Spanish, Portuguese, German, Italian, Russian, Japanese, Korean, Vietnamese, Thai, Arabic, and more.\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
-    "context_length": 32768,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Qwen",
-      "instruct_type": "chatml"
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 32768,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/qwen:qwen_2.5_72b_instruct:free",
-    "abangPricing": {
-      "completion": 0,
-      "image": 0
-    },
-    "provider": "qwen"
-  },
-  "447201": {
-    "id": "qwen/qwen-vl-max",
-    "name": "Qwen: Qwen VL Max",
-    "created": 1738434304,
-    "description": "Qwen VL Max is a visual understanding model with 7500 tokens context length. It excels in delivering optimal performance for a broader spectrum of complex tasks.\n",
-    "context_length": 7500,
-    "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "Qwen",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000008",
-      "completion": "0.0000032",
-      "image": "0.001024",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 7500,
-      "max_completion_tokens": 1500,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/qwen:qwen_vl_max",
-    "abangPricing": {
-      "completion": 22,
-      "image": 2048
-    },
-    "provider": "qwen"
-  },
-  "448148": {
-    "id": "google/gemma-3-27b-it",
-    "name": "Google: Gemma 3 27B",
-    "created": 1741756359,
-    "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to [Gemma 2](google/gemma-2-27b-it)",
-    "context_length": 131072,
-    "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "Gemini",
-      "instruct_type": "gemma"
-    },
-    "pricing": {
-      "prompt": "0.0000001",
-      "completion": "0.0000002",
-      "image": "0.0000256",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 8192,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/google:gemma_3_27b_it",
-    "abangPricing": {
-      "completion": 1,
-      "image": 51
-    },
-    "provider": "google"
-  },
-  "458363": {
-    "id": "meta-llama/llama-3.2-3b-instruct:free",
-    "name": "Meta: Llama 3.2 3B Instruct (free)",
-    "created": 1727222400,
-    "description": "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it supports eight languages, including English, Spanish, and Hindi, and is adaptable for additional languages.\n\nTrained on 9 trillion tokens, the Llama 3.2 3B model excels in instruction-following, complex reasoning, and tool use. Its balanced performance makes it ideal for applications needing accuracy and efficiency in text generation across multilingual settings.\n\nClick here for the [original model card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md).\n\nUsage of this model is subject to [Meta's Acceptable Use Policy](https://www.llama.com/llama3/use-policy/).",
-    "context_length": 20000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Llama3",
-      "instruct_type": "llama3"
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 20000,
-      "max_completion_tokens": 20000,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/meta_llama:llama_3.2_3b_instruct:free",
-    "abangPricing": {
-      "completion": 0,
-      "image": 0
-    },
-    "provider": "meta-llama"
-  },
-  "459586": {
-    "id": "thedrummer/skyfall-36b-v2",
-    "name": "TheDrummer: Skyfall 36B V2",
-    "created": 1741636566,
-    "description": "Skyfall 36B v2 is an enhanced iteration of Mistral Small 2501, specifically fine-tuned for improved creativity, nuanced writing, role-playing, and coherent storytelling.",
-    "context_length": 32768,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000005",
-      "completion": "0.0000005",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 32768,
-      "max_completion_tokens": 32768,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/thedrummer:skyfall_36b_v2",
-    "abangPricing": {
-      "completion": 4,
-      "image": 0
-    },
-    "provider": "thedrummer"
-  },
-  "481166": {
-    "id": "cohere/command-a",
-    "name": "Cohere: Command A",
-    "created": 1741894342,
-    "description": "Command A is an open-weights 111B parameter model with a 256k context window focused on delivering great performance across agentic, multilingual, and coding use cases.\nCompared to other leading proprietary and open-weights models Command A delivers maximum performance with minimum hardware costs, excelling on business-critical agentic and multilingual tasks.",
-    "context_length": 256000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000025",
-      "completion": "0.00001",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 256000,
-      "max_completion_tokens": 8192,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/cohere:command_a",
-    "abangPricing": {
-      "completion": 70,
-      "image": 0
-    },
-    "provider": "cohere"
-  },
-  "491316": {
-    "id": "openai/gpt-4o-mini-search-preview",
-    "name": "OpenAI: GPT-4o-mini Search Preview",
-    "created": 1741818122,
-    "description": "GPT-4o mini Search Preview is a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries.",
-    "context_length": 128000,
     "architecture": {
       "modality": "text+image->text",
       "tokenizer": "GPT",
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.00000015",
-      "completion": "0.0000006",
-      "image": "0.000217",
-      "request": "0.0275",
+      "prompt": "0.00015",
+      "completion": "0.0006",
+      "image": "0.21675",
+      "request": "0",
       "input_cache_read": "0",
       "input_cache_write": "0",
       "web_search": "0",
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": 16384,
+      "context_length": 200000,
+      "max_completion_tokens": 100000,
       "is_moderated": true
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4o_mini_search_preview",
+    "commandName": "/openai:o1_pro",
     "abangPricing": {
-      "completion": 4,
-      "image": 434
+      "completion": 4200,
+      "image": 433500
     },
-    "provider": "openai"
+    "provider": "openai",
+    "straico": {
+      "coins": 300,
+      "max_output": 100000
+    }
   },
-  "536018": {
-    "id": "qwen/qwen-2.5-vl-72b-instruct",
-    "name": "Qwen: Qwen2.5-VL 72B Instruct",
-    "created": 1726617600,
-    "description": "Qwen2.5 VL 72B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2.5-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2.5-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2.5-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2.5-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
-    "context_length": 4096,
-    "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "Qwen",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000006",
-      "completion": "0.0000006",
-      "image": "0.000578",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 4096,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/qwen:qwen_2.5_vl_72b_instruct",
-    "abangPricing": {
-      "completion": 4,
-      "image": 1156
-    },
-    "provider": "qwen"
-  },
-  "554848": {
-    "id": "microsoft/phi-4-multimodal-instruct",
-    "name": "Microsoft: Phi 4 Multimodal Instruct",
-    "created": 1741396284,
-    "description": "Phi-4 Multimodal Instruct is a versatile 5.6B parameter foundation model that combines advanced reasoning and instruction-following capabilities across both text and visual inputs, providing accurate text outputs. The unified architecture enables efficient, low-latency inference, suitable for edge and mobile deployments. Phi-4 Multimodal Instruct supports text inputs in multiple languages including Arabic, Chinese, English, French, German, Japanese, Spanish, and more, with visual input optimized primarily for English. It delivers impressive performance on multimodal tasks involving mathematical, scientific, and document reasoning, providing developers and enterprises a powerful yet compact model for sophisticated interactive applications. For more information, see the [Phi-4 Multimodal blog post](https://azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family/).\n",
-    "context_length": 128000,
-    "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "Other",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.00000007",
-      "completion": "0.00000011",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/microsoft:phi_4_multimodal_instruct",
-    "abangPricing": {
-      "completion": 1,
-      "image": 0
-    },
-    "provider": "microsoft"
-  },
-  "565305": {
-    "id": "qwen/qwq-32b:free",
-    "name": "Qwen: QwQ 32B (free)",
-    "created": 1741208814,
-    "description": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks, especially hard problems. QwQ-32B is the medium-sized reasoning model, which is capable of achieving competitive performance against state-of-the-art reasoning models, e.g., DeepSeek-R1, o1-mini.",
-    "context_length": 131072,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Qwen",
-      "instruct_type": "qwq"
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 131072,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/qwen:qwq_32b:free",
-    "abangPricing": {
-      "completion": 0,
-      "image": 0
-    },
-    "provider": "qwen"
-  },
-  "581893": {
+  "4083": {
     "id": "google/gemma-3-1b-it:free",
     "name": "Google: Gemma 3 1B (free)",
     "created": 1741963556,
@@ -9222,158 +8410,22 @@
     },
     "provider": "google"
   },
-  "699629": {
-    "id": "google/gemma-3-4b-it:free",
-    "name": "Google: Gemma 3 4B (free)",
-    "created": 1741905510,
-    "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling.",
-    "context_length": 131072,
-    "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "Gemini",
-      "instruct_type": "gemma"
-    },
-    "pricing": {
-      "prompt": "0",
-      "completion": "0",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 8192,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/google:gemma_3_4b_it:free",
-    "abangPricing": {
-      "completion": 0,
-      "image": 0
-    },
-    "provider": "google"
-  },
-  "723559": {
-    "id": "qwen/qwen2.5-32b-instruct",
-    "name": "Qwen: Qwen2.5 32B Instruct",
-    "created": 1741042744,
-    "description": "Qwen2.5 32B Instruct is the instruction-tuned variant of the latest Qwen large language model series. It provides enhanced instruction-following capabilities, improved proficiency in coding and mathematical reasoning, and robust handling of structured data and outputs such as JSON. It supports long-context processing up to 128K tokens and multilingual tasks across 29+ languages. The model has 32.5 billion parameters, 64 layers, and utilizes an advanced transformer architecture with RoPE, SwiGLU, RMSNorm, and Attention QKV bias.\n\nFor details, please refer to the [Qwen2.5 Blog](https://qwenlm.github.io/blog/qwen2.5/).",
-    "context_length": 131072,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Qwen",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.00000079",
-      "completion": "0.00000079",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/qwen:qwen2.5_32b_instruct",
-    "abangPricing": {
-      "completion": 6,
-      "image": 0
-    },
-    "provider": "qwen"
-  },
-  "753685": {
-    "id": "deepseek/deepseek-r1-zero:free",
-    "name": "DeepSeek: DeepSeek R1 Zero (free)",
-    "created": 1741297434,
-    "description": "DeepSeek-R1-Zero is a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step. It's 671B parameters in size, with 37B active in an inference pass.\n\nIt demonstrates remarkable performance on reasoning. With RL, DeepSeek-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors.\n\nDeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. See [DeepSeek R1](/deepseek/deepseek-r1) for the SFT model.\n\n",
-    "context_length": 163840,
+  "67109": {
+    "id": "perplexity/sonar-reasoning-pro",
+    "name": "Perplexity: Sonar Reasoning Pro",
+    "created": 1741313308,
+    "description": "Note: Sonar Pro pricing includes Perplexity search pricing. See [details here](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-reasoning-pro-and-sonar-pro)\n\nSonar Reasoning Pro is a premier reasoning model powered by DeepSeek R1 with Chain of Thought (CoT). Designed for advanced use cases, it supports in-depth, multi-step queries with a larger context window and can surface more citations per search, enabling more comprehensive and extensible responses.",
+    "context_length": 128000,
     "architecture": {
       "modality": "text->text",
       "tokenizer": "Other",
       "instruct_type": "deepseek-r1"
     },
     "pricing": {
-      "prompt": "0",
-      "completion": "0",
+      "prompt": "0.000002",
+      "completion": "0.000008",
       "image": "0",
       "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 163840,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/deepseek:deepseek_r1_zero:free",
-    "abangPricing": {
-      "completion": 0,
-      "image": 0
-    },
-    "provider": "deepseek"
-  },
-  "780228": {
-    "id": "ai21/jamba-1.6-mini",
-    "name": "AI21: Jamba Mini 1.6",
-    "created": 1741905171,
-    "description": "AI21 Jamba Mini 1.6 is a hybrid foundation model combining State Space Models (Mamba) with Transformer attention mechanisms. With 12 billion active parameters (52 billion total), this model excels in extremely long-context tasks (up to 256K tokens) and achieves superior inference efficiency, outperforming comparable open models on tasks such as retrieval-augmented generation (RAG) and grounded question answering. Jamba Mini 1.6 supports multilingual tasks across English, Spanish, French, Portuguese, Italian, Dutch, German, Arabic, and Hebrew, along with structured JSON output and tool-use capabilities.\n\nUsage of this model is subject to the [Jamba Open Model License](https://www.ai21.com/licenses/jamba-open-model-license).",
-    "context_length": 256000,
-    "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Other",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000002",
-      "completion": "0.0000004",
-      "image": "0",
-      "request": "0",
-      "input_cache_read": "0",
-      "input_cache_write": "0",
-      "web_search": "0",
-      "internal_reasoning": "0"
-    },
-    "top_provider": {
-      "context_length": 256000,
-      "max_completion_tokens": 4096,
-      "is_moderated": false
-    },
-    "per_request_limits": null,
-    "commandName": "/ai21:jamba_1.6_mini",
-    "abangPricing": {
-      "completion": 3,
-      "image": 0
-    },
-    "provider": "ai21"
-  },
-  "796187": {
-    "id": "openai/gpt-4o-search-preview",
-    "name": "OpenAI: GPT-4o Search Preview",
-    "created": 1741817949,
-    "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries.",
-    "context_length": 128000,
-    "architecture": {
-      "modality": "text+image->text",
-      "tokenizer": "GPT",
-      "instruct_type": null
-    },
-    "pricing": {
-      "prompt": "0.0000025",
-      "completion": "0.00001",
-      "image": "0.003613",
-      "request": "0.035",
       "input_cache_read": "0",
       "input_cache_write": "0",
       "web_search": "0",
@@ -9381,18 +8433,120 @@
     },
     "top_provider": {
       "context_length": 128000,
-      "max_completion_tokens": 16384,
-      "is_moderated": true
+      "max_completion_tokens": null,
+      "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/openai:gpt_4o_search_preview",
+    "commandName": "/perplexity:sonar_reasoning_pro",
     "abangPricing": {
-      "completion": 70,
-      "image": 7226
+      "completion": 56,
+      "image": 0
     },
-    "provider": "openai"
+    "provider": "perplexity"
   },
-  "822279": {
+  "67423": {
+    "id": "thedrummer/anubis-pro-105b-v1",
+    "name": "TheDrummer: Anubis Pro 105B V1",
+    "created": 1741642290,
+    "description": "Anubis Pro 105B v1 is an expanded and refined variant of Meta’s Llama 3.3 70B, featuring 50% additional layers and further fine-tuning to leverage its increased capacity. Designed for advanced narrative, roleplay, and instructional tasks, it demonstrates enhanced emotional intelligence, creativity, nuanced character portrayal, and superior prompt adherence compared to smaller models. Its larger parameter count allows for deeper contextual understanding and extended reasoning capabilities, optimized for engaging, intelligent, and coherent interactions.",
+    "context_length": 64000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000008",
+      "completion": "0.0000008",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 64000,
+      "max_completion_tokens": 64000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/thedrummer:anubis_pro_105b_v1",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
+    "provider": "thedrummer"
+  },
+  "137895": {
+    "id": "google/gemma-3-27b-it",
+    "name": "Google: Gemma 3 27B",
+    "created": 1741756359,
+    "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to [Gemma 2](google/gemma-2-27b-it)",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Gemini",
+      "instruct_type": "gemma"
+    },
+    "pricing": {
+      "prompt": "0.0000003",
+      "completion": "0.0000005",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/google:gemma_3_27b_it",
+    "abangPricing": {
+      "completion": 4,
+      "image": 0
+    },
+    "provider": "google"
+  },
+  "143734": {
+    "id": "perplexity/sonar-deep-research",
+    "name": "Perplexity: Sonar Deep Research",
+    "created": 1741311246,
+    "description": "Sonar Deep Research is a research-focused model designed for multi-step retrieval, synthesis, and reasoning across complex topics. It autonomously searches, reads, and evaluates sources, refining its approach as it gathers information. This enables comprehensive report generation across domains like finance, technology, health, and current events.\n\nNotes on Pricing ([Source](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-deep-research)) \n- Input tokens comprise of Prompt tokens (user prompt) + Citation tokens (these are processed tokens from running searches)\n- Deep Research runs multiple searches to conduct exhaustive research. Searches are priced at $5/1000 searches. A request that does 30 searches will cost $0.15 in this step.\n- Reasoning is a distinct step in Deep Research since it does extensive automated reasoning through all the material it gathers during its research phase. Reasoning tokens here are a bit different than the CoTs in the answer - these are tokens that we use to reason through the research material prior to generating the outputs via the CoTs. Reasoning tokens are priced at $3/1M tokens",
+    "context_length": 200000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000008",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 200000,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/perplexity:sonar_deep_research",
+    "abangPricing": {
+      "completion": 56,
+      "image": 0
+    },
+    "provider": "perplexity"
+  },
+  "167486": {
     "id": "rekaai/reka-flash-3:free",
     "name": "Reka: Flash 3 (free)",
     "created": 1741812813,
@@ -9426,7 +8580,7 @@
     },
     "provider": "rekaai"
   },
-  "840460": {
+  "229399": {
     "id": "qwen/qwq-32b",
     "name": "Qwen: QwQ 32B",
     "created": 1741208814,
@@ -9460,20 +8614,54 @@
     },
     "provider": "qwen"
   },
-  "854805": {
-    "id": "latitudegames/wayfarer-large-70b-llama-3.3",
-    "name": "LatitudeGames: Wayfarer Large 70B Llama 3.3",
-    "created": 1741636885,
-    "description": "Wayfarer Large 70B is a roleplay and text-adventure model fine-tuned from Meta’s Llama-3.3-70B-Instruct. Specifically optimized for narrative-driven, challenging scenarios, it introduces realistic stakes, conflicts, and consequences often avoided by standard RLHF-aligned models. Trained using a curated blend of adventure, roleplay, and instructive fiction datasets, Wayfarer emphasizes tense storytelling, authentic player failure scenarios, and robust narrative immersion, making it uniquely suited for interactive fiction and gaming experiences.",
-    "context_length": 128000,
+  "244430": {
+    "id": "qwen/qwen-vl-max",
+    "name": "Qwen: Qwen VL Max",
+    "created": 1738434304,
+    "description": "Qwen VL Max is a visual understanding model with 7500 tokens context length. It excels in delivering optimal performance for a broader spectrum of complex tasks.\n",
+    "context_length": 7500,
     "architecture": {
-      "modality": "text->text",
-      "tokenizer": "Llama3",
+      "modality": "text+image->text",
+      "tokenizer": "Qwen",
       "instruct_type": null
     },
     "pricing": {
-      "prompt": "0.0000007",
-      "completion": "0.0000007",
+      "prompt": "0.0000008",
+      "completion": "0.0000032",
+      "image": "0.001024",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 7500,
+      "max_completion_tokens": 1500,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen_vl_max",
+    "abangPricing": {
+      "completion": 22,
+      "image": 2048
+    },
+    "provider": "qwen"
+  },
+  "245443": {
+    "id": "perplexity/sonar-pro",
+    "name": "Perplexity: Sonar Pro",
+    "created": 1741312423,
+    "description": "Note: Sonar Pro pricing includes Perplexity search pricing. See [details here](https://docs.perplexity.ai/guides/pricing#detailed-pricing-breakdown-for-sonar-reasoning-pro-and-sonar-pro)\n\nFor enterprises seeking more advanced capabilities, the Sonar Pro API can handle in-depth, multi-step queries with added extensibility, like double the number of citations per search as Sonar on average. Plus, with a larger context window, it can handle longer and more nuanced searches and follow-up questions. ",
+    "context_length": 200000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000003",
+      "completion": "0.000015",
       "image": "0",
       "request": "0",
       "input_cache_read": "0",
@@ -9482,19 +8670,121 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": 128000,
+      "context_length": 200000,
+      "max_completion_tokens": 8000,
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/latitudegames:wayfarer_large_70b_llama_3.3",
+    "commandName": "/perplexity:sonar_pro",
     "abangPricing": {
-      "completion": 5,
+      "completion": 105,
       "image": 0
     },
-    "provider": "latitudegames"
+    "provider": "perplexity"
   },
-  "885352": {
+  "251601": {
+    "id": "ai21/jamba-1.6-large",
+    "name": "AI21: Jamba 1.6 Large",
+    "created": 1741905173,
+    "description": "AI21 Jamba Large 1.6 is a high-performance hybrid foundation model combining State Space Models (Mamba) with Transformer attention mechanisms. Developed by AI21, it excels in extremely long-context handling (256K tokens), demonstrates superior inference efficiency (up to 2.5x faster than comparable models), and supports structured JSON output and tool-use capabilities. It has 94 billion active parameters (398 billion total), optimized quantization support (ExpertsInt8), and multilingual proficiency in languages such as English, Spanish, French, Portuguese, Italian, Dutch, German, Arabic, and Hebrew.\n\nUsage of this model is subject to the [Jamba Open Model License](https://www.ai21.com/licenses/jamba-open-model-license).",
+    "context_length": 256000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000002",
+      "completion": "0.000008",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 256000,
+      "max_completion_tokens": 4096,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/ai21:jamba_1.6_large",
+    "abangPricing": {
+      "completion": 56,
+      "image": 0
+    },
+    "provider": "ai21"
+  },
+  "255947": {
+    "id": "openai/gpt-4o-mini-search-preview",
+    "name": "OpenAI: GPT-4o-mini Search Preview",
+    "created": 1741818122,
+    "description": "GPT-4o mini Search Preview is a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries.",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000015",
+      "completion": "0.0000006",
+      "image": "0.000217",
+      "request": "0.0275",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 16384,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "commandName": "/openai:gpt_4o_mini_search_preview",
+    "abangPricing": {
+      "completion": 4,
+      "image": 434
+    },
+    "provider": "openai"
+  },
+  "259209": {
+    "id": "deepseek/deepseek-r1-distill-qwen-14b:free",
+    "name": "DeepSeek: R1 Distill Qwen 14B (free)",
+    "created": 1738193940,
+    "description": "DeepSeek R1 Distill Qwen 14B is a distilled large language model based on [Qwen 2.5 14B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). It outperforms OpenAI's o1-mini across various benchmarks, achieving new state-of-the-art results for dense models.\n\nOther benchmark results include:\n\n- AIME 2024 pass@1: 69.7\n- MATH-500 pass@1: 93.9\n- CodeForces Rating: 1481\n\nThe model leverages fine-tuning from DeepSeek R1's outputs, enabling competitive performance comparable to larger frontier models.",
+    "context_length": 64000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Qwen",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 64000,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/deepseek:deepseek_r1_distill_qwen_14b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "deepseek"
+  },
+  "273064": {
     "id": "google/gemma-3-27b-it:free",
     "name": "Google: Gemma 3 27B (free)",
     "created": 1741756359,
@@ -9528,12 +8818,488 @@
     },
     "provider": "google"
   },
-  "910089": {
+  "340542": {
+    "id": "mistralai/mistral-7b-instruct-v0.2",
+    "name": "Mistral: Mistral 7B Instruct v0.2",
+    "created": 1703721600,
+    "description": "A high-performing, industry-standard 7.3B parameter model, with optimizations for speed and context length.\n\nAn improved version of [Mistral 7B Instruct](/modelsmistralai/mistral-7b-instruct-v0.1), with the following changes:\n\n- 32k context window (vs 8k context in v0.1)\n- Rope-theta = 1e6\n- No Sliding-Window Attention",
+    "context_length": 32768,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Mistral",
+      "instruct_type": "mistral"
+    },
+    "pricing": {
+      "prompt": "0.0000002",
+      "completion": "0.0000002",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 32768,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/mistralai:mistral_7b_instruct_v0.2",
+    "abangPricing": {
+      "completion": 1,
+      "image": 0
+    },
+    "provider": "mistralai"
+  },
+  "380806": {
+    "id": "open-r1/olympiccoder-32b:free",
+    "name": "OlympicCoder 32B (free)",
+    "created": 1742077228,
+    "description": "OlympicCoder-32B is a high-performing open-source model fine-tuned using the CodeForces-CoTs dataset, containing approximately 100,000 chain-of-thought programming samples. It excels at complex competitive programming benchmarks, such as IOI 2024 and Codeforces-style challenges, frequently surpassing state-of-the-art closed-source models. OlympicCoder-32B provides advanced reasoning, coherent multi-step problem-solving, and robust code generation capabilities, demonstrating significant potential for olympiad-level competitive programming applications.",
+    "context_length": 32768,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 32768,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/open_r1:olympiccoder_32b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "open-r1"
+  },
+  "380854": {
+    "id": "qwen/qwen2.5-32b-instruct",
+    "name": "Qwen: Qwen2.5 32B Instruct",
+    "created": 1741042744,
+    "description": "Qwen2.5 32B Instruct is the instruction-tuned variant of the latest Qwen large language model series. It provides enhanced instruction-following capabilities, improved proficiency in coding and mathematical reasoning, and robust handling of structured data and outputs such as JSON. It supports long-context processing up to 128K tokens and multilingual tasks across 29+ languages. The model has 32.5 billion parameters, 64 layers, and utilizes an advanced transformer architecture with RoPE, SwiGLU, RMSNorm, and Attention QKV bias.\n\nFor details, please refer to the [Qwen2.5 Blog](https://qwenlm.github.io/blog/qwen2.5/).",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000079",
+      "completion": "0.00000079",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen2.5_32b_instruct",
+    "abangPricing": {
+      "completion": 6,
+      "image": 0
+    },
+    "provider": "qwen"
+  },
+  "382547": {
+    "id": "deepseek/deepseek-r1-distill-qwen-32b:free",
+    "name": "DeepSeek: R1 Distill Qwen 32B (free)",
+    "created": 1738194830,
+    "description": "DeepSeek R1 Distill Qwen 32B is a distilled large language model based on [Qwen 2.5 32B](https://huggingface.co/Qwen/Qwen2.5-32B), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). It outperforms OpenAI's o1-mini across various benchmarks, achieving new state-of-the-art results for dense models.\n\nOther benchmark results include:\n\n- AIME 2024 pass@1: 72.6\n- MATH-500 pass@1: 94.3\n- CodeForces Rating: 1691\n\nThe model leverages fine-tuning from DeepSeek R1's outputs, enabling competitive performance comparable to larger frontier models.",
+    "context_length": 16000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Qwen",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 16000,
+      "max_completion_tokens": 16000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/deepseek:deepseek_r1_distill_qwen_32b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "deepseek"
+  },
+  "432231": {
+    "id": "meta-llama/llama-3.2-3b-instruct:free",
+    "name": "Meta: Llama 3.2 3B Instruct (free)",
+    "created": 1727222400,
+    "description": "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it supports eight languages, including English, Spanish, and Hindi, and is adaptable for additional languages.\n\nTrained on 9 trillion tokens, the Llama 3.2 3B model excels in instruction-following, complex reasoning, and tool use. Its balanced performance makes it ideal for applications needing accuracy and efficiency in text generation across multilingual settings.\n\nClick here for the [original model card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md).\n\nUsage of this model is subject to [Meta's Acceptable Use Policy](https://www.llama.com/llama3/use-policy/).",
+    "context_length": 20000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Llama3",
+      "instruct_type": "llama3"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 20000,
+      "max_completion_tokens": 20000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/meta_llama:llama_3.2_3b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "meta-llama"
+  },
+  "437413": {
+    "id": "mistralai/mistral-small-3.1-24b-instruct",
+    "name": "Mistral: Mistral Small 3.1 24B",
+    "created": 1742238937,
+    "description": "Mistral Small 3.1 24B Instruct is an upgraded variant of Mistral Small 3 (2501), featuring 24 billion parameters with advanced multimodal capabilities. It provides state-of-the-art performance in text-based reasoning and vision tasks, including image analysis, programming, mathematical reasoning, and multilingual support across dozens of languages. Equipped with an extensive 128k token context window and optimized for efficient local inference, it supports use cases such as conversational agents, function calling, long-document comprehension, and privacy-sensitive deployments.",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Mistral",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000001",
+      "completion": "0.0000003",
+      "image": "0.000926",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/mistralai:mistral_small_3.1_24b_instruct",
+    "abangPricing": {
+      "completion": 2,
+      "image": 1852
+    },
+    "provider": "mistralai"
+  },
+  "483559": {
+    "id": "qwen/qwen-2.5-vl-7b-instruct",
+    "name": "Qwen: Qwen2.5-VL 7B Instruct",
+    "created": 1724803200,
+    "description": "Qwen2.5 VL 7B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2.5-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2.5-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2.5-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2.5-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
+    "context_length": 4096,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000002",
+      "completion": "0.0000002",
+      "image": "0.0001445",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 4096,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen_2.5_vl_7b_instruct",
+    "abangPricing": {
+      "completion": 1,
+      "image": 289
+    },
+    "provider": "qwen"
+  },
+  "490683": {
+    "id": "deepseek/deepseek-r1-zero:free",
+    "name": "DeepSeek: DeepSeek R1 Zero (free)",
+    "created": 1741297434,
+    "description": "DeepSeek-R1-Zero is a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step. It's 671B parameters in size, with 37B active in an inference pass.\n\nIt demonstrates remarkable performance on reasoning. With RL, DeepSeek-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors.\n\nDeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. See [DeepSeek R1](/deepseek/deepseek-r1) for the SFT model.\n\n",
+    "context_length": 163840,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 163840,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/deepseek:deepseek_r1_zero:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "deepseek"
+  },
+  "502105": {
     "id": "allenai/olmo-2-0325-32b-instruct",
     "name": "AllenAI: Olmo 2 32B Instruct",
     "created": 1741988556,
     "description": "OLMo-2 32B Instruct is a supervised instruction-finetuned variant of the OLMo-2 32B March 2025 base model. It excels in complex reasoning and instruction-following tasks across diverse benchmarks such as GSM8K, MATH, IFEval, and general NLP evaluation. Developed by AI2, OLMo-2 32B is part of an open, research-oriented initiative, trained primarily on English-language datasets to advance the understanding and development of open-source language models.",
     "context_length": 4096,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.000001",
+      "completion": "0.0000015",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 4096,
+      "max_completion_tokens": 4096,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/allenai:olmo_2_0325_32b_instruct",
+    "abangPricing": {
+      "completion": 11,
+      "image": 0
+    },
+    "provider": "allenai"
+  },
+  "522659": {
+    "id": "cohere/command-a",
+    "name": "Cohere: Command A",
+    "created": 1741894342,
+    "description": "Command A is an open-weights 111B parameter model with a 256k context window focused on delivering great performance across agentic, multilingual, and coding use cases.\nCompared to other leading proprietary and open-weights models Command A delivers maximum performance with minimum hardware costs, excelling on business-critical agentic and multilingual tasks.",
+    "context_length": 256000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000025",
+      "completion": "0.00001",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 256000,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/cohere:command_a",
+    "abangPricing": {
+      "completion": 70,
+      "image": 0
+    },
+    "provider": "cohere"
+  },
+  "535856": {
+    "id": "openai/gpt-4o-search-preview",
+    "name": "OpenAI: GPT-4o Search Preview",
+    "created": 1741817949,
+    "description": "GPT-4o Search Previewis a specialized model for web search in Chat Completions. It is trained to understand and execute web search queries.",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000025",
+      "completion": "0.00001",
+      "image": "0.003613",
+      "request": "0.035",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 16384,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "commandName": "/openai:gpt_4o_search_preview",
+    "abangPricing": {
+      "completion": 70,
+      "image": 7226
+    },
+    "provider": "openai"
+  },
+  "550082": {
+    "id": "steelskull/l3.3-electra-r1-70b",
+    "name": "SteelSkull: L3.3 Electra R1 70B",
+    "created": 1742067611,
+    "description": "L3.3-Electra-R1-70 is the newest release of the Unnamed series. Built on a DeepSeek R1 Distill base, Electra-R1 integrates various models together to provide an intelligent and coherent model capable of providing deep character insights. Through proper prompting, the model demonstrates advanced reasoning capabilities and unprompted exploration of character inner thoughts and motivations. Read more about the model and [prompting here](https://huggingface.co/Steelskull/L3.3-Electra-R1-70b)",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": "deepseek-r1"
+    },
+    "pricing": {
+      "prompt": "0.0000007",
+      "completion": "0.0000007",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/steelskull:l3.3_electra_r1_70b",
+    "abangPricing": {
+      "completion": 5,
+      "image": 0
+    },
+    "provider": "steelskull"
+  },
+  "564260": {
+    "id": "tokyotech-llm/llama-3.1-swallow-70b-instruct-v0.3",
+    "name": "Swallow: Llama 3.1 Swallow 70B Instruct V0.3",
+    "created": 1741813936,
+    "description": "Llama 3.1 Swallow 70B is a large language model that was built by continual pre-training on the Meta Llama 3.1 70B. Llama 3.1 Swallow enhanced the Japanese language capabilities of the original Llama 3.1 while retaining the English language capabilities. Swallow used approximately 200 billion tokens that were sampled from a large Japanese web corpus (Swallow Corpus Version 2), Japanese and English Wikipedia articles, and mathematical and coding contents, etc (see the Training Datasets section of the base model) for continual pre-training. The instruction-tuned models (Instruct) were built by supervised fine-tuning (SFT) on the synthetic data specially built for Japanese. ",
+    "context_length": 16384,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Llama3",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000006",
+      "completion": "0.0000012",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 16384,
+      "max_completion_tokens": 4096,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/tokyotech_llm:llama_3.1_swallow_70b_instruct_v0.3",
+    "abangPricing": {
+      "completion": 8,
+      "image": 0
+    },
+    "provider": "tokyotech-llm"
+  },
+  "567613": {
+    "id": "ai21/jamba-1.6-mini",
+    "name": "AI21: Jamba Mini 1.6",
+    "created": 1741905171,
+    "description": "AI21 Jamba Mini 1.6 is a hybrid foundation model combining State Space Models (Mamba) with Transformer attention mechanisms. With 12 billion active parameters (52 billion total), this model excels in extremely long-context tasks (up to 256K tokens) and achieves superior inference efficiency, outperforming comparable open models on tasks such as retrieval-augmented generation (RAG) and grounded question answering. Jamba Mini 1.6 supports multilingual tasks across English, Spanish, French, Portuguese, Italian, Dutch, German, Arabic, and Hebrew, along with structured JSON output and tool-use capabilities.\n\nUsage of this model is subject to the [Jamba Open Model License](https://www.ai21.com/licenses/jamba-open-model-license).",
+    "context_length": 256000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000002",
+      "completion": "0.0000004",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 256000,
+      "max_completion_tokens": 4096,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/ai21:jamba_1.6_mini",
+    "abangPricing": {
+      "completion": 3,
+      "image": 0
+    },
+    "provider": "ai21"
+  },
+  "600830": {
+    "id": "thedrummer/skyfall-36b-v2",
+    "name": "TheDrummer: Skyfall 36B V2",
+    "created": 1741636566,
+    "description": "Skyfall 36B v2 is an enhanced iteration of Mistral Small 2501, specifically fine-tuned for improved creativity, nuanced writing, role-playing, and coherent storytelling.",
+    "context_length": 32768,
     "architecture": {
       "modality": "text->text",
       "tokenizer": "Other",
@@ -9550,19 +9316,155 @@
       "internal_reasoning": "0"
     },
     "top_provider": {
-      "context_length": 4096,
-      "max_completion_tokens": 4096,
+      "context_length": 32768,
+      "max_completion_tokens": 32768,
       "is_moderated": false
     },
     "per_request_limits": null,
-    "commandName": "/allenai:olmo_2_0325_32b_instruct",
+    "commandName": "/thedrummer:skyfall_36b_v2",
     "abangPricing": {
       "completion": 4,
       "image": 0
     },
-    "provider": "allenai"
+    "provider": "thedrummer"
   },
-  "911267": {
+  "633460": {
+    "id": "google/gemma-3-12b-it:free",
+    "name": "Google: Gemma 3 12B (free)",
+    "created": 1741902625,
+    "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 12B is the second largest in the family of Gemma 3 models after [Gemma 3 27B](google/gemma-3-27b-it)",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Gemini",
+      "instruct_type": "gemma"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/google:gemma_3_12b_it:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "google"
+  },
+  "672934": {
+    "id": "google/gemma-3-4b-it:free",
+    "name": "Google: Gemma 3 4B (free)",
+    "created": 1741905510,
+    "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling.",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Gemini",
+      "instruct_type": "gemma"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 8192,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/google:gemma_3_4b_it:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "google"
+  },
+  "740721": {
+    "id": "latitudegames/wayfarer-large-70b-llama-3.3",
+    "name": "LatitudeGames: Wayfarer Large 70B Llama 3.3",
+    "created": 1741636885,
+    "description": "Wayfarer Large 70B is a roleplay and text-adventure model fine-tuned from Meta’s Llama-3.3-70B-Instruct. Specifically optimized for narrative-driven, challenging scenarios, it introduces realistic stakes, conflicts, and consequences often avoided by standard RLHF-aligned models. Trained using a curated blend of adventure, roleplay, and instructive fiction datasets, Wayfarer emphasizes tense storytelling, authentic player failure scenarios, and robust narrative immersion, making it uniquely suited for interactive fiction and gaming experiences.",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Llama3",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000007",
+      "completion": "0.0000007",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 128000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/latitudegames:wayfarer_large_70b_llama_3.3",
+    "abangPricing": {
+      "completion": 5,
+      "image": 0
+    },
+    "provider": "latitudegames"
+  },
+  "764235": {
+    "id": "qwen/qwen-2.5-vl-72b-instruct",
+    "name": "Qwen: Qwen2.5-VL 72B Instruct",
+    "created": 1726617600,
+    "description": "Qwen2.5 VL 72B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2.5-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2.5-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2.5-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2.5-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
+    "context_length": 4096,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Qwen",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.0000006",
+      "completion": "0.0000006",
+      "image": "0.000578",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 4096,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen_2.5_vl_72b_instruct",
+    "abangPricing": {
+      "completion": 4,
+      "image": 1156
+    },
+    "provider": "qwen"
+  },
+  "767244": {
     "id": "open-r1/olympiccoder-7b:free",
     "name": "OlympicCoder 7B (free)",
     "created": 1742078265,
@@ -9596,7 +9498,41 @@
     },
     "provider": "open-r1"
   },
-  "931190": {
+  "785039": {
+    "id": "qwen/qwq-32b:free",
+    "name": "Qwen: QwQ 32B (free)",
+    "created": 1741208814,
+    "description": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks, especially hard problems. QwQ-32B is the medium-sized reasoning model, which is capable of achieving competitive performance against state-of-the-art reasoning models, e.g., DeepSeek-R1, o1-mini.",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Qwen",
+      "instruct_type": "qwq"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 131072,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwq_32b:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "qwen"
+  },
+  "806294": {
     "id": "qwen/qwq-32b-preview:free",
     "name": "Qwen: QwQ 32B Preview (free)",
     "created": 1732754541,
@@ -9629,5 +9565,107 @@
       "image": 0
     },
     "provider": "qwen"
+  },
+  "840859": {
+    "id": "mistralai/mistral-small-3.1-24b-instruct:free",
+    "name": "Mistral: Mistral Small 3.1 24B (free)",
+    "created": 1742238937,
+    "description": "Mistral Small 3.1 24B Instruct is an upgraded variant of Mistral Small 3 (2501), featuring 24 billion parameters with advanced multimodal capabilities. It provides state-of-the-art performance in text-based reasoning and vision tasks, including image analysis, programming, mathematical reasoning, and multilingual support across dozens of languages. Equipped with an extensive 128k token context window and optimized for efficient local inference, it supports use cases such as conversational agents, function calling, long-document comprehension, and privacy-sensitive deployments.",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Mistral",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 128000,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/mistralai:mistral_small_3.1_24b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "mistralai"
+  },
+  "862646": {
+    "id": "qwen/qwen-2.5-72b-instruct:free",
+    "name": "Qwen2.5 72B Instruct (free)",
+    "created": 1726704000,
+    "description": "Qwen2.5 72B is the latest series of Qwen large language models. Qwen2.5 brings the following improvements upon Qwen2:\n\n- Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our specialized expert models in these domains.\n\n- Significant improvements in instruction following, generating long texts (over 8K tokens), understanding structured data (e.g, tables), and generating structured outputs especially JSON. More resilient to the diversity of system prompts, enhancing role-play implementation and condition-setting for chatbots.\n\n- Long-context Support up to 128K tokens and can generate up to 8K tokens.\n\n- Multilingual support for over 29 languages, including Chinese, English, French, Spanish, Portuguese, German, Italian, Russian, Japanese, Korean, Vietnamese, Thai, Arabic, and more.\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
+    "context_length": 32768,
+    "architecture": {
+      "modality": "text->text",
+      "tokenizer": "Qwen",
+      "instruct_type": "chatml"
+    },
+    "pricing": {
+      "prompt": "0",
+      "completion": "0",
+      "image": "0",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 32768,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/qwen:qwen_2.5_72b_instruct:free",
+    "abangPricing": {
+      "completion": 0,
+      "image": 0
+    },
+    "provider": "qwen"
+  },
+  "962993": {
+    "id": "microsoft/phi-4-multimodal-instruct",
+    "name": "Microsoft: Phi 4 Multimodal Instruct",
+    "created": 1741396284,
+    "description": "Phi-4 Multimodal Instruct is a versatile 5.6B parameter foundation model that combines advanced reasoning and instruction-following capabilities across both text and visual inputs, providing accurate text outputs. The unified architecture enables efficient, low-latency inference, suitable for edge and mobile deployments. Phi-4 Multimodal Instruct supports text inputs in multiple languages including Arabic, Chinese, English, French, German, Japanese, Spanish, and more, with visual input optimized primarily for English. It delivers impressive performance on multimodal tasks involving mathematical, scientific, and document reasoning, providing developers and enterprises a powerful yet compact model for sophisticated interactive applications. For more information, see the [Phi-4 Multimodal blog post](https://azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family/).\n",
+    "context_length": 131072,
+    "architecture": {
+      "modality": "text+image->text",
+      "tokenizer": "Other",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00000005",
+      "completion": "0.0000001",
+      "image": "0.00017685",
+      "request": "0",
+      "input_cache_read": "0",
+      "input_cache_write": "0",
+      "web_search": "0",
+      "internal_reasoning": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "per_request_limits": null,
+    "commandName": "/microsoft:phi_4_multimodal_instruct",
+    "abangPricing": {
+      "completion": 1,
+      "image": 354
+    },
+    "provider": "microsoft"
   }
 }

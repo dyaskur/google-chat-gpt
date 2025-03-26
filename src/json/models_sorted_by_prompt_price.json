@@ -3,6 +3,10 @@
     "prompt": "-1",
     "completion": "-1"
   },
+  "mistralai/mistral-small-3.1-24b-instruct:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
   "open-r1/olympiccoder-7b:free": {
     "prompt": "0",
     "completion": "0"
@@ -274,6 +278,10 @@
     "prompt": "0.00000004",
     "completion": "0.00000004"
   },
+  "microsoft/phi-4-multimodal-instruct": {
+    "prompt": "0.00000005",
+    "completion": "0.0000001"
+  },
   "qwen/qwen-turbo": {
     "prompt": "0.00000005",
     "completion": "0.0000002"
@@ -299,10 +307,6 @@
     "prompt": "0.000000065",
     "completion": "0.000000065",
     "coins": 1
-  },
-  "microsoft/phi-4-multimodal-instruct": {
-    "prompt": "0.00000007",
-    "completion": "0.00000011"
   },
   "mistralai/mistral-small-24b-instruct-2501": {
     "prompt": "0.00000007",
@@ -334,9 +338,9 @@
     "prompt": "0.000000075",
     "completion": "0.0000003"
   },
-  "google/gemma-3-27b-it": {
+  "mistralai/mistral-small-3.1-24b-instruct": {
     "prompt": "0.0000001",
-    "completion": "0.0000002"
+    "completion": "0.0000003"
   },
   "google/gemini-2.0-flash-001": {
     "prompt": "0.0000001",
@@ -478,10 +482,6 @@
     "prompt": "0.0000002",
     "completion": "0.0000004"
   },
-  "perplexity/llama-3.1-sonar-small-128k-chat": {
-    "prompt": "0.0000002",
-    "completion": "0.0000002"
-  },
   "perplexity/llama-3.1-sonar-small-128k-online": {
     "prompt": "0.0000002",
     "completion": "0.0000002",
@@ -551,6 +551,10 @@
     "completion": "0.00000027",
     "coins": 0.4
   },
+  "google/gemma-3-27b-it": {
+    "prompt": "0.0000003",
+    "completion": "0.0000005"
+  },
   "mistralai/codestral-2501": {
     "prompt": "0.0000003",
     "completion": "0.0000009"
@@ -571,10 +575,6 @@
   "cohere/command-r-03-2024": {
     "prompt": "0.000000475",
     "completion": "0.000001425"
-  },
-  "allenai/olmo-2-0325-32b-instruct": {
-    "prompt": "0.0000005",
-    "completion": "0.0000005"
   },
   "thedrummer/skyfall-36b-v2": {
     "prompt": "0.0000005",
@@ -619,6 +619,11 @@
     "prompt": "0.0000005",
     "completion": "0.0000015"
   },
+  "deepseek/deepseek-r1": {
+    "prompt": "0.00000055",
+    "completion": "0.00000219",
+    "coins": 4.3
+  },
   "tokyotech-llm/llama-3.1-swallow-70b-instruct-v0.3": {
     "prompt": "0.0000006",
     "completion": "0.0000012"
@@ -650,11 +655,6 @@
   "qwen/qwen2.5-vl-72b-instruct": {
     "prompt": "0.0000007",
     "completion": "0.0000007"
-  },
-  "deepseek/deepseek-r1": {
-    "prompt": "0.0000007",
-    "completion": "0.0000025",
-    "coins": 4.3
   },
   "sao10k/l3.3-euryale-70b": {
     "prompt": "0.0000007",
@@ -768,6 +768,10 @@
     "prompt": "0.00000095",
     "completion": "0.0000019"
   },
+  "allenai/olmo-2-0325-32b-instruct": {
+    "prompt": "0.000001",
+    "completion": "0.0000015"
+  },
   "perplexity/sonar-reasoning": {
     "prompt": "0.000001",
     "completion": "0.000005",
@@ -777,10 +781,6 @@
     "prompt": "0.000001",
     "completion": "0.000001",
     "coins": 1
-  },
-  "perplexity/llama-3.1-sonar-large-128k-chat": {
-    "prompt": "0.000001",
-    "completion": "0.000001"
   },
   "perplexity/llama-3.1-sonar-large-128k-online": {
     "prompt": "0.000001",
@@ -1159,5 +1159,10 @@
     "prompt": "0.000075",
     "completion": "0.00015",
     "coins": 60
+  },
+  "openai/o1-pro": {
+    "prompt": "0.00015",
+    "completion": "0.0006",
+    "coins": 300
   }
 }
