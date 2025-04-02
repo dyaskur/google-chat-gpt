@@ -1,5 +1,5 @@
 import {HttpFunction} from '@google-cloud/functions-framework'
-import {ChatEvent} from './types/event'
+import {ChatEvent, Space} from './types/event'
 import {createActionResponse, createMessageResponse} from './utils/chat'
 import * as fs from 'node:fs'
 import {getCache, getDefaultModel, getUser} from './utils/cache'
@@ -8,6 +8,7 @@ import * as commands from './json/models_by_command_id.json'
 import {AbangModel} from './types/model'
 import {createUser} from './api'
 import {generateCompletionWithCredits} from './services'
+import {addSpaceUser, getSpaceUser} from './db/team'
 
 const commandsTyped = commands as {[key: string]: object}
 
@@ -35,6 +36,8 @@ export const app: HttpFunction = async (req, res) => {
     }
 
     const email = event.chat.user.email
+    const space = event.chat.messagePayload?.space
+
     let userId = await getUser(email)
     if (!userId) {
       const userData: CreateUserInput = {
@@ -46,11 +49,21 @@ export const app: HttpFunction = async (req, res) => {
         domainId: event.chat.user.domainId,
         metadata: event.commonEventObject,
       }
+      if (space && space.type === 'ROOM') {
+        userData.space = space as Space
+      }
       // userId = await createUserIntegration(userData)
       userId = await createUser(userData)
       console.timeLog('process', 'a new registered user', userId)
       if (!userId) {
         res.status(500).send('Error creating user')
+      }
+    } else if (space && space.type === 'ROOM') {
+      const spaceUser = await getSpaceUser(space.name, Number(userId))
+      if (!spaceUser.user_id) {
+        addSpaceUser(Number(spaceUser.id), Number(userId)).catch((err) =>
+          console.error(`Failed to add user to space: ${err}`),
+        )
       }
     }
 

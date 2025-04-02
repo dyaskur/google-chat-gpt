@@ -27,7 +27,14 @@ export async function generateCompletionRequest(prompt: string, model: AbangMode
   try {
     if (model.straico && retry === 0) {
       const {data} = await fetchCompletion(prompt, model.straico.model ?? model.id)
-      console.timeLog('process', 'straico price', data.price.total, 'coin')
+      console.timeLog(
+        'process',
+        'straico price',
+        data.price.total,
+        'coin',
+        data.completion.choices[0].message.content,
+        'chars',
+      )
       return data.completion.choices[0].message.content
     }
 

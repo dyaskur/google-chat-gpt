@@ -84,14 +84,21 @@ export async function getCachedUserCredits(userId: bigint): Promise<number> {
   const expireInSeconds = Math.floor((nextMidnight.getTime() - Date.now()) / 1000)
 
   cache
-    .setEx(`credits_${userId}`, expireInSeconds, String(userCredit.balance))
+    .setEx(`credits_${userId}`, expireInSeconds, String(userCredit.coin_balance))
     .catch((err) => console.error(`Failed to cache user credits: ${err}`))
-  return Number(userCredit.balance)
+  return Number(userCredit.coin_balance)
 }
 
 export async function setUserCreditsCache(userId: bigint, amount: number) {
   const cache = await getCache()
   const newCredits = amount
-  cache.set(`credits_${userId}`, newCredits).catch((err) => console.error(`Failed to cache user credits: ${err}`))
+  const nextMidnight = new Date()
+  nextMidnight.setUTCHours(0, 0, 0, 0)
+  nextMidnight.setDate(nextMidnight.getDate() + 1)
+
+  const expireInSeconds = Math.floor((nextMidnight.getTime() - Date.now()) / 1000)
+  cache
+    .setEx(`credits_${userId}`, expireInSeconds, String(newCredits))
+    .catch((err) => console.error(`Failed to cache user credits: ${err}`))
   return newCredits
 }

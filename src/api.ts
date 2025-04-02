@@ -34,6 +34,7 @@ export const createUser = async (data: CreateUserInput): Promise<string> => {
       external_id: data.name,
       platform: 'google_chat',
       metadata: data.metadata,
+      space: data.space,
     }),
   })
 

@@ -14,7 +14,7 @@ type CommonEventObject = {
   userLocale: string
 }
 
-type EventTime = {
+export type EventTime = {
   nanos: number
   seconds: number
 }
@@ -33,7 +33,11 @@ type AppCommandMetadata = {
   appCommandType: string
 }
 
-type Space = {
+export type MembershipCount = {
+  joinedDirectHumanUserCount: number
+}
+
+export type Space = {
   spaceHistoryState: 'HISTORY_ON' | 'HISTORY_OFF'
   spaceThreadingState: 'UNTHREADED_MESSAGES' | 'THREADED_MESSAGES'
   singleUserBotDm: boolean
@@ -41,6 +45,9 @@ type Space = {
   type: 'DM' | 'ROOM'
   spaceType: 'DIRECT_MESSAGE' | 'SPACE'
   name: string
+  displayName?: string
+  membershipCount?: MembershipCount
+  lastActiveTime?: EventTime
 }
 
 type AppCommandPayload = {

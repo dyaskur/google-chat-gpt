@@ -75,7 +75,7 @@ export async function createUserIntegration(data: CreateUserInput) {
 
 export async function getUserCredits(userId: bigint) {
   try {
-    const {rows} = await query(`SELECT * FROM user_credits WHERE user_id = $1`, [userId])
+    const {rows} = await query(`SELECT * FROM users WHERE id = $1`, [userId])
     return rows[0] || null
   } catch (error) {
     console.error('Error fetching user credits:', error)
@@ -83,12 +83,12 @@ export async function getUserCredits(userId: bigint) {
   }
 }
 
-export async function deductUserCredits(userId: bigint, amount: number) {
+export async function deductUserCoins(userId: bigint, amount: number) {
   try {
-    const {rows} = await query(`UPDATE user_credits SET balance = balance - $1 WHERE user_id = $2 RETURNING balance`, [
-      amount,
-      userId,
-    ])
+    const {rows} = await query(
+      `UPDATE users SET coin_balance = coin_balance - $1 WHERE id = $2 RETURNING coin_balance`,
+      [amount, userId],
+    )
     return rows[0]
   } catch (error) {
     console.error('Error update user credits:', error)
@@ -96,12 +96,12 @@ export async function deductUserCredits(userId: bigint, amount: number) {
   }
 }
 
-export async function addUserCredits(userId: bigint, amount: number) {
+export async function addUserCoins(userId: bigint, amount: number) {
   try {
-    const {rows} = await query(`UPDATE user_credits SET balance = balance + $1 WHERE user_id = $2 RETURNING balance`, [
-      amount,
-      userId,
-    ])
+    const {rows} = await query(
+      `UPDATE users SET coin_balance = coin_balance + $1 WHERE id = $2 RETURNING coin_balance`,
+      [[amount, userId]],
+    )
     return rows[0]
   } catch (error) {
     console.error('Error fetching user credits:', error)
@@ -109,15 +109,15 @@ export async function addUserCredits(userId: bigint, amount: number) {
   }
 }
 
-export async function addCreditTransaction(userId: bigint, amount: number, type: string, description: string) {
+export async function addCoinTransaction(userId: bigint, amount: number, type: string, description: string = '') {
   try {
     const {rows} = await query(
-      `INSERT INTO credit_transactions (user_id, amount, type, description) VALUES ($1, $2, $3, $4) RETURNING *`,
+      `INSERT INTO user_coin_transactions (user_id, amount, type, description) VALUES ($1, $2, $3, $4) RETURNING *`,
       [userId, amount, type, description],
     )
     return rows[0]
   } catch (error) {
-    console.error('Error fetching user credits:', error)
+    console.error('Error fetching user coins:', error)
     throw error
   }
 }

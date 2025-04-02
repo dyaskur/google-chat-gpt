@@ -1,3 +1,5 @@
+import {Space} from '../types/event'
+
 export type CreateUserInput = {
   email: string
   name: string
@@ -6,4 +8,5 @@ export type CreateUserInput = {
   type?: 'HUMAN' | 'BOT'
   domainId?: string
   metadata?: object
+  space?: Space
 }
