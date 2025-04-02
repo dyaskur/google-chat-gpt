@@ -18,6 +18,7 @@
   "dependencies": {
     "@google-cloud/functions-framework": "^3.4.5",
     "@googleapis/chat": "^32.0.0",
+    "mongodb": "^6.15.0",
     "pg": "^8.13.3",
     "redis": "^4.7.0"
   },
@@ -27,6 +28,7 @@
     "@babel/preset-typescript": "^7.26.0",
     "@eslint/js": "^9.20.0",
     "@types/jest": "^29.5.14",
+    "@types/mongodb": "^4.0.7",
     "@types/pg": "^8.11.11",
     "@typescript-eslint/eslint-plugin": "^8.24.0",
     "@typescript-eslint/parser": "^8.24.0",
