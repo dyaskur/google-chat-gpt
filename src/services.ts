@@ -1,24 +1,25 @@
 import {addCoinTransaction, addUserCoins, deductUserCoins} from './db/user'
-import {getCachedUserCredits, setUserCreditsCache} from './utils/cache'
+import {getCachedUserCoins, setUserCoinsCache} from './utils/cache'
 import {generateCompletionRequest} from './apis/router'
 import {formatForGoogleChat} from './utils/chat'
 import {AbangModel} from './types/model'
 
-export async function generateCompletionWithCredits(messageText: string, commandModel: AbangModel, userId: string) {
-  const currentCredits = await getCachedUserCredits(BigInt(userId))
+export async function generateCompletionWithCoins(messageText: string, commandModel: AbangModel, userId: string) {
+  const currentCoins = await getCachedUserCoins(BigInt(userId))
   const price = commandModel.abangPricing.completion
 
-  if (currentCredits < price) {
-    return "Sorry, you don't have enough credits"
+  if (currentCoins < price) {
+    return `Sorry, you don't have enough coins, ${commandModel.name} model costs *${price}* coin, you only have *${currentCoins}*.`
   }
-  const remainingCredits = currentCredits - price
-  // async reduce user credits to reduce response time
-  const deductCredit = deductUserCoins(BigInt(userId), price)
-  const setCreditCache = setUserCreditsCache(BigInt(userId), remainingCredits)
+  const remainingCoins = currentCoins - price
+  console.log('remaining coins', remainingCoins)
+  // async reduce user coins to reduce response time
+  const deductCoins = deductUserCoins(BigInt(userId), price)
+  const setCreditCache = setUserCoinsCache(BigInt(userId), remainingCoins)
   const addTransaction = addCoinTransaction(BigInt(userId), -price, 'used', commandModel.id)
 
-  deductCredit.catch((err) => console.error(`Failed to reduce user credits: ${err}`))
-  setCreditCache.catch((err) => console.error(`Failed to cache user credits: ${err}`))
+  deductCoins.catch((err) => console.error(`Failed to reduce user coins: ${err}`))
+  setCreditCache.catch((err) => console.error(`Failed to cache user coins: ${err}`))
   addTransaction.catch((err) => console.error(`Failed to add credit transaction: ${err}`))
 
   let response = ''
@@ -27,12 +28,12 @@ export async function generateCompletionWithCredits(messageText: string, command
     console.timeLog('process', logMessage)
     response = await generateCompletionRequest(messageText, commandModel)
   } catch (error) {
-    deductCredit.then(() => {
-      addUserCoins(BigInt(userId), price).catch((err) => console.error(`Failed to refund user credits: ${err}`))
+    deductCoins.then(() => {
+      addUserCoins(BigInt(userId), price).catch((err) => console.error(`Failed to refund user coins: ${err}`))
     })
     setCreditCache.then(() => {
-      setUserCreditsCache(BigInt(userId), currentCredits).catch((err) =>
-        console.error(`Failed to cache user credits: ${err}`),
+      setUserCoinsCache(BigInt(userId), currentCoins).catch((err) =>
+        console.error(`Failed to cache user coins: ${err}`),
       )
     })
     addTransaction.then(() => {
@@ -45,7 +46,7 @@ export async function generateCompletionWithCredits(messageText: string, command
   } finally {
     console.timeEnd('process')
   }
-  const creditInfo = `\n\n_By ${commandModel.name}. Deducted ${price} credits. You have ${remainingCredits} credits left_`
+  const creditInfo = `\n\n_By ${commandModel.name}. Deducted ${price} coins. You have ${remainingCoins} coins left_`
 
   return formatForGoogleChat(response) + creditInfo
 }

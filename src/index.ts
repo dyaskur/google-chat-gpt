@@ -7,7 +7,7 @@ import {CreateUserInput} from './db/user.types'
 import * as commands from './json/models_by_command_id.json'
 import {AbangModel} from './types/model'
 import {createUser} from './api'
-import {generateCompletionWithCredits} from './services'
+import {generateCompletionWithCoins} from './services'
 import {addSpaceUser, getSpaceUser} from './db/team'
 
 const commandsTyped = commands as {[key: string]: object}
@@ -81,7 +81,7 @@ export const app: HttpFunction = async (req, res) => {
         } else if (!messageText) {
           res.json(createMessageResponse('Please give me a context'))
         } else {
-          const response = await generateCompletionWithCredits(messageText, commandModel, userId)
+          const response = await generateCompletionWithCoins(messageText, commandModel, userId)
           res.json(createMessageResponse(response))
         }
       } else {
@@ -106,7 +106,7 @@ export const app: HttpFunction = async (req, res) => {
         const defaultModel = await getDefaultModel(event.chat.user.name)
         const commandModel: AbangModel = commandsTyped[defaultModel || '138'] as AbangModel
 
-        const response = await generateCompletionWithCredits(messageText, commandModel, userId)
+        const response = await generateCompletionWithCoins(messageText, commandModel, userId)
         res.json(createMessageResponse(response))
       }
     } else {

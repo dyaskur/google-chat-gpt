@@ -1,6 +1,6 @@
 import type {RedisClientType} from 'redis'
 import {createClient} from 'redis'
-import {getUserCredits, getUserIntegrationByEmail, getUserIntegrationByUid} from '../db/user'
+import {getUserCoins, getUserIntegrationByEmail, getUserIntegrationByUid} from '../db/user'
 
 let redisClient: RedisClientType | null = null
 let isReady = false
@@ -66,14 +66,14 @@ export async function getDefaultModel(userId: string): Promise<string | null> {
   return user.default_model
 }
 
-export async function getCachedUserCredits(userId: bigint): Promise<number> {
+export async function getCachedUserCoins(userId: bigint): Promise<number> {
   const cache = await getCache()
-  const credits = await cache.get(`credits_${userId}`)
-  console.log('credit from cache', credits)
-  if (credits !== null) return Number(credits)
-  const userCredit = await getUserCredits(userId)
-  if (!userCredit) return 0
-  console.log('userCredit', userCredit)
+  const coins = await cache.get(`coins_${userId}`)
+  console.log('credit from cache', coins)
+  if (coins !== null && !isNaN(Number(coins))) return Number(coins)
+  const userCoins = await getUserCoins(userId)
+  console.log('userCoins', userCoins)
+  if (!userCoins) return 0
 
   const now = new Date()
   now.setUTCHours(0, 0, 0, 0)
@@ -84,21 +84,21 @@ export async function getCachedUserCredits(userId: bigint): Promise<number> {
   const expireInSeconds = Math.floor((nextMidnight.getTime() - Date.now()) / 1000)
 
   cache
-    .setEx(`credits_${userId}`, expireInSeconds, String(userCredit.coin_balance))
-    .catch((err) => console.error(`Failed to cache user credits: ${err}`))
-  return Number(userCredit.coin_balance)
+    .setEx(`coins_${userId}`, expireInSeconds, String(userCoins.coin_balance))
+    .catch((err) => console.error(`Failed to cache user coins: ${err}`))
+  return Number(userCoins.coin_balance)
 }
 
-export async function setUserCreditsCache(userId: bigint, amount: number) {
+export async function setUserCoinsCache(userId: bigint, amount: number) {
   const cache = await getCache()
-  const newCredits = amount
+  const newCoins = amount
   const nextMidnight = new Date()
   nextMidnight.setUTCHours(0, 0, 0, 0)
   nextMidnight.setDate(nextMidnight.getDate() + 1)
 
   const expireInSeconds = Math.floor((nextMidnight.getTime() - Date.now()) / 1000)
   cache
-    .setEx(`credits_${userId}`, expireInSeconds, String(newCredits))
-    .catch((err) => console.error(`Failed to cache user credits: ${err}`))
-  return newCredits
+    .setEx(`coins_${userId}`, expireInSeconds, String(newCoins))
+    .catch((err) => console.error(`Failed to cache user coins: ${err}`))
+  return newCoins
 }

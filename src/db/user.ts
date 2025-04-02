@@ -73,12 +73,12 @@ export async function createUserIntegration(data: CreateUserInput) {
   return userIntegration.rows[0].id
 }
 
-export async function getUserCredits(userId: bigint) {
+export async function getUserCoins(userId: bigint) {
   try {
-    const {rows} = await query(`SELECT * FROM users WHERE id = $1`, [userId])
+    const {rows} = await query(`SELECT coin_balance FROM users WHERE id = $1`, [userId])
     return rows[0] || null
   } catch (error) {
-    console.error('Error fetching user credits:', error)
+    console.error('Error fetching user coins:', error)
     throw error
   }
 }
@@ -91,7 +91,7 @@ export async function deductUserCoins(userId: bigint, amount: number) {
     )
     return rows[0]
   } catch (error) {
-    console.error('Error update user credits:', error)
+    console.error('Error update user coins:', error)
     throw error
   }
 }
@@ -104,7 +104,7 @@ export async function addUserCoins(userId: bigint, amount: number) {
     )
     return rows[0]
   } catch (error) {
-    console.error('Error fetching user credits:', error)
+    console.error('Error fetching user coins:', error)
     throw error
   }
 }
