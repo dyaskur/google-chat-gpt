@@ -34,7 +34,7 @@ export const app: HttpFunction = async (req, res) => {
     if (event) {
       console.timeLog('process', JSON.stringify(event))
     }
-
+    const displayName = event.chat.user.displayName
     const email = event.chat.user.email
     const space = event.chat.messagePayload?.space
 
@@ -43,7 +43,7 @@ export const app: HttpFunction = async (req, res) => {
       const userData: CreateUserInput = {
         email,
         name: event.chat.user.name,
-        displayName: event.chat.user.name,
+        displayName: displayName,
         type: event.chat.user.type,
         avatarUrl: event.chat.user.avatarUrl,
         domainId: event.chat.user.domainId,
@@ -81,7 +81,7 @@ export const app: HttpFunction = async (req, res) => {
         } else if (!messageText) {
           res.json(createMessageResponse('Please give me a context'))
         } else {
-          const response = await generateCompletionWithCoins(messageText, commandModel, userId)
+          const response = await generateCompletionWithCoins(messageText, commandModel, userId, displayName)
           res.json(createMessageResponse(response))
         }
       } else {
@@ -106,7 +106,7 @@ export const app: HttpFunction = async (req, res) => {
         const defaultModel = await getDefaultModel(event.chat.user.name)
         const commandModel: AbangModel = commandsTyped[defaultModel || '138'] as AbangModel
 
-        const response = await generateCompletionWithCoins(messageText, commandModel, userId)
+        const response = await generateCompletionWithCoins(messageText, commandModel, userId, displayName)
         res.json(createMessageResponse(response))
       }
     } else {

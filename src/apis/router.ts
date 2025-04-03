@@ -32,7 +32,7 @@ export async function generateCompletionRequest(prompt: string, model: AbangMode
         'straico price',
         data.price.total,
         'coin',
-        data.completion.choices[0].message.content,
+        data.completion.choices[0].message.content.length,
         'chars',
       )
       return data.completion.choices[0].message.content
