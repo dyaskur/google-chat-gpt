@@ -48,6 +48,8 @@ async function exportModels() {
   const straicoModels: {[key: number]: object} = {}
   const models: {[key: number]: AbangModel} = {}
   for (const model of openrouter) {
+    const modelExploded = model.id.split('/')
+
     const abangModel: AbangModel = {
       ...model,
       commandName: '/' + model.id.replace(/-/g, '_').replace(/\//g, ':'),
@@ -55,9 +57,8 @@ async function exportModels() {
         completion: Math.round(Number(model.pricing.completion) * 350 * 20000),
         image: Math.round(Number(model.pricing.image) * 100 * 20000),
       },
+      provider: modelExploded[0],
     }
-    const modelExploded = model.id.split('/')
-    abangModel['provider'] = modelExploded[0]
     if (straicoByModel[model.id]) {
       abangModel['straico'] = {
         coins: straicoByModel[model.id].pricing.coins,
