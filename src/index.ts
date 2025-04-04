@@ -9,6 +9,7 @@ import {AbangModel} from './types/model'
 import {createUser} from './api'
 import {generateCompletionWithCoins} from './services'
 import {addSpaceUser, getSpaceUser} from './db/team'
+import {callMessageApi} from './utils/googleapi'
 
 const commandsTyped = commands as {[key: string]: object}
 
@@ -31,25 +32,24 @@ export const app: HttpFunction = async (req, res) => {
   } else {
     const event: ChatEvent = req.body
 
-    if (event) {
-      console.timeLog('process', JSON.stringify(event))
-    }
-    const displayName = event.chat.user.displayName
-    const email = event.chat.user.email
-    const space = event.chat.messagePayload?.space
+    console.timeLog('process', JSON.stringify(event))
+    const {user} = event.chat
+    const {displayName, email, name, type, avatarUrl, domainId} = user
+    const space =
+      event.chat.messagePayload?.space || event.chat.addedToSpacePayload?.space || event.chat.appCommandPayload?.space
 
     let userId = await getUser(email)
     if (!userId) {
       const userData: CreateUserInput = {
         email,
-        name: event.chat.user.name,
-        displayName: displayName,
-        type: event.chat.user.type,
-        avatarUrl: event.chat.user.avatarUrl,
-        domainId: event.chat.user.domainId,
+        name,
+        displayName,
+        type,
+        avatarUrl,
+        domainId,
         metadata: event.commonEventObject,
       }
-      if (space && space.type === 'ROOM') {
+      if (space?.type === 'ROOM') {
         userData.space = space as Space
       }
       // userId = await createUserIntegration(userData)
@@ -81,7 +81,24 @@ export const app: HttpFunction = async (req, res) => {
         } else if (!messageText) {
           res.json(createMessageResponse('Please give me a context'))
         } else {
+          //todo: use Promise.race
+          const start = process.hrtime()
           const response = await generateCompletionWithCoins(messageText, commandModel, userId, displayName)
+          const elapsed = process.hrtime(start)
+          const elapsedSeconds = elapsed[0] + elapsed[1] / 1e9
+
+          // if more than 29 seconds
+          if (elapsedSeconds > 29) {
+            const request = {
+              parent: space?.name,
+              requestBody: {
+                text: response,
+              },
+            }
+            const apiResponse = await callMessageApi('create', request)
+            console.log(apiResponse.statusText, 'google api')
+          }
+          console.log(elapsed, 'elapsed', elapsedSeconds)
           res.json(createMessageResponse(response))
         }
       } else {
@@ -105,8 +122,25 @@ export const app: HttpFunction = async (req, res) => {
         const messageText = event.chat.messagePayload.message.text
         const defaultModel = await getDefaultModel(event.chat.user.name)
         const commandModel: AbangModel = commandsTyped[defaultModel || '138'] as AbangModel
-
+        const start = process.hrtime()
         const response = await generateCompletionWithCoins(messageText, commandModel, userId, displayName)
+        const elapsed = process.hrtime(start)
+        const elapsedSeconds = elapsed[0] + elapsed[1] / 1e9
+
+        // if more than 29 seconds
+        if (elapsedSeconds > 29) {
+          const text = `<users/all>, test 123`
+
+          const request = {
+            parent: space?.name,
+            requestBody: {
+              text,
+            },
+          }
+          const response = await callMessageApi('create', request)
+          console.log(response, 'google api')
+        }
+        console.log(elapsed, 'elapsed', elapsedSeconds)
         res.json(createMessageResponse(response))
       }
     } else {
