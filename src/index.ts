@@ -9,7 +9,6 @@ import {AbangModel} from './types/model'
 import {createUser} from './api'
 import {generateCompletionSafely} from './services'
 import {addSpaceUser, getSpaceUser} from './db/team'
-import {callMessageApi} from './utils/googleapi'
 
 const commandsTyped = commands as {[key: string]: object}
 
