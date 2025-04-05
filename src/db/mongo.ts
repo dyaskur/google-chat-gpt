@@ -1,4 +1,4 @@
-import {MongoClient, ObjectId, Db, Collection} from 'mongodb'
+import {MongoClient, ObjectId, Db, Collection, FindOptions} from 'mongodb'
 
 const COSMOS_CONNECTION_STRING = process.env.MONGO_URL || ''
 const DATABASE_NAME = 'abang'
@@ -8,6 +8,7 @@ export interface ChatHistory {
   _id?: ObjectId
   user_id: number
   role: string
+  model: string
   message: string
   created_at: Date
 }
@@ -34,13 +35,12 @@ export class MongoHelper {
     return await this.collection.findOne({_id: new ObjectId(user_id)} as any)
   }
 
-  async findAll(): Promise<ChatHistory[]> {
+  async findAllSorted(userId: string, limit?: number, sortOrder: 'asc' | 'desc' = 'desc'): Promise<ChatHistory[]> {
     await this.client.connect()
-    return await this.collection.find().toArray()
-  }
-  async findAllSorted(): Promise<ChatHistory[]> {
-    await this.client.connect()
-    return await this.collection.find().sort({created_at: -1}).toArray() // Descending order
+    const query = {user_id: Number(userId)}
+    const sortDirection = sortOrder === 'asc' ? 1 : -1
+    const options: FindOptions = {sort: {created_at: sortDirection}, ...(limit && {limit})}
+    return this.collection.find(query, options).toArray()
   }
   async close() {
     await this.client.close()
@@ -49,8 +49,12 @@ export class MongoHelper {
 
 export async function test() {
   const chatDb = new MongoHelper()
-  const newChat: ChatHistory = {user_id: 1, role: 'user', message: 'hello', created_at: new Date()}
+  const newChat: ChatHistory = {user_id: 1, role: 'user', model: 'gpt4.0', message: 'hello', created_at: new Date()}
   const userId = await chatDb.insertOne(newChat)
   console.log('Inserted User ID:', userId)
+  const history = await chatDb.findAllSorted(String(1060046125828341760))
+  console.log('history', history)
   await chatDb.close()
 }
+
+// test()

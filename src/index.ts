@@ -7,7 +7,7 @@ import {CreateUserInput} from './db/user.types'
 import * as commands from './json/models_by_command_id.json'
 import {AbangModel} from './types/model'
 import {createUser} from './api'
-import {generateCompletionWithCoins} from './services'
+import {generateCompletionSafely} from './services'
 import {addSpaceUser, getSpaceUser} from './db/team'
 
 const commandsTyped = commands as {[key: string]: object}
@@ -31,25 +31,24 @@ export const app: HttpFunction = async (req, res) => {
   } else {
     const event: ChatEvent = req.body
 
-    if (event) {
-      console.timeLog('process', JSON.stringify(event))
-    }
-
-    const email = event.chat.user.email
-    const space = event.chat.messagePayload?.space
+    console.timeLog('process', JSON.stringify(event))
+    const {user} = event.chat
+    const {displayName, email, name, type, avatarUrl, domainId} = user
+    const space =
+      event.chat.messagePayload?.space || event.chat.addedToSpacePayload?.space || event.chat.appCommandPayload?.space
 
     let userId = await getUser(email)
     if (!userId) {
       const userData: CreateUserInput = {
         email,
-        name: event.chat.user.name,
-        displayName: event.chat.user.name,
-        type: event.chat.user.type,
-        avatarUrl: event.chat.user.avatarUrl,
-        domainId: event.chat.user.domainId,
+        name,
+        displayName,
+        type,
+        avatarUrl,
+        domainId,
         metadata: event.commonEventObject,
       }
-      if (space && space.type === 'ROOM') {
+      if (space?.type === 'ROOM') {
         userData.space = space as Space
       }
       // userId = await createUserIntegration(userData)
@@ -81,7 +80,12 @@ export const app: HttpFunction = async (req, res) => {
         } else if (!messageText) {
           res.json(createMessageResponse('Please give me a context'))
         } else {
-          const response = await generateCompletionWithCoins(messageText, commandModel, userId)
+          const userInfo = {
+            userId: userId,
+            spaceName: space!.name,
+            userName: displayName,
+          }
+          const response = await generateCompletionSafely(messageText, commandModel, userInfo)
           res.json(createMessageResponse(response))
         }
       } else {
@@ -105,8 +109,12 @@ export const app: HttpFunction = async (req, res) => {
         const messageText = event.chat.messagePayload.message.text
         const defaultModel = await getDefaultModel(event.chat.user.name)
         const commandModel: AbangModel = commandsTyped[defaultModel || '138'] as AbangModel
-
-        const response = await generateCompletionWithCoins(messageText, commandModel, userId)
+        const userInfo = {
+          userId: userId,
+          userName: displayName,
+          spaceName: space!.name,
+        }
+        const response = await generateCompletionSafely(messageText, commandModel, userInfo)
         res.json(createMessageResponse(response))
       }
     } else {

@@ -5,7 +5,7 @@ export interface AbangModel extends OpenrouterModel {
     max_output: number
   }
   commandName?: string
-  provider?: string
+  provider: string
   abangPricing: {
     completion: number
     image: number
