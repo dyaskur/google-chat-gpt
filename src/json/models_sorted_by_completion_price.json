@@ -3,6 +3,40 @@
     "prompt": "-1",
     "completion": "-1"
   },
+  "deepseek/deepseek-v3-base:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "allenai/molmo-7b-d:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "bytedance-research/ui-tars-72b:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "qwen/qwen2.5-vl-3b-instruct:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "google/gemini-2.5-pro-exp-03-25:free": {
+    "prompt": "0",
+    "completion": "0",
+    "coins": 1.5
+  },
+  "qwen/qwen2.5-vl-32b-instruct:free": {
+    "prompt": "0",
+    "completion": "0",
+    "coins": 0.7
+  },
+  "deepseek/deepseek-chat-v3-0324:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "featherless/qwerky-72b:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
   "mistralai/mistral-small-3.1-24b-instruct:free": {
     "prompt": "0",
     "completion": "0"
@@ -59,14 +93,9 @@
     "prompt": "0",
     "completion": "0"
   },
-  "google/gemini-2.0-flash-lite-preview-02-05:free": {
-    "prompt": "0",
-    "completion": "0"
-  },
   "google/gemini-2.0-pro-exp-02-05:free": {
     "prompt": "0",
-    "completion": "0",
-    "coins": 1.5
+    "completion": "0"
   },
   "qwen/qwen2.5-vl-72b-instruct:free": {
     "prompt": "0",
@@ -112,10 +141,6 @@
     "prompt": "0",
     "completion": "0"
   },
-  "google/gemini-exp-1206:free": {
-    "prompt": "0",
-    "completion": "0"
-  },
   "meta-llama/llama-3.3-70b-instruct:free": {
     "prompt": "0",
     "completion": "0"
@@ -152,6 +177,10 @@
     "prompt": "0",
     "completion": "0"
   },
+  "qwen/qwen-2.5-vl-7b-instruct:free": {
+    "prompt": "0",
+    "completion": "0"
+  },
   "google/gemini-flash-1.5-8b-exp": {
     "prompt": "0",
     "completion": "0"
@@ -184,10 +213,6 @@
     "prompt": "0",
     "completion": "0"
   },
-  "meta-llama/llama-3-8b-instruct:free": {
-    "prompt": "0",
-    "completion": "0"
-  },
   "openchat/openchat-7b:free": {
     "prompt": "0",
     "completion": "0"
@@ -197,10 +222,6 @@
     "completion": "0"
   },
   "huggingfaceh4/zephyr-7b-beta:free": {
-    "prompt": "0",
-    "completion": "0"
-  },
-  "gryphe/mythomax-l2-13b:free": {
     "prompt": "0",
     "completion": "0"
   },
@@ -219,6 +240,10 @@
   "meta-llama/llama-3.2-3b-instruct": {
     "prompt": "0.000000015",
     "completion": "0.000000025"
+  },
+  "google/gemma-3-4b-it": {
+    "prompt": "0.00000002",
+    "completion": "0.00000004"
   },
   "nousresearch/hermes-2-pro-llama-3-8b": {
     "prompt": "0.000000025",
@@ -240,6 +265,10 @@
     "prompt": "0.000000025",
     "completion": "0.00000005"
   },
+  "sao10k/l3-lunaris-8b": {
+    "prompt": "0.00000005",
+    "completion": "0.00000005"
+  },
   "qwen/qwen-2-7b-instruct": {
     "prompt": "0.000000054",
     "completion": "0.000000054"
@@ -256,27 +285,23 @@
     "prompt": "0.000000055",
     "completion": "0.000000055"
   },
-  "openchat/openchat-7b": {
-    "prompt": "0.000000055",
-    "completion": "0.000000055"
-  },
-  "sao10k/l3-lunaris-8b": {
-    "prompt": "0.00000003",
-    "completion": "0.00000006"
-  },
-  "google/gemma-2-9b-it": {
-    "prompt": "0.00000003",
-    "completion": "0.00000006"
-  },
   "meta-llama/llama-3-8b-instruct": {
     "prompt": "0.00000003",
     "completion": "0.00000006",
     "coins": 0.5
   },
+  "openchat/openchat-7b": {
+    "prompt": "0.00000006",
+    "completion": "0.00000006"
+  },
   "gryphe/mythomax-l2-13b": {
     "prompt": "0.000000065",
     "completion": "0.000000065",
     "coins": 1
+  },
+  "google/gemma-2-9b-it": {
+    "prompt": "0.00000007",
+    "completion": "0.00000007"
   },
   "microsoft/wizardlm-2-7b": {
     "prompt": "0.00000007",
@@ -290,8 +315,16 @@
     "prompt": "0.000000035",
     "completion": "0.00000008"
   },
+  "google/gemma-3-12b-it": {
+    "prompt": "0.00000005",
+    "completion": "0.0000001"
+  },
   "microsoft/phi-4-multimodal-instruct": {
     "prompt": "0.00000005",
+    "completion": "0.0000001"
+  },
+  "mistral/ministral-8b": {
+    "prompt": "0.0000001",
     "completion": "0.0000001"
   },
   "mistralai/ministral-8b": {
@@ -340,10 +373,6 @@
     "prompt": "0.00000015",
     "completion": "0.00000015"
   },
-  "google/gemma-7b-it": {
-    "prompt": "0.00000015",
-    "completion": "0.00000015"
-  },
   "qwen/qwen-2.5-coder-32b-instruct": {
     "prompt": "0.00000007",
     "completion": "0.00000016",
@@ -365,12 +394,20 @@
     "prompt": "0.00000012",
     "completion": "0.00000018"
   },
+  "scb10x/llama3.1-typhoon2-8b-instruct": {
+    "prompt": "0.00000018",
+    "completion": "0.00000018"
+  },
   "deepseek/deepseek-r1-distill-qwen-1.5b": {
     "prompt": "0.00000018",
     "completion": "0.00000018"
   },
   "qwen/qwen-turbo": {
     "prompt": "0.00000005",
+    "completion": "0.0000002"
+  },
+  "google/gemma-3-27b-it": {
+    "prompt": "0.0000001",
     "completion": "0.0000002"
   },
   "meta-llama/llama-guard-3-8b": {
@@ -430,11 +467,6 @@
     "prompt": "0.00000025",
     "completion": "0.00000025"
   },
-  "google/gemma-2-27b-it": {
-    "prompt": "0.00000027",
-    "completion": "0.00000027",
-    "coins": 0.4
-  },
   "google/gemini-2.0-flash-lite-001": {
     "prompt": "0.000000075",
     "completion": "0.0000003"
@@ -492,10 +524,6 @@
     "prompt": "0.00000025",
     "completion": "0.0000005"
   },
-  "google/gemma-3-27b-it": {
-    "prompt": "0.0000003",
-    "completion": "0.0000005"
-  },
   "thedrummer/skyfall-36b-v2": {
     "prompt": "0.0000005",
     "completion": "0.0000005"
@@ -519,14 +547,14 @@
     "prompt": "0.0000005",
     "completion": "0.0000005"
   },
-  "cohere/command-r-08-2024": {
-    "prompt": "0.0000001425",
-    "completion": "0.00000057",
-    "coins": 0.2
-  },
   "openai/gpt-4o-mini-search-preview": {
     "prompt": "0.00000015",
     "completion": "0.0000006"
+  },
+  "cohere/command-r-08-2024": {
+    "prompt": "0.00000015",
+    "completion": "0.0000006",
+    "coins": 0.2
   },
   "openai/gpt-4o-mini": {
     "prompt": "0.00000015",
@@ -597,14 +625,6 @@
     "prompt": "0.0000007",
     "completion": "0.0000008"
   },
-  "sao10k/l3-euryale-70b": {
-    "prompt": "0.0000007",
-    "completion": "0.0000008"
-  },
-  "thedrummer/anubis-pro-105b-v1": {
-    "prompt": "0.0000008",
-    "completion": "0.0000008"
-  },
   "nousresearch/hermes-3-llama-3.1-405b": {
     "prompt": "0.0000008",
     "completion": "0.0000008",
@@ -615,9 +635,23 @@
     "completion": "0.0000008",
     "coins": 1.6
   },
+  "google/gemma-2-27b-it": {
+    "prompt": "0.0000008",
+    "completion": "0.0000008",
+    "coins": 0.4
+  },
   "sophosympatheia/midnight-rose-70b": {
     "prompt": "0.0000008",
     "completion": "0.0000008"
+  },
+  "scb10x/llama3.1-typhoon2-70b-instruct": {
+    "prompt": "0.00000088",
+    "completion": "0.00000088"
+  },
+  "deepseek/deepseek-chat": {
+    "prompt": "0.0000004",
+    "completion": "0.00000089",
+    "coins": 1.1
   },
   "mistralai/codestral-2501": {
     "prompt": "0.0000003",
@@ -640,6 +674,10 @@
     "prompt": "0.0000009",
     "completion": "0.0000009"
   },
+  "thedrummer/anubis-pro-105b-v1": {
+    "prompt": "0.0000008",
+    "completion": "0.000001"
+  },
   "perplexity/sonar": {
     "prompt": "0.000001",
     "completion": "0.000001",
@@ -657,6 +695,11 @@
   "minimax/minimax-01": {
     "prompt": "0.0000002",
     "completion": "0.0000011"
+  },
+  "deepseek/deepseek-chat-v3-0324": {
+    "prompt": "0.00000027",
+    "completion": "0.0000011",
+    "coins": 1
   },
   "neversleep/llama-3.1-lumimaid-8b": {
     "prompt": "0.0000001875",
@@ -711,22 +754,21 @@
     "prompt": "0.00000025",
     "completion": "0.00000125"
   },
-  "deepseek/deepseek-chat": {
-    "prompt": "0.0000004",
-    "completion": "0.0000013",
-    "coins": 1.1
-  },
   "aion-labs/aion-1.0-mini": {
     "prompt": "0.0000007",
     "completion": "0.0000014"
   },
+  "sao10k/l3-euryale-70b": {
+    "prompt": "0.00000148",
+    "completion": "0.00000148"
+  },
   "cohere/command-r": {
-    "prompt": "0.000000475",
-    "completion": "0.000001425"
+    "prompt": "0.0000005",
+    "completion": "0.0000015"
   },
   "cohere/command-r-03-2024": {
-    "prompt": "0.000000475",
-    "completion": "0.000001425"
+    "prompt": "0.0000005",
+    "completion": "0.0000015"
   },
   "google/gemini-pro-vision": {
     "prompt": "0.0000005",
@@ -753,8 +795,8 @@
     "completion": "0.0000016"
   },
   "cohere/command": {
-    "prompt": "0.00000095",
-    "completion": "0.0000019"
+    "prompt": "0.000001",
+    "completion": "0.000002"
   },
   "openai/gpt-3.5-turbo-0613": {
     "prompt": "0.000001",
@@ -834,23 +876,27 @@
     "prompt": "0.0000026",
     "completion": "0.0000034"
   },
+  "all-hands/openhands-lm-32b-v0.1": {
+    "prompt": "0.0000024",
+    "completion": "0.0000036"
+  },
   "xwin-lm/xwin-lm-70b": {
     "prompt": "0.00000375",
     "completion": "0.00000375"
-  },
-  "anthropic/claude-3.5-haiku-20241022:beta": {
-    "prompt": "0.0000008",
-    "completion": "0.000004"
-  },
-  "anthropic/claude-3.5-haiku-20241022": {
-    "prompt": "0.0000008",
-    "completion": "0.000004"
   },
   "anthropic/claude-3.5-haiku:beta": {
     "prompt": "0.0000008",
     "completion": "0.000004"
   },
   "anthropic/claude-3.5-haiku": {
+    "prompt": "0.0000008",
+    "completion": "0.000004"
+  },
+  "anthropic/claude-3.5-haiku-20241022:beta": {
+    "prompt": "0.0000008",
+    "completion": "0.000004"
+  },
+  "anthropic/claude-3.5-haiku-20241022": {
     "prompt": "0.0000008",
     "completion": "0.000004"
   },
@@ -868,14 +914,14 @@
     "completion": "0.0000044",
     "coins": 1.5
   },
-  "openai/o1-mini-2024-09-12": {
-    "prompt": "0.0000011",
-    "completion": "0.0000044"
-  },
   "openai/o1-mini": {
     "prompt": "0.0000011",
     "completion": "0.0000044",
     "coins": 4
+  },
+  "openai/o1-mini-2024-09-12": {
+    "prompt": "0.0000011",
+    "completion": "0.0000044"
   },
   "neversleep/llama-3.1-lumimaid-70b": {
     "prompt": "0.000003375",
@@ -958,11 +1004,6 @@
     "completion": "0.000009375",
     "coins": 5
   },
-  "cohere/command-r-plus-08-2024": {
-    "prompt": "0.000002375",
-    "completion": "0.0000095",
-    "coins": 3.4
-  },
   "x-ai/grok-2-vision-1212": {
     "prompt": "0.000002",
     "completion": "0.00001",
@@ -986,13 +1027,18 @@
     "completion": "0.00001",
     "coins": 3.3
   },
+  "inflection/inflection-3-productivity": {
+    "prompt": "0.0000025",
+    "completion": "0.00001"
+  },
   "inflection/inflection-3-pi": {
     "prompt": "0.0000025",
     "completion": "0.00001"
   },
-  "inflection/inflection-3-productivity": {
+  "cohere/command-r-plus-08-2024": {
     "prompt": "0.0000025",
-    "completion": "0.00001"
+    "completion": "0.00001",
+    "coins": 3.4
   },
   "openai/gpt-4o-2024-08-06": {
     "prompt": "0.0000025",
@@ -1003,23 +1049,7 @@
     "prompt": "0.0000025",
     "completion": "0.00001"
   },
-  "allenai/llama-3.1-tulu-3-405b": {
-    "prompt": "0.000005",
-    "completion": "0.00001"
-  },
-  "cohere/command-r-plus": {
-    "prompt": "0.00000285",
-    "completion": "0.00001425"
-  },
-  "cohere/command-r-plus-04-2024": {
-    "prompt": "0.00000285",
-    "completion": "0.00001425"
-  },
   "perplexity/sonar-pro": {
-    "prompt": "0.000003",
-    "completion": "0.000015"
-  },
-  "anthropic/claude-3.7-sonnet:beta": {
     "prompt": "0.000003",
     "completion": "0.000015"
   },
@@ -1032,6 +1062,10 @@
     "prompt": "0.000003",
     "completion": "0.000015",
     "coins": 5
+  },
+  "anthropic/claude-3.7-sonnet:beta": {
+    "prompt": "0.000003",
+    "completion": "0.000015"
   },
   "anthropic/claude-3.5-sonnet:beta": {
     "prompt": "0.000003",
@@ -1047,6 +1081,14 @@
     "completion": "0.000015"
   },
   "anthropic/claude-3.5-sonnet-20240620": {
+    "prompt": "0.000003",
+    "completion": "0.000015"
+  },
+  "cohere/command-r-plus": {
+    "prompt": "0.000003",
+    "completion": "0.000015"
+  },
+  "cohere/command-r-plus-04-2024": {
     "prompt": "0.000003",
     "completion": "0.000015"
   },
@@ -1080,19 +1122,19 @@
     "prompt": "0.000006",
     "completion": "0.000018"
   },
-  "anthropic/claude-2:beta": {
-    "prompt": "0.000008",
-    "completion": "0.000024"
-  },
-  "anthropic/claude-2": {
-    "prompt": "0.000008",
-    "completion": "0.000024"
-  },
   "anthropic/claude-2.1:beta": {
     "prompt": "0.000008",
     "completion": "0.000024"
   },
   "anthropic/claude-2.1": {
+    "prompt": "0.000008",
+    "completion": "0.000024"
+  },
+  "anthropic/claude-2:beta": {
+    "prompt": "0.000008",
+    "completion": "0.000024"
+  },
+  "anthropic/claude-2": {
     "prompt": "0.000008",
     "completion": "0.000024"
   },
