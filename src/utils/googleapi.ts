@@ -34,10 +34,14 @@ export async function callMessageApi(action: string, request: object) {
       throw new Error(`Unsupported action: ${action}`)
     }
   } catch (error) {
-    // @ts-ignore: all error should have this method
-    const errorMessage: string = error.message ?? error.toString() ?? 'Unknown error'
-    console.error('Error:', action, JSON.stringify(request), response, errorMessage)
-    response = {status: 444, statusText: errorMessage, data: {}}
+    const errorMessage: string = error instanceof Error 
+      ? error.message 
+      : (typeof error === 'object' && error !== null && 'toString' in error)
+        ? error.toString()
+        : 'Unknown error';
+    // Log error without full request details to avoid leaking sensitive information
+    console.error('Error during Google Chat API call:', action, errorMessage);
+    response = {status: 500, statusText: errorMessage, data: {}}
   }
 
   if (!response) {
