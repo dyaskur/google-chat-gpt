@@ -1,18 +1,7 @@
-import {ChatResponse} from '../types/response'
-
-export function createMessageResponse(text: string): ChatResponse {
-  return {
-    hostAppDataAction: {
-      chatDataAction: {
-        createMessageAction: {
-          message: {
-            text,
-          },
-        },
-      },
-    },
-  }
-}
+import {ActionCard, ChatResponse} from '../types/response'
+import {chat_v1} from '@googleapis/chat'
+import Schema$CardWithId = chat_v1.Schema$CardWithId
+import Schema$GoogleAppsCardV1Card = chat_v1.Schema$GoogleAppsCardV1Card
 
 export function createActionResponse(): ChatResponse {
   return {
@@ -28,6 +17,33 @@ export function createActionResponse(): ChatResponse {
           },
         },
       },
+    },
+  }
+}
+
+export function createMessageResponse(text?: string, cardsV2?: Schema$CardWithId[]): ChatResponse {
+  return {
+    hostAppDataAction: {
+      chatDataAction: {
+        createMessageAction: {
+          message: {
+            text,
+            cardsV2,
+          },
+        },
+      },
+    },
+  }
+}
+
+export function createActionDialog(card: Schema$GoogleAppsCardV1Card): ActionCard {
+  return {
+    action: {
+      navigations: [
+        {
+          pushCard: card,
+        },
+      ],
     },
   }
 }
