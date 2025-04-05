@@ -4,6 +4,7 @@ import {generateCompletionRequest} from './apis/router'
 import {formatForGoogleChat} from './utils/chat'
 import {AbangModel} from './types/model'
 import {ChatHistory, MongoHelper} from './db/mongo'
+import {callMessageApi} from './utils/googleapi'
 
 function convertToLLMFormat(messages: ChatHistory[]): string {
   // Sort messages by created_at in ascending order
@@ -21,15 +22,16 @@ async function previousChats(userId: string, userName: string, chatDb: MongoHelp
   }
   return 'User: I am ' + userName + '.\n' + convertToLLMFormat(previousChats)
 }
-export async function generateCompletionWithCoins(
-  messageText: string,
-  commandModel: AbangModel,
-  userId: string,
-  userName: string,
-) {
+export interface UserInfo {
+  userId: string
+  userName: string
+  spaceName: string
+}
+export async function generateCompletionWithCoins(messageText: string, commandModel: AbangModel, userInfo: UserInfo) {
+  const {userId, userName} = userInfo
+
   const currentCoins = await getCachedUserCoins(BigInt(userId))
   const price = commandModel.abangPricing.completion
-
   if (currentCoins < price) {
     return `Sorry, you don't have enough coins, ${commandModel.name} model costs *${price}* coin, you only have *${currentCoins}*.`
   }
@@ -95,4 +97,52 @@ export async function generateCompletionWithCoins(
   const creditInfo = `\n\n_By ${commandModel.name}. Deducted ${price} coins. You have ${remainingCoins} coins left_`
 
   return formatForGoogleChat(response) + creditInfo
+}
+
+function generateCompletionWithTimeout(
+  messageText: string,
+  commandModel: AbangModel,
+  userInfo: UserInfo,
+): Promise<string> {
+  return new Promise((resolve) => {
+    let exceeded = false
+
+    // Timeout to detect if the task exceeds 30 seconds
+    const timeout = setTimeout(() => {
+      console.log('Task exceeded 30 seconds, taking action...')
+      exceeded = true
+    }, 30000)
+
+    generateCompletionWithCoins(messageText, commandModel, userInfo).then((response) => {
+      clearTimeout(timeout)
+      if (exceeded) {
+        const request = {
+          parent: userInfo?.spaceName,
+          requestBody: {
+            text: response,
+          },
+        }
+        console.log('request is more than 30 seconds, calling create chat API')
+        callMessageApi('create', request).then((response) => {
+          console.log(response.statusText, 'google api')
+        })
+      }
+      resolve(exceeded ? 'Completed after timeout' : response)
+    })
+  })
+}
+
+function timeoutPromise(ms: number, fallbackValue: string): Promise<string> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(fallbackValue)
+    }, ms)
+  })
+}
+
+export async function generateCompletionSafely(messageText: string, commandModel: AbangModel, userInfo: UserInfo) {
+  return await Promise.race([
+    generateCompletionWithTimeout(messageText, commandModel, userInfo),
+    timeoutPromise(29000, 'Please wait, I will answer in a few seconds'),
+  ])
 }

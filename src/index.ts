@@ -7,7 +7,7 @@ import {CreateUserInput} from './db/user.types'
 import * as commands from './json/models_by_command_id.json'
 import {AbangModel} from './types/model'
 import {createUser} from './api'
-import {generateCompletionWithCoins} from './services'
+import {generateCompletionSafely} from './services'
 import {addSpaceUser, getSpaceUser} from './db/team'
 import {callMessageApi} from './utils/googleapi'
 
@@ -81,24 +81,12 @@ export const app: HttpFunction = async (req, res) => {
         } else if (!messageText) {
           res.json(createMessageResponse('Please give me a context'))
         } else {
-          //todo: use Promise.race
-          const start = process.hrtime()
-          const response = await generateCompletionWithCoins(messageText, commandModel, userId, displayName)
-          const elapsed = process.hrtime(start)
-          const elapsedSeconds = elapsed[0] + elapsed[1] / 1e9
-
-          // if more than 29 seconds
-          if (elapsedSeconds > 29) {
-            const request = {
-              parent: space?.name,
-              requestBody: {
-                text: response,
-              },
-            }
-            const apiResponse = await callMessageApi('create', request)
-            console.log(apiResponse.statusText, 'google api')
+          const userInfo = {
+            userId: userId,
+            spaceName: space!.name,
+            userName: displayName,
           }
-          console.log(elapsed, 'elapsed', elapsedSeconds)
+          const response = await generateCompletionSafely(messageText, commandModel, userInfo)
           res.json(createMessageResponse(response))
         }
       } else {
@@ -122,25 +110,12 @@ export const app: HttpFunction = async (req, res) => {
         const messageText = event.chat.messagePayload.message.text
         const defaultModel = await getDefaultModel(event.chat.user.name)
         const commandModel: AbangModel = commandsTyped[defaultModel || '138'] as AbangModel
-        const start = process.hrtime()
-        const response = await generateCompletionWithCoins(messageText, commandModel, userId, displayName)
-        const elapsed = process.hrtime(start)
-        const elapsedSeconds = elapsed[0] + elapsed[1] / 1e9
-
-        // if more than 29 seconds
-        if (elapsedSeconds > 29) {
-          const text = `<users/all>, test 123`
-
-          const request = {
-            parent: space?.name,
-            requestBody: {
-              text,
-            },
-          }
-          const response = await callMessageApi('create', request)
-          console.log(response, 'google api')
+        const userInfo = {
+          userId: userId,
+          userName: displayName,
+          spaceName: space!.name,
         }
-        console.log(elapsed, 'elapsed', elapsedSeconds)
+        const response = await generateCompletionSafely(messageText, commandModel, userInfo)
         res.json(createMessageResponse(response))
       }
     } else {
