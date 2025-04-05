@@ -1,11 +1,12 @@
 import {chat, auth} from '@googleapis/chat'
+import {chat_v1} from '@googleapis/chat/v1'
 
 /**
  * Create google api credentials
  *
- * @returns {object} google.chat
+ * @returns {chat_v1.Chat} google.chat
  */
-function gAuth() {
+function gAuth(): chat_v1.Chat {
   // Use default credentials (service account)
   const credentials = new auth.GoogleAuth({
     // keyFile: path.join(__dirname, '../../tests/creds.json'),
@@ -29,6 +30,8 @@ export async function callMessageApi(action: string, request: object) {
       response = await chatApi.spaces.messages.update(request)
     } else if (action === 'get') {
       response = await chatApi.spaces.messages.get(request)
+    } else {
+      throw new Error(`Unsupported action: ${action}`)
     }
   } catch (error) {
     // @ts-ignore: all error should have this method

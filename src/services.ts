@@ -59,8 +59,10 @@ export async function generateCompletionWithCoins(
       message: messageText,
       created_at: new Date(),
     }
+
     chatDb.insertOne(chatHistory).catch((err) => console.error(`Failed to insert message to mongodb: ${err}`))
-    response = await generateCompletionRequest(previousChat + '\n' + messageText, commandModel)
+    const prompt = previousChat ? `${previousChat}\n${messageText}` : messageText
+    response = await generateCompletionRequest(prompt, commandModel)
     const responseHistory: ChatHistory = {
       user_id: Number(userId),
       role: 'system',
