@@ -1,6 +1,6 @@
 import {HttpFunction} from '@google-cloud/functions-framework'
 import {ChatEvent, Space} from './types/event'
-import {createActionResponse, createMessageResponse} from './utils/chat'
+import {createActionResponse, createActionDialog, createMessageResponse} from './utils/chat'
 import * as fs from 'node:fs'
 import {getCache, getDefaultModel, getUser} from './utils/cache'
 import {CreateUserInput} from './db/user.types'
@@ -9,6 +9,8 @@ import {AbangModel} from './types/model'
 import {createUser} from './api'
 import {generateCompletionSafely} from './services'
 import {addSpaceUser, getSpaceUser} from './db/team'
+import {Configuration} from './types/card'
+import ConfigDialogCard from './cards/ConfigDialogCard'
 
 const commandsTyped = commands as {[key: string]: object}
 
@@ -76,7 +78,19 @@ export const app: HttpFunction = async (req, res) => {
         const commandModel: AbangModel = commandsTyped[commandId.toString()] as AbangModel
         const messageText = event.chat.appCommandPayload?.message?.argumentText
         if (!commandModel) {
-          res.json(createMessageResponse('Sorry, this command is not supported yet'))
+          if (event.chat.appCommandPayload.isDialogEvent) {
+            const defaultModel = await getDefaultModel(event.chat.user.name)
+
+            const dialogConfig: Configuration = {
+              defaultModel: defaultModel ?? '',
+              showCreditInfo: false,
+              showModelInfo: false,
+            }
+            const card = new ConfigDialogCard(dialogConfig).create()
+            res.json(createActionDialog(card))
+          } else {
+            res.json(createMessageResponse('Sorry, this command is not supported yet'))
+          }
         } else if (!messageText) {
           res.json(createMessageResponse('Please give me a context'))
         } else {

@@ -55,6 +55,7 @@ type AppCommandPayload = {
   appCommandMetadata: AppCommandMetadata
   space: Space
   configCompleteRedirectUri: string
+  isDialogEvent?: boolean
 }
 
 type AddedToSpacePayload = {
